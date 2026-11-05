@@ -11,7 +11,7 @@ Sources checked on 5 November 2026. Status: **In place** is true of the repo tod
 | Each file stays under 95 MB | [GitHub enforces 100 MB per file and recommends 1 MB](https://docs.github.com/en/repositories/creating-and-managing-repositories/repository-limits) | In place |
 | Each dataset has a datasheet: source, coverage, known traps, licence and limits | [Datasheets](https://huggingface.co/docs/hub/model-cards) make a result interpretable as well as re-runnable | In place: [Dubai](../dubai-property/docs/DATASHEET.md), [Grid Pulse](../grid-pulse/docs/DATASHEET.md) |
 
-**A deliberate exception:** Cookiecutter's default is to keep data out of Git, and GitHub suggests Git LFS for large files. We commit raw data so that anyone can rebuild the results from one clone. The `.git` folder is about 520 MB against [GitHub's 10 GB recommended limit](https://docs.github.com/en/repositories/creating-and-managing-repositories/repository-limits). Review this if it passes 1 GB or if files start changing often.
+**A deliberate exception:** Cookiecutter's default is to keep data out of Git, and GitHub suggests Git LFS for large files. We commit raw data so that anyone can rebuild the results from one clone. The `.git` folder is about 953 MB against [GitHub's 10 GB recommended limit](https://docs.github.com/en/repositories/creating-and-managing-repositories/repository-limits). Review this if it passes 1 GB or if files start changing often.
 
 ## Reproducibility
 
