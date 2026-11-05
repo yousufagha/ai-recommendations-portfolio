@@ -13,3 +13,5 @@
 - 2026-11-05: AI results are computed in advance, because Tableau Public cannot call AI live; viewers explore them with filters.
 - 2026-11-05: Raw transactions are public in the repo, split by year and gzipped, because GitHub refuses files over 100 MB.
 - 2026-11-05: data.dubai is the source for history, because the Land Department page only reaches back to January 2026.
+- 2026-11-05: Test value at AED 2M against other round prices, nearby prices and earlier years, because prices cluster at round numbers anyway.
+- 2026-11-05: Treat the value step at AED 2M as unproven, because prices with no visa line show steps of similar size. No saving is claimed from it.
