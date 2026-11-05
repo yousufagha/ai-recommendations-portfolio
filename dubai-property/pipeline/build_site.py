@@ -26,6 +26,7 @@ def load_results(root: Path = ROOT) -> dict:
     return {"overview": json.loads((d / "market_overview.json").read_text()),
             "lines": json.loads((d / "value_at_line.json").read_text()),
             "yields": json.loads((d / "rent_yields.json").read_text()),
+            "backtest": json.loads((d / "backtest.json").read_text()),
             "grid": json.loads((root / "grid-pulse" / "validation" / "golden_values.json").read_text())}
 
 
@@ -37,10 +38,16 @@ def chart_data(r: dict) -> dict:
     steps = sorted(main + near, key=lambda x: x["line"])
     fy = lambda key: {x["region_code"]: x for x in r["grid"][key] if x["fy"] == 2026}
     order = sorted(REGIONS, key=lambda c: -fy("load_shift")[c]["saving_aud_per_mw_year"])
+    tested = [x for x in r["backtest"]["rounds"] if x["tested"]]
     bedrooms = {"1 B/R": "1-bed", "2 B/R": "2-bed", "3 B/R": "3-bed"}
     return {
         "yields": [{"label": f"{x['area']}, {bedrooms.get(x['rooms'], x['rooms'])}", "value": x["yield_pct"], "rent": x["rent_aed"],
                     "highlight": x["top_tier"]} for x in r["yields"]["ready_ranked"]],
+        "backtest": {"x": [f"Nov {x['decision'][:4]}" for x in tested],
+                     "series": [{"name": "Picked homes", "values": [x["picks_realised_yield_pct"] for x in tested]},
+                                {"name": "Other ranked homes", "values": [x["others_realised_yield_pct"] for x in tested]}]},
+        "backtest_rows": [[f"Nov {x['decision'][:4]}", x["picks_realised_yield_pct"], x["others_realised_yield_pct"], x["excess_plan_points"], x["excess_centred_points"],
+                           x["sensitivity"]["well_measured_options_only"], x["picks_minus_wider_market_points"]] for x in tested],
         "sales": [{"label": x["year"], "value": x["sales"], "partial": x["year"] == "2026"} for x in o["sales_by_year"]],
         "rents": {"x": [x["year"] for x in rents["Flat"]],
                   "series": [{"name": f"{t}s", "values": [x["median_aed"] for x in rents[t]]} for t in ("Villa", "Flat")]},
@@ -70,7 +77,17 @@ def figures(r: dict) -> dict:
     near = sum(x["sales"] for x in evidence)
     off_plan = sum(x["sales"] for x in evidence if x["stage"] == "off_plan")
     held_out = r["yields"]["checks"]["leave_project_out"]
+    b = r["backtest"]
+    tested = [x for x in b["rounds"] if x["tested"]]
+    gaps = [x["picks_realised_yield_pct"] - x["others_realised_yield_pct"] for x in tested]
+    wins = b["verdict"]["rounds_ahead_on_both_windows"]
     return {
+        "rounds_tested": str(len(tested)), "rounds_more_rent": str(sum(g > 0 for g in gaps)), "total_rounds_ahead": str(wins),
+        "rent_gap_low": f"{min(gaps):.1f}", "rent_gap_high": f"{max(gaps):.1f}",
+        "rent_aed_low": f"{round(min(gaps) / 100 * 10_000_000, -3):,.0f}", "rent_aed_high": f"{round(max(gaps) / 100 * 10_000_000, -3):,.0f}",
+        "random_draws": f"{5000:,}", "verdict": b["verdict"]["label"],
+        "sum_plan": f"{b['permutation']['plan']['observed_points']:.1f}", "sum_centred": f"{b['permutation']['centred']['observed_points']:.1f}",
+        "wider_behind": str(sum(x["picks_minus_wider_market_points"] < 0 for x in tested)),
         "ranked_count": str(len(ranked)), "top_tier_count": str(sum(x["top_tier"] for x in ranked)),
         "yield_low": f"{ranked[-1]['yield_pct']:.1f}", "yield_high": f"{ranked[0]['yield_pct']:.1f}",
         "rent_low": f"{min(rents):,}", "rent_high": f"{max(rents):,}", "rent_gap": f"{max(rents) - min(rents):,}",
@@ -89,6 +106,8 @@ def figures(r: dict) -> dict:
 def tables(data: dict) -> dict:
     series = lambda c: [[x] + [s["values"][i] for s in c["series"]] for i, x in enumerate(c["x"])]
     return {
+        "table_backtest": table("Each round: yearly rent as a percent of price, and gaps in points", ["Decision", "Picked homes' rent", "Others' rent", "Total gap, first price measure", "Total gap, second price measure",
+                                "Total gap, well-measured options only", "Total gap against all ready flats"], data["backtest_rows"]),
         "table_yields": table("Estimated gross yield and yearly rent, ready flats priced at AED 2M to 2.2M", ["Home", "Gross yield, percent", "Rent a year, AED"],
                               [[x["label"], x["value"], f"{x['rent']:,}"] for x in data["yields"]]),
         "table_sales": table("Residential flat and villa sales by year", ["Year", "Sales"], [[x["label"], f"{x['value']:,}"] for x in data["sales"]]),

@@ -30,6 +30,13 @@ def test_every_written_claim_holds_in_the_results():
     tier = [y for y in data["yields"] if y["highlight"]]
     assert len(tier) >= 2 and round(tier[-1]["value"]) == 6, "the page says the top options run from about 6%"
     assert int(f["rent_gap"].replace(",", "")) == max(y["rent"] for y in data["yields"]) - min(y["rent"] for y in data["yields"])
+    tested = [x for x in results["backtest"]["rounds"] if x["tested"]]
+    assert f["verdict"] == "not shown", "the page says better total return is not shown"
+    assert all(x["picks_realised_yield_pct"] > x["others_realised_yield_pct"] for x in tested), "the page says picks earned more rent in every round"
+    rent = results["backtest"]["rent_only_permutation_added_after_seeing_results"]
+    assert rent["share_of_random_at_least_as_good"] == 0, "the page says the rent gap beat all random picks"
+    p = results["backtest"]["permutation"]
+    assert (p["plan"]["observed_points"] > p["plan"]["random_95th_points"]) != (p["centred"]["observed_points"] > p["centred"]["random_95th_points"]), "the page says one measure of two"
     assert data["shift"][0]["label"] == data["tail"][0]["label"] == "South Australia"
     highlight = next(s for s in data["steps"] if s["highlight"])
     assert any(abs(s["value"]) >= abs(highlight["value"]) for s in data["steps"] if not s["highlight"]), "no clear cost relies on this"
