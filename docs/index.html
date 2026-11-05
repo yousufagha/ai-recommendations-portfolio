@@ -172,7 +172,7 @@ h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.08;letter-spacing:-.02em;margi
 section{padding:52px 0 0}
 h2{font-size:clamp(1.5rem,4vw,2rem);line-height:1.2;letter-spacing:-.01em;margin:0 0 10px}
 .intro{color:var(--text2);max-width:44em;margin:0 0 24px}
-.takeaways{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.takeaways{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 .takeaway{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px}
 .takeaway b{display:block;font-size:2rem;line-height:1.15;margin-bottom:6px}
 .takeaway h3{font-size:1.02rem;margin:0 0 6px}
@@ -229,11 +229,12 @@ footer p{margin:0 0 8px;max-width:60em}
 <main class="wrap">
 <section id="findings">
 <h2>What the data shows so far</h2>
-<p class="intro">Three findings for someone with about AED 2 million looking at a UAE Golden Visa through property.</p>
+<p class="intro">Four findings for someone with about AED 2 million looking at a UAE Golden Visa through property.</p>
 <div class="takeaways">
   <div class="takeaway"><b>6.1x</b><h3>A market in strong growth</h3><p>Flat and villa sales rose from 29,142 in 2019 to 177,619 in 2025.</p></div>
   <div class="takeaway"><b>1.56 to 1</b><h3>Demand gathers at AED 2 million</h3><p>Sales just above the Golden Visa line outnumber those just below it, up from 1.10 to 1 before 2022.</p></div>
   <div class="takeaway"><b>Not proven</b><h3>No clear extra cost at the line</h3><p>A first reading of about AED 39,000 is in line with swings at prices that have no visa line.</p></div>
+  <div class="takeaway"><b>AED 30,000</b><h3>The same money, different rent</h3><p>Estimated yearly rent differs by up to this much between ready homes at about AED 2 million.</p></div>
 </div>
 </section>
 
@@ -263,7 +264,18 @@ footer p{margin:0 0 8px;max-width:60em}
 <p class="note">Floor and view are not in the records, so a higher price may also buy a better home.</p><details><summary>Show the data</summary><div class="scroll"><table><caption>Step in price for a comparable home, from Q2 2022, percent</caption><thead><tr><th scope="col">Price</th><th scope="col">Step</th><th scope="col">Low</th><th scope="col">High</th></tr></thead><tbody><tr><td>AED 1.5M</td><td>-0.74</td><td>-1.73</td><td>0.36</td></tr><tr><td>AED 1.7M</td><td>0.17</td><td>-0.75</td><td>1.29</td></tr><tr><td>AED 1.8M</td><td>-1.27</td><td>-2.28</td><td>-0.15</td></tr><tr><td>AED 1.9M</td><td>0.34</td><td>-0.76</td><td>1.56</td></tr><tr><td>AED 2.0M</td><td>1.94</td><td>0.72</td><td>3.16</td></tr><tr><td>AED 2.1M</td><td>-2.24</td><td>-3.4</td><td>-1.24</td></tr><tr><td>AED 2.2M</td><td>1.68</td><td>0.57</td><td>2.88</td></tr><tr><td>AED 2.3M</td><td>0.26</td><td>-1.08</td><td>1.28</td></tr><tr><td>AED 2.5M</td><td>-0.23</td><td>-1.33</td><td>0.85</td></tr><tr><td>AED 3.0M</td><td>0.9</td><td>-0.87</td><td>2.78</td></tr><tr><td>AED 4.0M</td><td>-0.77</td><td>-2.06</td><td>0.7</td></tr></tbody></table></div></details></figure>
 <div class="callout"><h3>What it means for a buyer with about AED 2 million</h3>
 <p>Reaching the line does not appear to carry a clear premium, so choose the home on value and returns. As a precaution, compare price per square metre with similar homes in the same building.</p>
-<p>Next: rankings of AED 2 million options by area, including rental income, tested on past years. Read <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/STORY.md">the story so far</a> or <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/pipeline/value_at_line.py">the method</a>.</p></div>
+<p>Read <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/STORY.md">the story so far</a> or <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/pipeline/value_at_line.py">the method</a>.</p></div>
+</section>
+
+<section id="income">
+<h2>Which homes at AED 2 million earn the most rent</h2>
+<p class="intro">Ready flats give Dubai buyers income from the day they are let. We estimated what each option rents for today, using new contracts from the past year.</p>
+<figure><figcaption><h3>4 options lead, at about 6% to 6.4% a year</h3><p>Estimated gross yield for ready flats priced at AED 2M to 2.2M. Highlighted options are too close to separate, because estimates typically miss by 0.67 points. All 13 options run from AED 105,000 to AED 135,000 a year.</p></figcaption>
+<div class="chart" data-chart="bars" data-key="yields" data-format="yield" data-stacked="1"></div>
+<p class="note">Gross, before service charges, vacancy and fees, which are not in the records. These are homes priced at the threshold, not confirmed visa cases.</p><details><summary>Show the data</summary><div class="scroll"><table><caption>Estimated gross yield and yearly rent, ready flats priced at AED 2M to 2.2M</caption><thead><tr><th scope="col">Home</th><th scope="col">Gross yield, percent</th><th scope="col">Rent a year, AED</th></tr></thead><tbody><tr><td>Business Bay, 2-bed</td><td>6.43</td><td>135,000</td></tr><tr><td>Hadaeq Sheikh Mohammed Bin Rashid, 2-bed</td><td>6.07</td><td>125,000</td></tr><tr><td>Business Bay, 1-bed</td><td>6.0</td><td>123,000</td></tr><tr><td>Hadaeq Sheikh Mohammed Bin Rashid, 1-bed</td><td>5.95</td><td>125,000</td></tr><tr><td>Jumeirah First, 1-bed</td><td>5.71</td><td>120,000</td></tr><tr><td>Um Suqaim Third, 1-bed</td><td>5.62</td><td>118,000</td></tr><tr><td>Al Khairan First, 2-bed</td><td>5.61</td><td>120,000</td></tr><tr><td>Marsa Dubai, 1-bed</td><td>5.49</td><td>113,000</td></tr><tr><td>Palm Jumeirah, 1-bed</td><td>5.48</td><td>115,000</td></tr><tr><td>Al Khairan First, 1-bed</td><td>5.39</td><td>110,000</td></tr><tr><td>Burj Khalifa, 1-bed</td><td>5.24</td><td>110,000</td></tr><tr><td>Zaabeel Second, 1-bed</td><td>5.24</td><td>110,000</td></tr><tr><td>Al Merkadh, 1-bed</td><td>5.22</td><td>105,000</td></tr></tbody></table></div></details></figure>
+<div class="callout"><h3>What it means for a buyer who wants income</h3>
+<p>Start with the highlighted options and compare actual buildings, because the same AED 2 million can buy noticeably more rent. Off-plan was 76% of sales at this price and earns rent from handover, so we report it separately.</p>
+<p>Last year's rents give a similar order (rank correlation 0.90). Next: test on past years whether these homes would have beaten the market. See <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/validation/rent_yields.json">the results</a> and <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/pipeline/rent_yields.py">the method</a>.</p></div>
 </section>
 
 <section id="data">
@@ -296,7 +308,7 @@ footer p{margin:0 0 8px;max-width:60em}
 <p>By <a href="https://github.com/yousufagha">Yousuf Agha</a>.</p>
 </div></footer>
 <div id="tip" role="status"></div>
-<script id="chart-data" type="application/json">{"sales":[{"label":"2015","value":27271,"partial":false},{"label":"2016","value":26626,"partial":false},{"label":"2017","value":32319,"partial":false},{"label":"2018","value":22573,"partial":false},{"label":"2019","value":29142,"partial":false},{"label":"2020","value":24877,"partial":false},{"label":"2021","value":44344,"partial":false},{"label":"2022","value":71498,"partial":false},{"label":"2023","value":104266,"partial":false},{"label":"2024","value":149914,"partial":false},{"label":"2025","value":177619,"partial":false},{"label":"2026","value":113673,"partial":true}],"rents":{"x":["2015","2016","2017","2018","2019","2020","2021","2022","2023","2024","2025","2026"],"series":[{"name":"Villas","values":[171296,175000,165000,155000,143077,125000,125000,130000,143325,160000,170000,175000]},{"name":"Flats","values":[62000,65000,64615,60000,55000,48000,43000,45000,50000,55000,60000,61123]}]},"bands":[{"label":"AED 1.8M","value":1091,"highlight":false},{"label":"AED 1.825M","value":746,"highlight":false},{"label":"AED 1.85M","value":942,"highlight":false},{"label":"AED 1.875M","value":889,"highlight":false},{"label":"AED 1.9M","value":1017,"highlight":false},{"label":"AED 1.925M","value":821,"highlight":false},{"label":"AED 1.95M","value":1001,"highlight":false},{"label":"AED 1.975M","value":772,"highlight":false},{"label":"AED 2.0M","value":1732,"highlight":true},{"label":"AED 2.025M","value":827,"highlight":false},{"label":"AED 2.05M","value":929,"highlight":false},{"label":"AED 2.075M","value":772,"highlight":false},{"label":"AED 2.1M","value":952,"highlight":false},{"label":"AED 2.125M","value":680,"highlight":false},{"label":"AED 2.15M","value":918,"highlight":false},{"label":"AED 2.175M","value":690,"highlight":false}],"crowding":{"x":["2021 Q1","2021 Q2","2021 Q3","2021 Q4","2022 Q1","2022 Q2","2022 Q3","2022 Q4","2023 Q1","2023 Q2","2023 Q3","2023 Q4","2024 Q1","2024 Q2","2024 Q3","2024 Q4","2025 Q1","2025 Q2","2025 Q3","2025 Q4","2026 Q1","2026 Q2","2026 Q3","2026 Q4"],"series":[{"name":"AED 2M","values":[1.31,1.25,0.78,0.9,0.84,1.31,1.77,1.82,1.59,1.54,1.79,1.94,1.53,1.74,1.19,1.41,1.57,1.43,1.29,1.56,1.85,1.62,1.69,2.07]},{"name":"AED 1.5M, 2.5M and 3M","values":[1.33,1.22,1.35,1.01,1.22,1.24,1.14,1.07,1.22,1.25,0.95,1.14,1.16,1.06,0.92,0.94,1.1,1.13,0.96,1.17,0.99,1.07,1.1,1.1]}]},"steps":[{"label":"AED 1.5M","value":-0.74,"low":-1.73,"high":0.36,"highlight":false},{"label":"AED 1.7M","value":0.17,"low":-0.75,"high":1.29,"highlight":false},{"label":"AED 1.8M","value":-1.27,"low":-2.28,"high":-0.15,"highlight":false},{"label":"AED 1.9M","value":0.34,"low":-0.76,"high":1.56,"highlight":false},{"label":"AED 2.0M","value":1.94,"low":0.72,"high":3.16,"highlight":true},{"label":"AED 2.1M","value":-2.24,"low":-3.4,"high":-1.24,"highlight":false},{"label":"AED 2.2M","value":1.68,"low":0.57,"high":2.88,"highlight":false},{"label":"AED 2.3M","value":0.26,"low":-1.08,"high":1.28,"highlight":false},{"label":"AED 2.5M","value":-0.23,"low":-1.33,"high":0.85,"highlight":false},{"label":"AED 3.0M","value":0.9,"low":-0.87,"high":2.78,"highlight":false},{"label":"AED 4.0M","value":-0.77,"low":-2.06,"high":0.7,"highlight":false}],"shift":[{"label":"South Australia","value":151760},{"label":"Queensland","value":96946},{"label":"New South Wales","value":79016},{"label":"Victoria","value":78811},{"label":"Tasmania","value":28201}],"tail":[{"label":"South Australia","value":35.4},{"label":"New South Wales","value":13.4},{"label":"Victoria","value":8.4},{"label":"Queensland","value":5.7},{"label":"Tasmania","value":5.1}]}</script>
+<script id="chart-data" type="application/json">{"yields":[{"label":"Business Bay, 2-bed","value":6.43,"rent":135000,"highlight":true},{"label":"Hadaeq Sheikh Mohammed Bin Rashid, 2-bed","value":6.07,"rent":125000,"highlight":true},{"label":"Business Bay, 1-bed","value":6.0,"rent":123000,"highlight":true},{"label":"Hadaeq Sheikh Mohammed Bin Rashid, 1-bed","value":5.95,"rent":125000,"highlight":true},{"label":"Jumeirah First, 1-bed","value":5.71,"rent":120000,"highlight":false},{"label":"Um Suqaim Third, 1-bed","value":5.62,"rent":118000,"highlight":false},{"label":"Al Khairan First, 2-bed","value":5.61,"rent":120000,"highlight":false},{"label":"Marsa Dubai, 1-bed","value":5.49,"rent":113000,"highlight":false},{"label":"Palm Jumeirah, 1-bed","value":5.48,"rent":115000,"highlight":false},{"label":"Al Khairan First, 1-bed","value":5.39,"rent":110000,"highlight":false},{"label":"Burj Khalifa, 1-bed","value":5.24,"rent":110000,"highlight":false},{"label":"Zaabeel Second, 1-bed","value":5.24,"rent":110000,"highlight":false},{"label":"Al Merkadh, 1-bed","value":5.22,"rent":105000,"highlight":false}],"sales":[{"label":"2015","value":27271,"partial":false},{"label":"2016","value":26626,"partial":false},{"label":"2017","value":32319,"partial":false},{"label":"2018","value":22573,"partial":false},{"label":"2019","value":29142,"partial":false},{"label":"2020","value":24877,"partial":false},{"label":"2021","value":44344,"partial":false},{"label":"2022","value":71498,"partial":false},{"label":"2023","value":104266,"partial":false},{"label":"2024","value":149914,"partial":false},{"label":"2025","value":177619,"partial":false},{"label":"2026","value":113673,"partial":true}],"rents":{"x":["2015","2016","2017","2018","2019","2020","2021","2022","2023","2024","2025","2026"],"series":[{"name":"Villas","values":[171296,175000,165000,155000,143077,125000,125000,130000,143325,160000,170000,175000]},{"name":"Flats","values":[62000,65000,64615,60000,55000,48000,43000,45000,50000,55000,60000,61123]}]},"bands":[{"label":"AED 1.8M","value":1091,"highlight":false},{"label":"AED 1.825M","value":746,"highlight":false},{"label":"AED 1.85M","value":942,"highlight":false},{"label":"AED 1.875M","value":889,"highlight":false},{"label":"AED 1.9M","value":1017,"highlight":false},{"label":"AED 1.925M","value":821,"highlight":false},{"label":"AED 1.95M","value":1001,"highlight":false},{"label":"AED 1.975M","value":772,"highlight":false},{"label":"AED 2.0M","value":1732,"highlight":true},{"label":"AED 2.025M","value":827,"highlight":false},{"label":"AED 2.05M","value":929,"highlight":false},{"label":"AED 2.075M","value":772,"highlight":false},{"label":"AED 2.1M","value":952,"highlight":false},{"label":"AED 2.125M","value":680,"highlight":false},{"label":"AED 2.15M","value":918,"highlight":false},{"label":"AED 2.175M","value":690,"highlight":false}],"crowding":{"x":["2021 Q1","2021 Q2","2021 Q3","2021 Q4","2022 Q1","2022 Q2","2022 Q3","2022 Q4","2023 Q1","2023 Q2","2023 Q3","2023 Q4","2024 Q1","2024 Q2","2024 Q3","2024 Q4","2025 Q1","2025 Q2","2025 Q3","2025 Q4","2026 Q1","2026 Q2","2026 Q3","2026 Q4"],"series":[{"name":"AED 2M","values":[1.31,1.25,0.78,0.9,0.84,1.31,1.77,1.82,1.59,1.54,1.79,1.94,1.53,1.74,1.19,1.41,1.57,1.43,1.29,1.56,1.85,1.62,1.69,2.07]},{"name":"AED 1.5M, 2.5M and 3M","values":[1.33,1.22,1.35,1.01,1.22,1.24,1.14,1.07,1.22,1.25,0.95,1.14,1.16,1.06,0.92,0.94,1.1,1.13,0.96,1.17,0.99,1.07,1.1,1.1]}]},"steps":[{"label":"AED 1.5M","value":-0.74,"low":-1.73,"high":0.36,"highlight":false},{"label":"AED 1.7M","value":0.17,"low":-0.75,"high":1.29,"highlight":false},{"label":"AED 1.8M","value":-1.27,"low":-2.28,"high":-0.15,"highlight":false},{"label":"AED 1.9M","value":0.34,"low":-0.76,"high":1.56,"highlight":false},{"label":"AED 2.0M","value":1.94,"low":0.72,"high":3.16,"highlight":true},{"label":"AED 2.1M","value":-2.24,"low":-3.4,"high":-1.24,"highlight":false},{"label":"AED 2.2M","value":1.68,"low":0.57,"high":2.88,"highlight":false},{"label":"AED 2.3M","value":0.26,"low":-1.08,"high":1.28,"highlight":false},{"label":"AED 2.5M","value":-0.23,"low":-1.33,"high":0.85,"highlight":false},{"label":"AED 3.0M","value":0.9,"low":-0.87,"high":2.78,"highlight":false},{"label":"AED 4.0M","value":-0.77,"low":-2.06,"high":0.7,"highlight":false}],"shift":[{"label":"South Australia","value":151760},{"label":"Queensland","value":96946},{"label":"New South Wales","value":79016},{"label":"Victoria","value":78811},{"label":"Tasmania","value":28201}],"tail":[{"label":"South Australia","value":35.4},{"label":"New South Wales","value":13.4},{"label":"Victoria","value":8.4},{"label":"Queensland","value":5.7},{"label":"Tasmania","value":5.1}]}</script>
 <script>
 (function () {
   var DATA = JSON.parse(document.getElementById('chart-data').textContent);
@@ -308,7 +320,8 @@ footer p{margin:0 0 8px;max-width:60em}
     compact: function (v) { return v >= 1000 ? parseFloat((v / 1000).toFixed(1)) + 'K' : String(v); },
     ratio: function (v) { return v.toFixed(2); },
     dollars: function (v) { return '$' + v.toLocaleString('en-GB'); },
-    percent: function (v) { return v + '%'; }
+    percent: function (v) { return v + '%'; },
+    yield: function (v) { return v.toFixed(1) + '%'; }
   };
   function el(name, attrs, parent, text) {
     var e = document.createElementNS(NS, name);
@@ -442,16 +455,17 @@ footer p{margin:0 0 8px;max-width:60em}
       bindTip(hit, [{ value: (d.value > 0 ? '+' : '') + d.value + '%', name: 'range ' + d.low + '% to ' + d.high + '%' }], d.label);
     });
   }
-  function bars(host, items, fmt) {
-    var row = 38, W = host.clientWidth, lab = Math.min(128, W * .36), val = 72, H = row * items.length;
+  function bars(host, items, fmt, stacked) {
+    var row = stacked ? 48 : 38, W = host.clientWidth, lab = stacked ? 0 : Math.min(128, W * .36), val = 72, H = row * items.length;
+    var hasHighlight = items.some(function (d) { return d.highlight; });
     var svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, height: H, role: 'img' }, host);
     var max = Math.max.apply(null, items.map(function (d) { return d.value; }));
     items.forEach(function (d, i) {
-      var y = row * i + (row - 20) / 2, w = d.value / max * (W - lab - val - 8);
-      el('text', { x: 0, y: y + 14 }, svg, d.label);
+      var y = stacked ? row * i + 20 : row * i + (row - 20) / 2, w = d.value / max * (W - lab - val - 8);
+      el('text', { x: 0, y: stacked ? y - 6 : y + 14, class: d.highlight ? 'strong' : '' }, svg, d.label);
       var r = Math.min(4, w);
-      var bar = el('path', { d: 'M' + lab + ' ' + y + 'H' + (lab + w - r) + 'Q' + (lab + w) + ' ' + y + ' ' + (lab + w) + ' ' + (y + r) + 'V' + (y + 20 - r) + 'Q' + (lab + w) + ' ' + (y + 20) + ' ' + (lab + w - r) + ' ' + (y + 20) + 'H' + lab + 'Z', fill: 'var(--blue)' }, svg);
-      bindTip(bar, [{ value: fmt(d.value) }], d.label);
+      var bar = el('path', { d: 'M' + lab + ' ' + y + 'H' + (lab + w - r) + 'Q' + (lab + w) + ' ' + y + ' ' + (lab + w) + ' ' + (y + r) + 'V' + (y + 20 - r) + 'Q' + (lab + w) + ' ' + (y + 20) + ' ' + (lab + w - r) + ' ' + (y + 20) + 'H' + lab + 'Z', fill: hasHighlight && !d.highlight ? 'var(--gray)' : 'var(--blue)' }, svg);
+      bindTip(bar, [{ value: fmt(d.value), name: d.rent ? 'AED ' + d.rent.toLocaleString('en-GB') + ' a year' : '' }], d.label);
       el('text', { x: lab + w + 8, y: y + 14, class: 'strong' }, svg, fmt(d.value));
     });
   }
@@ -463,7 +477,7 @@ footer p{margin:0 0 8px;max-width:60em}
       if (host.dataset.chart === 'columns') columns(host, data, fmt, host.dataset.tall);
       if (host.dataset.chart === 'lines') lines(host, data, fmt, Number(host.dataset.ref || 0), host.dataset.zero);
       if (host.dataset.chart === 'ranges') ranges(host, data);
-      if (host.dataset.chart === 'bars') bars(host, data, fmt);
+      if (host.dataset.chart === 'bars') bars(host, data, fmt, host.dataset.stacked);
     });
   }
   draw();
