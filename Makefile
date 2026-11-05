@@ -3,7 +3,7 @@
 # Installs the locked versions into one environment shared by both projects
 setup:
 	python3 -m venv grid-pulse/.venv
-	grid-pulse/.venv/bin/python -m pip install -r grid-pulse/requirements.lock
+	grid-pulse/.venv/bin/python -m pip install -r grid-pulse/requirements-lock.txt
 
 test:
 	cd grid-pulse && .venv/bin/python -m pytest -q

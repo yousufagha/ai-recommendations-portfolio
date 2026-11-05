@@ -18,7 +18,7 @@ Sources checked on 5 November 2026. Status: **In place** is true of the repo tod
 | Rule | Why | Status |
 |---|---|---|
 | Logic lives in `pipeline/`, not notebooks | [Source files are for repetition](https://cookiecutter-data-science.drivendata.org/opinions/) | In place |
-| Exact dependency versions are locked | [Reproducing starts with the same environment](https://cookiecutter-data-science.drivendata.org/opinions/) | In place: `grid-pulse/requirements.lock`, used by CI |
+| Exact dependency versions are locked | [Reproducing starts with the same environment](https://cookiecutter-data-science.drivendata.org/opinions/) | In place: `grid-pulse/requirements-lock.txt`, used by CI |
 | One command rebuilds each project from raw data | Pipelines should re-run from code and raw data | In place for Grid Pulse: `make grid-pulse` reproduced the committed results exactly on 5 November 2026. Dubai has no derived results yet |
 | Models record seeds, settings and accuracy by region or group | [Model cards](https://huggingface.co/docs/hub/model-cards) report results beyond one headline number | In place: [forecast model card](../grid-pulse/docs/MODEL_CARD.md) |
 | Secrets never enter Git; any local secrets go in an ignored `.env` file | [Cookiecutter](https://cookiecutter-data-science.drivendata.org/opinions/) | In place: no secrets are used, and `.env` is ignored |
