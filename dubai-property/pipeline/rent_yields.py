@@ -33,7 +33,7 @@ BOOTSTRAPS = 300
 KEY = ["area_id", "rooms", "type"]
 
 
-def load_sales(raw: str, cut: str = DATA_CUT) -> pd.DataFrame:
+def load_sales(raw: str, cut: str = DATA_CUT, since: str = SALES_FROM) -> pd.DataFrame:
     return duckdb.connect().execute(f"""
         SELECT instance_date AS date, try_cast(actual_worth AS DOUBLE) AS value, try_cast(procedure_area AS DOUBLE) AS size,
                area_id, area_name_en AS area, nullif(trim(project_number), '') AS project, rooms_en AS rooms,
@@ -42,7 +42,7 @@ def load_sales(raw: str, cut: str = DATA_CUT) -> pd.DataFrame:
                try_cast(no_of_parties_role_2 AS INT) AS buyers
         FROM read_csv('{raw}', header=true, all_varchar=true, delim=',', quote='"', escape='"', union_by_name=true)
         WHERE trans_group_en = 'Sales' AND property_usage_en = 'Residential' AND property_type_en IN ('Unit', 'Villa')
-          AND procedure_name_en IN {MARKET_PROCEDURES} AND instance_date >= '{SALES_FROM}' AND instance_date <= '{cut}'
+          AND procedure_name_en IN {MARKET_PROCEDURES} AND instance_date >= '{since}' AND instance_date <= '{cut}'
           AND coalesce(nullif(trim(building_name_en), ''), nullif(trim(project_name_en), '')) IS NOT NULL
           AND rooms_en IS NOT NULL AND try_cast(procedure_area AS DOUBLE) > 0
           AND try_cast(actual_worth AS DOUBLE) / try_cast(procedure_area AS DOUBLE) BETWEEN 500 AND 200000
@@ -57,18 +57,20 @@ def fit_beta(rents: pd.DataFrame, sales: pd.DataFrame) -> float:
     d = np.log(d[["median_rent", "median_sale"]])
     d = d[d.groupby(KEY)["median_rent"].transform("size") >= 2]
     dev = d - d.groupby(KEY).transform("mean")
-    return float((dev["median_rent"] * dev["median_sale"]).sum() / (dev["median_sale"] ** 2).sum())
+    spread = (dev["median_sale"] ** 2).sum()
+    return float((dev["median_rent"] * dev["median_sale"]).sum() / spread) if spread > 0 else 0.0
 
 
 def _near_size(contracts: pd.DataFrame, size: float) -> pd.DataFrame:
     return contracts[contracts["size"].between(size * (1 - SIZE_TOLERANCE), size * (1 + SIZE_TOLERANCE))]
 
 
-def fallback_rent(pool: pd.DataFrame, cell_sales: pd.DataFrame, price: float, size: float, beta: float) -> tuple[float, str]:
+def fallback_rent(pool: pd.DataFrame, cell_sales: pd.DataFrame, price: float, size: float, beta: float,
+                  tier_band: tuple[float, float] = TIER_BAND) -> tuple[float, str]:
     """Rent from the wider area when the project itself has too little evidence."""
     near = _near_size(pool, size)
     project_price = cell_sales.groupby("project")["value"].median()
-    tier = near[near["project"].isin(project_price[project_price.between(*TIER_BAND)].index)]
+    tier = near[near["project"].isin(project_price[project_price.between(*tier_band)].index)]
     if len(tier) >= MIN_POOL_CONTRACTS and tier["project"].nunique() >= MIN_TIER_PROJECTS:
         return float(tier["rent"].median()), "price_tier"
     if len(near) >= MIN_POOL_CONTRACTS and len(cell_sales):
@@ -76,7 +78,8 @@ def fallback_rent(pool: pd.DataFrame, cell_sales: pd.DataFrame, price: float, si
     return float("nan"), "none"
 
 
-def estimate_rents(near: pd.DataFrame, rents: pd.DataFrame, sales: pd.DataFrame, beta: float) -> pd.DataFrame:
+def estimate_rents(near: pd.DataFrame, rents: pd.DataFrame, sales: pd.DataFrame, beta: float,
+                   tier_band: tuple[float, float] = TIER_BAND) -> pd.DataFrame:
     """Add an estimated rent and its evidence level to each near-line sale."""
     rent_cells = dict(tuple(rents.groupby(KEY)))
     sale_cells = dict(tuple(sales.groupby(KEY)))
@@ -84,7 +87,7 @@ def estimate_rents(near: pd.DataFrame, rents: pd.DataFrame, sales: pd.DataFrame,
     parts = []
     for key, cell in near.groupby(KEY):
         pool, cell_sales = rent_cells.get(key, empty), sale_cells.get(key, sales.iloc[0:0])
-        wide = fallback_rent(pool, cell_sales, cell["value"].median(), cell["size"].median(), beta)
+        wide = fallback_rent(pool, cell_sales, cell["value"].median(), cell["size"].median(), beta, tier_band)
         for project, group in cell.groupby("project", dropna=False):
             own = _near_size(pool[pool["project"] == project], group["size"].median()) if pd.notna(project) else empty
             rent, level = (float(own["rent"].median()), "project") if len(own) >= MIN_PROJECT_CONTRACTS else wide
