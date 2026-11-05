@@ -26,3 +26,4 @@
 - 2026-11-05: After seeing results, added two checks: options with 100+ matched sales, because two thin options alone produced the +9.55 point gap in 2025; and a rent-only permutation test. The verdict rule stayed the same, and the verdict stayed "not shown".
 - 2026-11-05: The product claim is limited to rent: picks earned 0.5 to 0.7 points more out of sample. No claim on total return or price prediction.
 - 2026-11-05: Buy-and-hold uses a 4% fee from the [Dubai Land Department fee table](https://rdc.dubailand.gov.ae/Assets/img/Real_Estate_Legislation_en.pdf). AED 200 per sqm service charge is an unverified assumption.
+- 2026-11-05: Tableau reads flat CSVs built from `validation/` by `pipeline/build_tableau.py`, with no new analysis, so the dashboard cannot disagree with tested results.

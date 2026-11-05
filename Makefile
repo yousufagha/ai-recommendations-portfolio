@@ -28,4 +28,5 @@ dubai:
 	cd dubai-property && ../grid-pulse/.venv/bin/python -m pipeline.rent_yields
 	cd dubai-property && ../grid-pulse/.venv/bin/python -m pipeline.backtest
 	cd dubai-property && ../grid-pulse/.venv/bin/python -m pipeline.build_site
+	cd dubai-property && ../grid-pulse/.venv/bin/python -m pipeline.build_tableau
 	cd dubai-property && ../grid-pulse/.venv/bin/python -m pytest -q

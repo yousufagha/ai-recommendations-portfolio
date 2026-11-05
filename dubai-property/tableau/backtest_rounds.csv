@@ -1,0 +1,6 @@
+decision,tested,options,picks_rent_pct,others_rent_pct,picks_price_change_pct,others_price_change_pct,total_gap_first_price_measure,total_gap_second_price_measure,total_gap_well_measured_only,total_gap_against_all_ready_flats,hold_years,hold_picks_total_pct,hold_others_total_pct
+2021-11-03,False,5,6.37,,11.39,,,,,2.7,,,
+2022-11-03,True,10,7.22,6.72,16.4,14.66,2.25,1.08,2.25,2.31,4,53.7,40.1
+2023-11-03,True,10,7.03,6.43,8.21,6.1,2.7,3.02,-0.35,-3.88,3,17.8,12.5
+2024-11-03,True,12,6.96,6.23,5.07,3.37,2.44,2.6,-0.51,-2.29,2,8.0,3.8
+2025-11-03,True,9,6.07,5.49,-9.82,-18.79,9.55,-2.92,0.44,-5.31,1,-7.1,-15.3
