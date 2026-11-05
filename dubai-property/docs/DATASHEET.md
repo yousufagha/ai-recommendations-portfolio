@@ -45,6 +45,10 @@ The two source files were split by `pipeline/split_raw.py`. Rows, unique transac
 - **Labour accommodation and virtual units** can appear under Residential usage, so filter by property type too.
 - **Project is 25% filled for 2026,** so area is the reliable place field. 177 of the 215 rent area names also appear in the 2025 sales file, so the rest need matching.
 - **Dates:** a few starts run far ahead, such as `2205-07-16`. They sit in `rents_after-2027.csv.gz`.
+- **Renewals lag new contracts.** Flats starting in 2025 had a median of AED 971 per sqm new and AED 693 renewed, so use new contracts for market rent.
+- **`actual_area` needs bounds.** It runs from 1 sqm to 378,236 sqm on single-property lines. `pipeline/clean_rents.py` keeps 15 to 2,000 sqm and records every step's count in `validation/rent_yields.json`.
+- **Project is on under half of new contracts,** and not at random: rents with a project run higher. Do not mix project and area figures without saying so.
+- **Not in the data:** furnished status, holiday lets and handover dates.
 - **Fields on people:** the files have no names, phone numbers or unit numbers. They do hold contract IDs and tenant type, and the portal has listed `Personal Information (DNRD)` under Rights for this dataset. Aggregate before publishing analysis.
 
 ## Residential sale index
