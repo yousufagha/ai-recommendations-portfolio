@@ -1,0 +1,38 @@
+{
+ "files": [
+  {
+   "file": "insights_region_fy.csv",
+   "rows": 20,
+   "mb": 0.0
+  },
+  {
+   "file": "forecast_halfhour.csv",
+   "rows": 263040,
+   "mb": 21.2
+  }
+ ],
+ "checks": {
+  "financial_year": "FY2026",
+  "load_shift_saving_aud_per_mw_year": {
+   "NSW1": 79016.0,
+   "QLD1": 96946.0,
+   "SA1": 151760.0,
+   "TAS1": 28201.0,
+   "VIC1": 78811.0
+  },
+  "forecast_rows": {
+   "New South Wales": 17520,
+   "Queensland": 17520,
+   "South Australia": 17520,
+   "Tasmania": 17520,
+   "Victoria": 17520
+  },
+  "forecast_average_demand_mw": {
+   "New South Wales": 7482.9,
+   "Queensland": 6205.4,
+   "South Australia": 1318.6,
+   "Tasmania": 1019.5,
+   "Victoria": 4932.8
+  }
+ }
+}

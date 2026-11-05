@@ -1,0 +1,5 @@
+data/star/
+looker/*.csv
+*.abf
+**/.pbi/localSettings.json
+**/.pbi/cache.abf

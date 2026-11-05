@@ -1,0 +1,1406 @@
+{
+ "golden_values": [
+  {
+   "region_code": "NSW1",
+   "year": 2019,
+   "intervals": 17520,
+   "energy_mwh": 69769334.43,
+   "turnover_aud": 6194012127.0444,
+   "energy_weighted_price": 88.7784,
+   "time_weighted_price": 84.8473,
+   "naive_row_average_price": 84.8473
+  },
+  {
+   "region_code": "NSW1",
+   "year": 2020,
+   "intervals": 17568,
+   "energy_mwh": 67722493.57,
+   "turnover_aud": 4620941079.0641,
+   "energy_weighted_price": 68.2335,
+   "time_weighted_price": 59.886,
+   "naive_row_average_price": 59.886
+  },
+  {
+   "region_code": "NSW1",
+   "year": 2021,
+   "intervals": 39600,
+   "energy_mwh": 66155273.6583,
+   "turnover_aud": 5427478620.2554,
+   "energy_weighted_price": 82.0415,
+   "time_weighted_price": 72.6028,
+   "naive_row_average_price": 67.337
+  },
+  {
+   "region_code": "NSW1",
+   "year": 2022,
+   "intervals": 105120,
+   "energy_mwh": 66650004.3025,
+   "turnover_aud": 13269949554.4105,
+   "energy_weighted_price": 199.099,
+   "time_weighted_price": 182.7142,
+   "naive_row_average_price": 182.7142
+  },
+  {
+   "region_code": "NSW1",
+   "year": 2023,
+   "intervals": 105120,
+   "energy_mwh": 65424831.0225,
+   "turnover_aud": 6945939838.0927,
+   "energy_weighted_price": 106.1667,
+   "time_weighted_price": 95.9443,
+   "naive_row_average_price": 95.9443
+  },
+  {
+   "region_code": "NSW1",
+   "year": 2024,
+   "intervals": 105408,
+   "energy_mwh": 65851609.995,
+   "turnover_aud": 10063776046.0198,
+   "energy_weighted_price": 152.8251,
+   "time_weighted_price": 131.0218,
+   "naive_row_average_price": 131.0218
+  },
+  {
+   "region_code": "NSW1",
+   "year": 2025,
+   "intervals": 105120,
+   "energy_mwh": 65671052.7917,
+   "turnover_aud": 7965487901.5105,
+   "energy_weighted_price": 121.2937,
+   "time_weighted_price": 103.3208,
+   "naive_row_average_price": 103.3208
+  },
+  {
+   "region_code": "NSW1",
+   "year": 2026,
+   "intervals": 87552,
+   "energy_mwh": 55119413.8583,
+   "turnover_aud": 4707504327.2568,
+   "energy_weighted_price": 85.4056,
+   "time_weighted_price": 79.7367,
+   "naive_row_average_price": 79.7367
+  },
+  {
+   "region_code": "QLD1",
+   "year": 2019,
+   "intervals": 17520,
+   "energy_mwh": 54433672.67,
+   "turnover_aud": 4074542573.0003,
+   "energy_weighted_price": 74.8533,
+   "time_weighted_price": 71.7567,
+   "naive_row_average_price": 71.7567
+  },
+  {
+   "region_code": "QLD1",
+   "year": 2020,
+   "intervals": 17568,
+   "energy_mwh": 53626284.785,
+   "turnover_aud": 2387990056.7599,
+   "energy_weighted_price": 44.5302,
+   "time_weighted_price": 41.2249,
+   "naive_row_average_price": 41.2249
+  },
+  {
+   "region_code": "QLD1",
+   "year": 2021,
+   "intervals": 39600,
+   "energy_mwh": 53423560.5483,
+   "turnover_aud": 5162059312.4149,
+   "energy_weighted_price": 96.6251,
+   "time_weighted_price": 87.1205,
+   "naive_row_average_price": 92.753
+  },
+  {
+   "region_code": "QLD1",
+   "year": 2022,
+   "intervals": 105120,
+   "energy_mwh": 52678753.0092,
+   "turnover_aud": 11917085592.517,
+   "energy_weighted_price": 226.2219,
+   "time_weighted_price": 205.1415,
+   "naive_row_average_price": 205.1415
+  },
+  {
+   "region_code": "QLD1",
+   "year": 2023,
+   "intervals": 105120,
+   "energy_mwh": 53031741.2142,
+   "turnover_aud": 5495480501.9619,
+   "energy_weighted_price": 103.6263,
+   "time_weighted_price": 90.6682,
+   "naive_row_average_price": 90.6682
+  },
+  {
+   "region_code": "QLD1",
+   "year": 2024,
+   "intervals": 105408,
+   "energy_mwh": 54641612.1575,
+   "turnover_aud": 7142884544.2517,
+   "energy_weighted_price": 130.7224,
+   "time_weighted_price": 111.4831,
+   "naive_row_average_price": 111.4831
+  },
+  {
+   "region_code": "QLD1",
+   "year": 2025,
+   "intervals": 105120,
+   "energy_mwh": 54585628.5358,
+   "turnover_aud": 5344837044.0456,
+   "energy_weighted_price": 97.9166,
+   "time_weighted_price": 84.8893,
+   "naive_row_average_price": 84.8893
+  },
+  {
+   "region_code": "QLD1",
+   "year": 2026,
+   "intervals": 87552,
+   "energy_mwh": 44728450.4408,
+   "turnover_aud": 3245814994.9742,
+   "energy_weighted_price": 72.5671,
+   "time_weighted_price": 67.5087,
+   "naive_row_average_price": 67.5087
+  },
+  {
+   "region_code": "SA1",
+   "year": 2019,
+   "intervals": 17520,
+   "energy_mwh": 11431783.22,
+   "turnover_aud": 1432395015.2384,
+   "energy_weighted_price": 125.2994,
+   "time_weighted_price": 98.9298,
+   "naive_row_average_price": 98.9298
+  },
+  {
+   "region_code": "SA1",
+   "year": 2020,
+   "intervals": 17568,
+   "energy_mwh": 11013826.195,
+   "turnover_aud": 586685997.3103,
+   "energy_weighted_price": 53.2681,
+   "time_weighted_price": 43.4889,
+   "naive_row_average_price": 43.4889
+  },
+  {
+   "region_code": "SA1",
+   "year": 2021,
+   "intervals": 39600,
+   "energy_mwh": 10534866.4083,
+   "turnover_aud": 702661279.6926,
+   "energy_weighted_price": 66.6986,
+   "time_weighted_price": 50.706,
+   "naive_row_average_price": 45.2296
+  },
+  {
+   "region_code": "SA1",
+   "year": 2022,
+   "intervals": 105120,
+   "energy_mwh": 11650917.9817,
+   "turnover_aud": 2169674352.7135,
+   "energy_weighted_price": 186.2235,
+   "time_weighted_price": 155.8919,
+   "naive_row_average_price": 155.8919
+  },
+  {
+   "region_code": "SA1",
+   "year": 2023,
+   "intervals": 105120,
+   "energy_mwh": 11046350.465,
+   "turnover_aud": 1159689321.368,
+   "energy_weighted_price": 104.9839,
+   "time_weighted_price": 80.0722,
+   "naive_row_average_price": 80.0722
+  },
+  {
+   "region_code": "SA1",
+   "year": 2024,
+   "intervals": 105408,
+   "energy_mwh": 11198496.8908,
+   "turnover_aud": 1512494881.6238,
+   "energy_weighted_price": 135.0623,
+   "time_weighted_price": 100.113,
+   "naive_row_average_price": 100.113
+  },
+  {
+   "region_code": "SA1",
+   "year": 2025,
+   "intervals": 105120,
+   "energy_mwh": 11632675.7533,
+   "turnover_aud": 1372110159.8395,
+   "energy_weighted_price": 117.9531,
+   "time_weighted_price": 86.7317,
+   "naive_row_average_price": 86.7317
+  },
+  {
+   "region_code": "SA1",
+   "year": 2026,
+   "intervals": 87552,
+   "energy_mwh": 9749487.5892,
+   "turnover_aud": 1021964673.6002,
+   "energy_weighted_price": 104.8224,
+   "time_weighted_price": 77.7928,
+   "naive_row_average_price": 77.7928
+  },
+  {
+   "region_code": "TAS1",
+   "year": 2019,
+   "intervals": 17520,
+   "energy_mwh": 9620045.48,
+   "turnover_aud": 914564595.02,
+   "energy_weighted_price": 95.0686,
+   "time_weighted_price": 94.0326,
+   "naive_row_average_price": 94.0326
+  },
+  {
+   "region_code": "TAS1",
+   "year": 2020,
+   "intervals": 17568,
+   "energy_mwh": 9702753.51,
+   "turnover_aud": 422180715.1737,
+   "energy_weighted_price": 43.5114,
+   "time_weighted_price": 43.0182,
+   "naive_row_average_price": 43.0182
+  },
+  {
+   "region_code": "TAS1",
+   "year": 2021,
+   "intervals": 39600,
+   "energy_mwh": 10015178.8633,
+   "turnover_aud": 347859728.671,
+   "energy_weighted_price": 34.7333,
+   "time_weighted_price": 33.5881,
+   "naive_row_average_price": 31.7637
+  },
+  {
+   "region_code": "TAS1",
+   "year": 2022,
+   "intervals": 105120,
+   "energy_mwh": 10198383.7592,
+   "turnover_aud": 1610224220.3943,
+   "energy_weighted_price": 157.8901,
+   "time_weighted_price": 147.007,
+   "naive_row_average_price": 147.007
+  },
+  {
+   "region_code": "TAS1",
+   "year": 2023,
+   "intervals": 105120,
+   "energy_mwh": 9974465.4717,
+   "turnover_aud": 565995832.4896,
+   "energy_weighted_price": 56.7445,
+   "time_weighted_price": 55.7319,
+   "naive_row_average_price": 55.7319
+  },
+  {
+   "region_code": "TAS1",
+   "year": 2024,
+   "intervals": 105408,
+   "energy_mwh": 10005634.105,
+   "turnover_aud": 1029861262.4845,
+   "energy_weighted_price": 102.9281,
+   "time_weighted_price": 95.7756,
+   "naive_row_average_price": 95.7756
+  },
+  {
+   "region_code": "TAS1",
+   "year": 2025,
+   "intervals": 105120,
+   "energy_mwh": 9195011.4517,
+   "turnover_aud": 936280733.2422,
+   "energy_weighted_price": 101.8249,
+   "time_weighted_price": 96.0069,
+   "naive_row_average_price": 96.0069
+  },
+  {
+   "region_code": "TAS1",
+   "year": 2026,
+   "intervals": 87552,
+   "energy_mwh": 7537253.7708,
+   "turnover_aud": 591977661.3608,
+   "energy_weighted_price": 78.5402,
+   "time_weighted_price": 76.9583,
+   "naive_row_average_price": 76.9583
+  },
+  {
+   "region_code": "VIC1",
+   "year": 2019,
+   "intervals": 17520,
+   "energy_mwh": 43047901.925,
+   "turnover_aud": 5415257424.4264,
+   "energy_weighted_price": 125.7961,
+   "time_weighted_price": 109.3631,
+   "naive_row_average_price": 109.3631
+  },
+  {
+   "region_code": "VIC1",
+   "year": 2020,
+   "intervals": 17568,
+   "energy_mwh": 41855022.385,
+   "turnover_aud": 2614055687.7061,
+   "energy_weighted_price": 62.455,
+   "time_weighted_price": 51.8867,
+   "naive_row_average_price": 51.8867
+  },
+  {
+   "region_code": "VIC1",
+   "year": 2021,
+   "intervals": 39600,
+   "energy_mwh": 41466553.92,
+   "turnover_aud": 2174756788.3049,
+   "energy_weighted_price": 52.446,
+   "time_weighted_price": 44.9145,
+   "naive_row_average_price": 35.7611
+  },
+  {
+   "region_code": "VIC1",
+   "year": 2022,
+   "intervals": 105120,
+   "energy_mwh": 42411244.7175,
+   "turnover_aud": 6519775966.8303,
+   "energy_weighted_price": 153.7275,
+   "time_weighted_price": 134.0608,
+   "naive_row_average_price": 134.0608
+  },
+  {
+   "region_code": "VIC1",
+   "year": 2023,
+   "intervals": 105120,
+   "energy_mwh": 40677641.3458,
+   "turnover_aud": 2674297627.2046,
+   "energy_weighted_price": 65.7437,
+   "time_weighted_price": 54.7771,
+   "naive_row_average_price": 54.7771
+  },
+  {
+   "region_code": "VIC1",
+   "year": 2024,
+   "intervals": 105408,
+   "energy_mwh": 41574704.1658,
+   "turnover_aud": 4300716876.4325,
+   "energy_weighted_price": 103.4455,
+   "time_weighted_price": 82.1275,
+   "naive_row_average_price": 82.1275
+  },
+  {
+   "region_code": "VIC1",
+   "year": 2025,
+   "intervals": 105120,
+   "energy_mwh": 42759015.4058,
+   "turnover_aud": 4184822399.3124,
+   "energy_weighted_price": 97.8699,
+   "time_weighted_price": 77.8859,
+   "naive_row_average_price": 77.8859
+  },
+  {
+   "region_code": "VIC1",
+   "year": 2026,
+   "intervals": 87552,
+   "energy_mwh": 37992183.1458,
+   "turnover_aud": 2261560043.2026,
+   "energy_weighted_price": 59.527,
+   "time_weighted_price": 51.7299,
+   "naive_row_average_price": 51.7299
+  }
+ ],
+ "cost_concentration": [
+  {
+   "region_code": "NSW1",
+   "fy": 2023,
+   "top_1pct_cost_share": 0.1123
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2024,
+   "top_1pct_cost_share": 0.247
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2025,
+   "top_1pct_cost_share": 0.3471
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2026,
+   "top_1pct_cost_share": 0.1338
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2023,
+   "top_1pct_cost_share": 0.1587
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2024,
+   "top_1pct_cost_share": 0.205
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2025,
+   "top_1pct_cost_share": 0.2552
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2026,
+   "top_1pct_cost_share": 0.057
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2023,
+   "top_1pct_cost_share": 0.2069
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2024,
+   "top_1pct_cost_share": 0.2118
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2025,
+   "top_1pct_cost_share": 0.3809
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2026,
+   "top_1pct_cost_share": 0.3541
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2023,
+   "top_1pct_cost_share": 0.09
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2024,
+   "top_1pct_cost_share": 0.1074
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2025,
+   "top_1pct_cost_share": 0.1345
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2026,
+   "top_1pct_cost_share": 0.0505
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2023,
+   "top_1pct_cost_share": 0.0917
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2024,
+   "top_1pct_cost_share": 0.1825
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2025,
+   "top_1pct_cost_share": 0.2867
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2026,
+   "top_1pct_cost_share": 0.0842
+  }
+ ],
+ "cap_value": [
+  {
+   "region_code": "NSW1",
+   "fy": 2023,
+   "energy_weighted_price": 158.7918,
+   "cap_150_aud_mwh": 49.0566,
+   "cap_300_aud_mwh": 20.5223,
+   "cap_500_aud_mwh": 11.3517
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2024,
+   "energy_weighted_price": 115.5797,
+   "cap_150_aud_mwh": 36.6641,
+   "cap_300_aud_mwh": 24.4441,
+   "cap_500_aud_mwh": 22.6554
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2025,
+   "energy_weighted_price": 152.4741,
+   "cap_150_aud_mwh": 64.0401,
+   "cap_300_aud_mwh": 48.9264,
+   "cap_500_aud_mwh": 46.4753
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2026,
+   "energy_weighted_price": 88.3348,
+   "cap_150_aud_mwh": 13.2115,
+   "cap_300_aud_mwh": 7.644,
+   "cap_500_aud_mwh": 6.7362
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2023,
+   "energy_weighted_price": 159.7812,
+   "cap_150_aud_mwh": 56.5087,
+   "cap_300_aud_mwh": 28.6858,
+   "cap_500_aud_mwh": 19.5237
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2024,
+   "energy_weighted_price": 103.3364,
+   "cap_150_aud_mwh": 29.18,
+   "cap_300_aud_mwh": 17.2439,
+   "cap_500_aud_mwh": 15.266
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2025,
+   "energy_weighted_price": 128.084,
+   "cap_150_aud_mwh": 42.9196,
+   "cap_300_aud_mwh": 28.7815,
+   "cap_500_aud_mwh": 26.9515
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2026,
+   "energy_weighted_price": 72.6363,
+   "cap_150_aud_mwh": 3.8045,
+   "cap_300_aud_mwh": 0.6669,
+   "cap_500_aud_mwh": 0.5313
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2023,
+   "energy_weighted_price": 151.8722,
+   "cap_150_aud_mwh": 70.6059,
+   "cap_300_aud_mwh": 39.2107,
+   "cap_500_aud_mwh": 25.6635
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2024,
+   "energy_weighted_price": 104.8002,
+   "cap_150_aud_mwh": 34.8576,
+   "cap_300_aud_mwh": 18.6451,
+   "cap_500_aud_mwh": 16.1854
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2025,
+   "energy_weighted_price": 143.7037,
+   "cap_150_aud_mwh": 66.667,
+   "cap_300_aud_mwh": 50.6692,
+   "cap_500_aud_mwh": 47.8654
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2026,
+   "energy_weighted_price": 111.0018,
+   "cap_150_aud_mwh": 45.2434,
+   "cap_300_aud_mwh": 34.9478,
+   "cap_500_aud_mwh": 32.1715
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2023,
+   "energy_weighted_price": 117.705,
+   "cap_150_aud_mwh": 31.1902,
+   "cap_300_aud_mwh": 11.556,
+   "cap_500_aud_mwh": 4.6148
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2024,
+   "energy_weighted_price": 72.6855,
+   "cap_150_aud_mwh": 11.3895,
+   "cap_300_aud_mwh": 4.2236,
+   "cap_500_aud_mwh": 3.634
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2025,
+   "energy_weighted_price": 115.8236,
+   "cap_150_aud_mwh": 24.198,
+   "cap_300_aud_mwh": 11.9003,
+   "cap_500_aud_mwh": 10.9312
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2026,
+   "energy_weighted_price": 80.9246,
+   "cap_150_aud_mwh": 3.2614,
+   "cap_300_aud_mwh": 1.178,
+   "cap_500_aud_mwh": 0.9555
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2023,
+   "energy_weighted_price": 116.2445,
+   "cap_150_aud_mwh": 37.0901,
+   "cap_300_aud_mwh": 13.2793,
+   "cap_500_aud_mwh": 3.9431
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2024,
+   "energy_weighted_price": 79.1796,
+   "cap_150_aud_mwh": 19.0607,
+   "cap_300_aud_mwh": 7.3326,
+   "cap_500_aud_mwh": 6.3305
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2025,
+   "energy_weighted_price": 112.6418,
+   "cap_150_aud_mwh": 41.1862,
+   "cap_300_aud_mwh": 27.6192,
+   "cap_500_aud_mwh": 25.8862
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2026,
+   "energy_weighted_price": 63.582,
+   "cap_150_aud_mwh": 6.605,
+   "cap_300_aud_mwh": 1.1193,
+   "cap_500_aud_mwh": 0.4638
+  }
+ ],
+ "load_shift": [
+  {
+   "region_code": "NSW1",
+   "fy": 2023,
+   "evening_price": 239.7909,
+   "solar_price": 100.4496,
+   "spread_aud_mwh": 139.3413,
+   "saving_aud_per_mw_year": 145472.2658
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2024,
+   "evening_price": 230.4509,
+   "solar_price": 60.3526,
+   "spread_aud_mwh": 170.0984,
+   "saving_aud_per_mw_year": 176902.3284
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2025,
+   "evening_price": 333.6421,
+   "solar_price": 73.565,
+   "spread_aud_mwh": 260.0771,
+   "saving_aud_per_mw_year": 271520.4854
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2026,
+   "evening_price": 126.8216,
+   "solar_price": 51.1354,
+   "spread_aud_mwh": 75.6862,
+   "saving_aud_per_mw_year": 79016.3709
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2023,
+   "evening_price": 277.0835,
+   "solar_price": 82.6198,
+   "spread_aud_mwh": 194.4637,
+   "saving_aud_per_mw_year": 203020.1089
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2024,
+   "evening_price": 202.704,
+   "solar_price": 26.4128,
+   "spread_aud_mwh": 176.2912,
+   "saving_aud_per_mw_year": 183342.8303
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2025,
+   "evening_price": 293.5301,
+   "solar_price": 32.2922,
+   "spread_aud_mwh": 261.2379,
+   "saving_aud_per_mw_year": 272732.348
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2026,
+   "evening_price": 115.4031,
+   "solar_price": 22.5426,
+   "spread_aud_mwh": 92.8605,
+   "saving_aud_per_mw_year": 96946.3781
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2023,
+   "evening_price": 202.5539,
+   "solar_price": 48.3534,
+   "spread_aud_mwh": 154.2005,
+   "saving_aud_per_mw_year": 160985.3154
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2024,
+   "evening_price": 174.4287,
+   "solar_price": 19.0118,
+   "spread_aud_mwh": 155.4169,
+   "saving_aud_per_mw_year": 161633.5449
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2025,
+   "evening_price": 265.2062,
+   "solar_price": 15.8976,
+   "spread_aud_mwh": 249.3085,
+   "saving_aud_per_mw_year": 260278.126
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2026,
+   "evening_price": 160.8732,
+   "solar_price": 15.5096,
+   "spread_aud_mwh": 145.3636,
+   "saving_aud_per_mw_year": 151759.568
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2023,
+   "evening_price": 133.6699,
+   "solar_price": 96.5243,
+   "spread_aud_mwh": 37.1456,
+   "saving_aud_per_mw_year": 38779.9946
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2024,
+   "evening_price": 83.9265,
+   "solar_price": 66.3564,
+   "spread_aud_mwh": 17.57,
+   "saving_aud_per_mw_year": 18272.8191
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2025,
+   "evening_price": 173.2505,
+   "solar_price": 78.5949,
+   "spread_aud_mwh": 94.6556,
+   "saving_aud_per_mw_year": 98820.435
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2026,
+   "evening_price": 96.1808,
+   "solar_price": 69.1687,
+   "spread_aud_mwh": 27.0121,
+   "saving_aud_per_mw_year": 28200.6362
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2023,
+   "evening_price": 175.7466,
+   "solar_price": 51.4299,
+   "spread_aud_mwh": 124.3167,
+   "saving_aud_per_mw_year": 129786.6497
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2024,
+   "evening_price": 118.4826,
+   "solar_price": 38.4201,
+   "spread_aud_mwh": 80.0625,
+   "saving_aud_per_mw_year": 83264.9896
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2025,
+   "evening_price": 219.7147,
+   "solar_price": 23.4117,
+   "spread_aud_mwh": 196.303,
+   "saving_aud_per_mw_year": 204940.3269
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2026,
+   "evening_price": 97.4471,
+   "solar_price": 21.9572,
+   "spread_aud_mwh": 75.4899,
+   "saving_aud_per_mw_year": 78811.4854
+  }
+ ],
+ "battery_upper_bound": [
+  {
+   "region_code": "NSW1",
+   "fy": 2023,
+   "gross_aud_per_mw_year": 201119.1293
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2024,
+   "gross_aud_per_mw_year": 234568.1526
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2025,
+   "gross_aud_per_mw_year": 381305.8925
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2026,
+   "gross_aud_per_mw_year": 140149.1424
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2023,
+   "gross_aud_per_mw_year": 285562.5166
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2024,
+   "gross_aud_per_mw_year": 250440.0707
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2025,
+   "gross_aud_per_mw_year": 309244.0763
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2026,
+   "gross_aud_per_mw_year": 103478.4849
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2023,
+   "gross_aud_per_mw_year": 358777.21
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2024,
+   "gross_aud_per_mw_year": 251129.5906
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2025,
+   "gross_aud_per_mw_year": 386943.3744
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2026,
+   "gross_aud_per_mw_year": 245278.9066
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2023,
+   "gross_aud_per_mw_year": 131301.2736
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2024,
+   "gross_aud_per_mw_year": 105391.9482
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2025,
+   "gross_aud_per_mw_year": 152899.08
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2026,
+   "gross_aud_per_mw_year": 47996.5658
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2023,
+   "gross_aud_per_mw_year": 174585.2335
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2024,
+   "gross_aud_per_mw_year": 176005.9803
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2025,
+   "gross_aud_per_mw_year": 237837.7111
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2026,
+   "gross_aud_per_mw_year": 102176.8934
+  }
+ ],
+ "price_regimes": [
+  {
+   "region_code": "NSW1",
+   "fy": 2019,
+   "negative_time_share": null,
+   "above_300_time_share": 0.0023
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2020,
+   "negative_time_share": 0.0015,
+   "above_300_time_share": 0.0021
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2021,
+   "negative_time_share": 0.0025,
+   "above_300_time_share": 0.0064
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2022,
+   "negative_time_share": 0.024,
+   "above_300_time_share": 0.0807
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2023,
+   "negative_time_share": 0.0414,
+   "above_300_time_share": 0.0724
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2024,
+   "negative_time_share": 0.0666,
+   "above_300_time_share": 0.0132
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2025,
+   "negative_time_share": 0.1077,
+   "above_300_time_share": 0.0144
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2026,
+   "negative_time_share": 0.1168,
+   "above_300_time_share": 0.0054
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2027,
+   "negative_time_share": 0.0362,
+   "above_300_time_share": 0.0029
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2019,
+   "negative_time_share": 0.0013,
+   "above_300_time_share": 0.001
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2020,
+   "negative_time_share": 0.0223,
+   "above_300_time_share": 0.0015
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2021,
+   "negative_time_share": 0.0424,
+   "above_300_time_share": 0.0107
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2022,
+   "negative_time_share": 0.0464,
+   "above_300_time_share": 0.1067
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2023,
+   "negative_time_share": 0.0734,
+   "above_300_time_share": 0.0739
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2024,
+   "negative_time_share": 0.1503,
+   "above_300_time_share": 0.0187
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2025,
+   "negative_time_share": 0.1709,
+   "above_300_time_share": 0.0157
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2026,
+   "negative_time_share": 0.1708,
+   "above_300_time_share": 0.0016
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2027,
+   "negative_time_share": 0.107,
+   "above_300_time_share": 0.0018
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2019,
+   "negative_time_share": 0.0122,
+   "above_300_time_share": 0.0112
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2020,
+   "negative_time_share": 0.0676,
+   "above_300_time_share": 0.0076
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2021,
+   "negative_time_share": 0.1304,
+   "above_300_time_share": 0.0029
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2022,
+   "negative_time_share": 0.192,
+   "above_300_time_share": 0.077
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2023,
+   "negative_time_share": 0.2295,
+   "above_300_time_share": 0.097
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2024,
+   "negative_time_share": 0.2279,
+   "above_300_time_share": 0.0263
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2025,
+   "negative_time_share": 0.2814,
+   "above_300_time_share": 0.0197
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2026,
+   "negative_time_share": 0.3112,
+   "above_300_time_share": 0.0177
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2027,
+   "negative_time_share": 0.2392,
+   "above_300_time_share": 0.0115
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2019,
+   "negative_time_share": 0.007,
+   "above_300_time_share": 0.0078
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2020,
+   "negative_time_share": 0.0237,
+   "above_300_time_share": 0.0015
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2021,
+   "negative_time_share": 0.0331,
+   "above_300_time_share": 0.0014
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2022,
+   "negative_time_share": 0.0959,
+   "above_300_time_share": 0.0294
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2023,
+   "negative_time_share": 0.0264,
+   "above_300_time_share": 0.0569
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2024,
+   "negative_time_share": 0.06,
+   "above_300_time_share": 0.0081
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2025,
+   "negative_time_share": 0.0577,
+   "above_300_time_share": 0.0095
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2026,
+   "negative_time_share": 0.0266,
+   "above_300_time_share": 0.0017
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2027,
+   "negative_time_share": 0.1377,
+   "above_300_time_share": 0.0025
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2019,
+   "negative_time_share": 0.0018,
+   "above_300_time_share": 0.0069
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2020,
+   "negative_time_share": 0.018,
+   "above_300_time_share": 0.0051
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2021,
+   "negative_time_share": 0.0731,
+   "above_300_time_share": 0.0016
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2022,
+   "negative_time_share": 0.1511,
+   "above_300_time_share": 0.0563
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2023,
+   "negative_time_share": 0.1867,
+   "above_300_time_share": 0.0683
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2024,
+   "negative_time_share": 0.1986,
+   "above_300_time_share": 0.0091
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2025,
+   "negative_time_share": 0.229,
+   "above_300_time_share": 0.0117
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2026,
+   "negative_time_share": 0.2638,
+   "above_300_time_share": 0.0037
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2027,
+   "negative_time_share": 0.189,
+   "above_300_time_share": 0.0028
+  }
+ ],
+ "negative_share_jul_oct": [
+  {
+   "region_code": "NSW1",
+   "fy": 2020,
+   "negative_time_share": 0.0008
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2021,
+   "negative_time_share": 0.0017
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2022,
+   "negative_time_share": 0.054
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2023,
+   "negative_time_share": 0.0338
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2024,
+   "negative_time_share": 0.1079
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2025,
+   "negative_time_share": 0.123
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2026,
+   "negative_time_share": 0.1612
+  },
+  {
+   "region_code": "NSW1",
+   "fy": 2027,
+   "negative_time_share": 0.0362
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2020,
+   "negative_time_share": 0.0351
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2021,
+   "negative_time_share": 0.0791
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2022,
+   "negative_time_share": 0.1059
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2023,
+   "negative_time_share": 0.065
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2024,
+   "negative_time_share": 0.2366
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2025,
+   "negative_time_share": 0.2259
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2026,
+   "negative_time_share": 0.2632
+  },
+  {
+   "region_code": "QLD1",
+   "fy": 2027,
+   "negative_time_share": 0.107
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2020,
+   "negative_time_share": 0.0903
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2021,
+   "negative_time_share": 0.117
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2022,
+   "negative_time_share": 0.2779
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2023,
+   "negative_time_share": 0.1867
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2024,
+   "negative_time_share": 0.2684
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2025,
+   "negative_time_share": 0.3169
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2026,
+   "negative_time_share": 0.3156
+  },
+  {
+   "region_code": "SA1",
+   "fy": 2027,
+   "negative_time_share": 0.2392
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2020,
+   "negative_time_share": 0.0161
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2021,
+   "negative_time_share": 0.0193
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2022,
+   "negative_time_share": 0.235
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2023,
+   "negative_time_share": 0.0192
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2024,
+   "negative_time_share": 0.134
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2025,
+   "negative_time_share": 0.1091
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2026,
+   "negative_time_share": 0.0608
+  },
+  {
+   "region_code": "TAS1",
+   "fy": 2027,
+   "negative_time_share": 0.1377
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2020,
+   "negative_time_share": 0.0103
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2021,
+   "negative_time_share": 0.0405
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2022,
+   "negative_time_share": 0.2402
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2023,
+   "negative_time_share": 0.139
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2024,
+   "negative_time_share": 0.237
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2025,
+   "negative_time_share": 0.262
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2026,
+   "negative_time_share": 0.238
+  },
+  {
+   "region_code": "VIC1",
+   "fy": 2027,
+   "negative_time_share": 0.189
+  }
+ ]
+}
