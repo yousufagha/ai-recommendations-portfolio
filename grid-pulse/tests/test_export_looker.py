@@ -4,7 +4,6 @@ from pathlib import Path
 import duckdb
 import pandas as pd
 import pytest
-
 from pipeline.export_looker import forecast_halfhour, insights_region_fy, write_csv
 
 REGIONS = pd.DataFrame({"region_code": ["SA1", "VIC1"], "region_name": ["South Australia", "Victoria"], "sort_order": [3, 5]})

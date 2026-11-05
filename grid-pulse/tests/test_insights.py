@@ -2,7 +2,6 @@ import datetime as dt
 
 import duckdb
 import pytest
-
 from pipeline.build_star import build_dimensions
 from pipeline.insights import EFFICIENCY, compute
 

@@ -18,7 +18,7 @@ EFFICIENCY = 0.85
 
 
 def _base(con) -> None:
-    con.execute(f"""
+    con.execute("""
         CREATE OR REPLACE VIEW m AS
         SELECT f.*, d.financial_year AS fy, d.year, t.day_part, d.is_weekend
         FROM fact_market f JOIN dim_date d USING (date_key) JOIN dim_time t USING (time_key)

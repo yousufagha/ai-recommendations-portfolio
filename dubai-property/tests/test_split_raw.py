@@ -3,7 +3,6 @@ from pathlib import Path
 
 import duckdb
 import pytest
-
 from pipeline.split_raw import split
 
 HEADER = "instance_date,transaction_id,project_name_en\n"
