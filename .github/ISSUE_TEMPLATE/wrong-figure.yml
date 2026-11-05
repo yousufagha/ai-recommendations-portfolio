@@ -1,0 +1,21 @@
+name: Wrong figure or claim
+description: A number or statement looks wrong
+labels: [bug]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Where is it?
+      description: The file and section, or a link
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What looks wrong, and what do you expect?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source or calculation that shows this
