@@ -19,7 +19,7 @@ The two source files were split by `pipeline/split_raw.py`. Rows, unique transac
 ## Coverage
 
 - **By type:** 1,386,564 of the 1,813,436 rows are sales.
-- **By time:** thin before 2008, when 47,243 rows are spread over decades, then every year to 3 November 2026. Sales range from 28,417 in 2011 to 214,568 in 2025, so recent years dominate.
+- **By time:** thin before 2008, when 47,243 rows are spread over decades, then every year to 3 November 2026. Sales range from 23,633 in 2008 to 214,568 in 2025, so recent years dominate.
 - **Fields:** date, group and procedure, value, area, usage, property type, rooms, size, price per square metre, project, nearest landmarks and party counts, mostly in Arabic and English.
 
 ## Known traps
