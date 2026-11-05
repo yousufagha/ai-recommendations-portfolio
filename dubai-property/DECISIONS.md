@@ -15,3 +15,5 @@
 - 2026-11-05: data.dubai is the source for history, because the Land Department page only reaches back to January 2026.
 - 2026-11-05: Test value at AED 2M against other round prices, nearby prices and earlier years, because prices cluster at round numbers anyway.
 - 2026-11-05: Treat the value step at AED 2M as unproven, because prices with no visa line show steps of similar size. No saving is claimed from it.
+- 2026-11-05: The landing page is built from a template and the results files by `pipeline/build_site.py`, and tests fail if a written claim stops holding, so charts cannot drift from the analysis.
+- 2026-11-05: Dashboards are Tableau Public for Dubai and Looker Studio for Grid Pulse. Superset is dropped because a public link would need a paid server.
