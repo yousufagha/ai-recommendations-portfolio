@@ -4,7 +4,7 @@
 
 - **Publisher:** Dubai Land Department, through [Data.Dubai](https://data.dubai/en/l/470061).
 - **Downloaded:** 5 November 2026, from the release dated 4 November 2026.
-- **Licence:** [Data.Dubai's FAQ](https://data.dubai/en/faqs) places open data under Dubai's Open Data License, which allows commercial and non-commercial use subject to its terms. The full licence text has not been reviewed yet.
+- **Licence:** the [Open Data Licence](https://data.dubai/documents/d/guest/open-data-license-english-5-pdf), which allows public sharing and commercial use subject to its terms. See [the data notice](../data/raw/README.md).
 
 ## What is here
 
@@ -22,15 +22,17 @@ The two source files were split by `pipeline/split_raw.py`. Rows, unique transac
 - **By time:** thin before 2008, when 47,243 rows are spread over decades, then every year to 3 November 2026. Sales range from 23,633 in 2008 to 214,568 in 2025, so recent years dominate.
 - **Fields:** date, group and procedure, value, area, usage, property type, rooms, size, price per square metre, project, nearest landmarks and party counts, mostly in Arabic and English.
 
-## Known traps
+## Reading the data well
 
 - **Not every row is a sale.** Mortgages and gifts share the file, so price work must filter to sales.
 - **Sales are not all alike.** The 2026 export shows pre-registration, delayed, development and lease-to-own procedures. Which count as market prices is still to be decided.
-- **Repeated values.** In the 2026 export, bulk mortgage deals show the full deal value on each unit's row.
-- **Mislabelled property.** In the 2026 export, offices and shops appear under Residential usage.
-- **Odd dates.** Some early dates are not Gregorian, such as `1416-07-02`.
+- **Bulk deals.** In the 2026 export, bulk mortgage deals show the full deal value on each unit's row.
+- **Broad usage labels.** In the 2026 export, offices and shops can sit under Residential usage, so filter by sub-type too.
+- **Older calendar dates.** Some early dates do not appear to use the Gregorian calendar, such as `1416-07-02`.
 - **Commas in names.** Project names can contain commas, so these files need a strict CSV reader.
-- **Not checked yet:** duplicates beyond the transaction ID, outliers, area name changes and how far each field is filled in across years.
+- **Similar rows.** From 2019, 33,695 sales rows (3.8%) share a date, place, value and size with another row. These may be separate identical units, so treat them with care.
+- **Fill rates from 2019.** Value, size and area are complete. Project is 89% filled, rooms 86% and building 79%.
+- **Not checked yet:** outliers and area name changes.
 
 ## Limits
 
