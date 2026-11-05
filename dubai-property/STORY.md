@@ -8,7 +8,7 @@ Draft outline. No figures yet, because the official data has not been downloaded
 
 ## In 2 minutes (to complete)
 
-- **Why it matters:** a home is a very large decision, and here it can also decide where a family can live. Sales pitches make claims about this. The official records show what actually sold, where and for how much.
+- **Why it matters:** a home is a very large decision, and here it can also decide where a family can live. Clear numbers help people choose well, and the official records show what sold, where and for how much.
 - **The scale:** [number of sales, years covered and total value, from the data].
 - **How it works:**
   1. **Collect:** gather the official records, keep real sales, and set aside mortgages and gifts, so a mortgage is not mistaken for a sale price.
@@ -24,4 +24,4 @@ Draft outline. No figures yet, because the official data has not been downloaded
 - **Is this advice?** No. It is analysis of public records, not immigration or investment advice.
 - **Do you know who got a visa?** No. The records do not appear to show that, so any visa effect is inferred from price patterns.
 - **Could you really have made that money?** Not exactly. It is a simulation by area, and nobody can buy at an area's typical price.
-- **What are the visa rules?** Official sources differ on visa length and mortgages, so check with the authorities.
+- **What are the visa rules?** Details are updated over time, so check the current terms with the authorities.
