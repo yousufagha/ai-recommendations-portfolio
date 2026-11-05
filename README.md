@@ -30,6 +30,10 @@ Read [the story in everyday language](grid-pulse/STORY.md) or [the recommendatio
 cd grid-pulse && python -m pip install -r requirements.txt && python -m pytest
 ```
 
+## How this repo is maintained
+
+See [the repository practices](docs/REPO_PRACTICES.md), including what is still to do.
+
 ## Data and credits
 
 The MIT licence covers the code only. Data stays under its publishers' terms.
