@@ -10,7 +10,7 @@ Predicts electricity demand for each half-hour of the next day, in each of 5 mar
 
 - **Model:** scikit-learn `HistGradientBoostingRegressor`, one set per region, retrained for each test year.
 - **Settings:** fixed in advance, not tuned, so test years cannot influence them: 300 iterations, learning rate 0.06, 48 leaf nodes, at least 40 samples per leaf, L2 of 1.0, seed 42.
-- **Features:** demand 2, 4, 7 and 14 days earlier; the mean of the prior 7 days; calendar and holidays; local hour. The weather version adds temperature, heating and cooling degrees and radiation.
+- **Features:** demand 1, 2, 7 and 14 days earlier; the mean of the prior 7 days; calendar and holidays; local hour. The weather version adds temperature, heating and cooling degrees and radiation.
 - **Likely range:** 10th and 90th percentile models on the no-weather features, widened by a margin from errors on the final training year.
 
 ## How it was tested
