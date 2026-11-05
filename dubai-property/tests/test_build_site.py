@@ -1,0 +1,42 @@
+import json
+import re
+
+from pipeline.build_site import ROOT, chart_data, figures, load_results, render, short_aed
+
+PAGE = ROOT / "docs" / "index.html"
+TEMPLATE = ROOT / "dubai-property" / "site" / "index.template.html"
+
+
+def test_published_page_is_the_built_page():
+    assert PAGE.read_text() == render(TEMPLATE.read_text(), load_results())
+
+
+def test_price_labels_keep_their_precision():
+    assert [short_aed(v) for v in (1_975_000, 2_000_000, 2_025_000, 1_800_000)] == ["AED 1.975M", "AED 2.0M", "AED 2.025M", "AED 1.8M"]
+
+
+def test_chart_data_on_the_page_matches_the_results():
+    results = load_results()
+    embedded = re.search(r'<script id="chart-data" type="application/json">(.*?)</script>', PAGE.read_text(), re.DOTALL).group(1)
+    assert json.loads(embedded) == chart_data(results)
+
+
+def test_every_written_claim_holds_in_the_results():
+    results = load_results()
+    f, data = figures(results), chart_data(results)
+    assert f["quarters_above"] == f["quarters_total"], "the page says the pattern held in every quarter since Q2 2022"
+    assert max(data["bands"], key=lambda b: b["value"])["highlight"], "the page says AED 2M was the most popular nearby band"
+    assert data["shift"][0]["label"] == data["tail"][0]["label"] == "South Australia"
+    highlight = next(s for s in data["steps"] if s["highlight"])
+    assert any(abs(s["value"]) >= abs(highlight["value"]) for s in data["steps"] if not s["highlight"]), "no clear cost relies on this"
+
+
+def test_search_and_trust_lines_stay_on_the_page():
+    text = PAGE.read_text()
+    for needed in ("google-site-verification", 'rel="canonical"', "application/ld+json", "not endorsed by or affiliated", "data-catalog.json"):
+        assert needed in text
+
+
+def test_local_data_links_exist():
+    for path in set(re.findall(r"github\.com/yousufagha/ai-recommendations-portfolio/(?:blob|tree)/main/([^\"#]+)", PAGE.read_text())):
+        assert (ROOT / path).exists(), path
