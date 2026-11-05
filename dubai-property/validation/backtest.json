@@ -1,0 +1,268 @@
+{
+ "funnel": {
+  "all_lines": 10683846,
+  "in_period": 6153528,
+  "residential": 4253982,
+  "flat_or_villa": 3469378,
+  "single_property": 3306923,
+  "about_a_year": 3110013,
+  "plausible_rent": 3108974,
+  "plausible_size": 2984652,
+  "known_bedrooms": 2981210,
+  "new_contract": 1300500,
+  "one_line_per_contract": 1299664
+ },
+ "verdict": {
+  "shown": false,
+  "label": "not shown",
+  "tested_rounds": 4,
+  "rounds_ahead_on_both_windows": 3,
+  "as_planned_rounds_ahead": 4,
+  "as_planned_near_line_weights_rounds_ahead": 3,
+  "as_planned_rounds": 5
+ },
+ "permutation": {
+  "plan": {
+   "observed_points": 16.94,
+   "random_95th_points": 14.95,
+   "share_of_random_at_least_as_good": 0.034
+  },
+  "centred": {
+   "observed_points": 3.78,
+   "random_95th_points": 14.16,
+   "share_of_random_at_least_as_good": 0.339
+  }
+ },
+ "rent_only_permutation_added_after_seeing_results": {
+  "observed_points": 2.41,
+  "random_95th_points": 1.25,
+  "share_of_random_at_least_as_good": 0.0
+ },
+ "rounds": [
+  {
+   "excess_plan_points": null,
+   "excess_centred_points": null,
+   "decision": "2021-11-03",
+   "tested": false,
+   "options": 5,
+   "picks": [
+    "Hadaeq Sheikh Mohammed Bin Rashid, 3 B/R",
+    "Burj Khalifa, 2 B/R",
+    "Palm Jumeirah, 2 B/R",
+    "Business Bay, 2 B/R",
+    "Al Kifaf, 2 B/R"
+   ],
+   "picks_estimated_yield_pct": 5.14,
+   "picks_realised_yield_pct": 6.37,
+   "others_realised_yield_pct": null,
+   "picks_price_change_pct": 11.39,
+   "others_price_change_pct": null,
+   "excess_aed_per_10m": null,
+   "bottom_five_total_pct": 17.76,
+   "top_five_total_pct": 17.76,
+   "as_planned_excess_points": 0.0,
+   "as_planned_near_line_weights_excess_points": 0.0,
+   "wider_market": {
+    "yield_pct": 6.99,
+    "change_pct": 8.07,
+    "sales_covered_share": 0.93
+   },
+   "picks_minus_wider_market_points": 2.7,
+   "official_flat_index_change_pct": 27.0,
+   "index_within_tolerance": false,
+   "hold_to_data_cut": null,
+   "sensitivity": {
+    "well_measured_options_only": null,
+    "top_3": 7.39,
+    "top_8": null,
+    "without_evidence_filter": 9.55,
+    "near_line_sales_out_of_price_change": null,
+    "picks_changed_by_30_day_embargo": 2
+   }
+  },
+  {
+   "excess_plan_points": 2.25,
+   "excess_centred_points": 1.08,
+   "decision": "2022-11-03",
+   "tested": true,
+   "options": 10,
+   "picks": [
+    "Hadaeq Sheikh Mohammed Bin Rashid, 3 B/R",
+    "Marsa Dubai, 1 B/R",
+    "Marsa Dubai, 2 B/R",
+    "Business Bay, 1 B/R",
+    "Palm Jumeirah, 1 B/R"
+   ],
+   "picks_estimated_yield_pct": 6.6,
+   "picks_realised_yield_pct": 7.22,
+   "others_realised_yield_pct": 6.72,
+   "picks_price_change_pct": 16.4,
+   "others_price_change_pct": 14.66,
+   "excess_aed_per_10m": 225000,
+   "bottom_five_total_pct": 21.38,
+   "top_five_total_pct": 23.63,
+   "as_planned_excess_points": 1.57,
+   "as_planned_near_line_weights_excess_points": -2.32,
+   "wider_market": {
+    "yield_pct": 7.72,
+    "change_pct": 13.6,
+    "sales_covered_share": 0.94
+   },
+   "picks_minus_wider_market_points": 2.31,
+   "official_flat_index_change_pct": 14.7,
+   "index_within_tolerance": true,
+   "hold_to_data_cut": {
+    "years": 4,
+    "picks_total_pct": 53.7,
+    "others_total_pct": 40.1,
+    "picks_extra_service_points_if_aed_200_per_sqm": -0.34
+   },
+   "sensitivity": {
+    "well_measured_options_only": 2.25,
+    "top_3": 3.7,
+    "top_8": 8.02,
+    "without_evidence_filter": 5.19,
+    "near_line_sales_out_of_price_change": 1.09,
+    "picks_changed_by_30_day_embargo": 1
+   }
+  },
+  {
+   "excess_plan_points": 2.7,
+   "excess_centred_points": 3.02,
+   "decision": "2023-11-03",
+   "tested": true,
+   "options": 10,
+   "picks": [
+    "Hadaeq Sheikh Mohammed Bin Rashid, 2 B/R",
+    "Palm Jumeirah, 1 B/R",
+    "Burj Khalifa, 2 B/R",
+    "Business Bay, 2 B/R",
+    "Marsa Dubai, 1 B/R"
+   ],
+   "picks_estimated_yield_pct": 7.02,
+   "picks_realised_yield_pct": 7.03,
+   "others_realised_yield_pct": 6.43,
+   "picks_price_change_pct": 8.21,
+   "others_price_change_pct": 6.1,
+   "excess_aed_per_10m": 270000,
+   "bottom_five_total_pct": 12.53,
+   "top_five_total_pct": 15.23,
+   "as_planned_excess_points": 0.96,
+   "as_planned_near_line_weights_excess_points": 0.73,
+   "wider_market": {
+    "yield_pct": 7.97,
+    "change_pct": 11.14,
+    "sales_covered_share": 0.97
+   },
+   "picks_minus_wider_market_points": -3.88,
+   "official_flat_index_change_pct": null,
+   "index_within_tolerance": null,
+   "hold_to_data_cut": {
+    "years": 3,
+    "picks_total_pct": 17.8,
+    "others_total_pct": 12.5,
+    "picks_extra_service_points_if_aed_200_per_sqm": 0.23
+   },
+   "sensitivity": {
+    "well_measured_options_only": -0.35,
+    "top_3": 6.75,
+    "top_8": -4.12,
+    "without_evidence_filter": 7.98,
+    "near_line_sales_out_of_price_change": 3.24,
+    "picks_changed_by_30_day_embargo": 2
+   }
+  },
+  {
+   "excess_plan_points": 2.44,
+   "excess_centred_points": 2.6,
+   "decision": "2024-11-03",
+   "tested": true,
+   "options": 12,
+   "picks": [
+    "Business Bay, 1 B/R",
+    "Nad Al Shiba First, 2 B/R",
+    "Burj Khalifa, 2 B/R",
+    "Business Bay, 2 B/R",
+    "Al Merkadh, 2 B/R"
+   ],
+   "picks_estimated_yield_pct": 7.21,
+   "picks_realised_yield_pct": 6.96,
+   "others_realised_yield_pct": 6.23,
+   "picks_price_change_pct": 5.07,
+   "others_price_change_pct": 3.37,
+   "excess_aed_per_10m": 244000,
+   "bottom_five_total_pct": 10.99,
+   "top_five_total_pct": 12.03,
+   "as_planned_excess_points": 0.52,
+   "as_planned_near_line_weights_excess_points": 1.5,
+   "wider_market": {
+    "yield_pct": 7.71,
+    "change_pct": 6.61,
+    "sales_covered_share": 0.97
+   },
+   "picks_minus_wider_market_points": -2.29,
+   "official_flat_index_change_pct": null,
+   "index_within_tolerance": null,
+   "hold_to_data_cut": {
+    "years": 2,
+    "picks_total_pct": 8.0,
+    "others_total_pct": 3.8,
+    "picks_extra_service_points_if_aed_200_per_sqm": 0.6
+   },
+   "sensitivity": {
+    "well_measured_options_only": -0.51,
+    "top_3": 3.04,
+    "top_8": -1.67,
+    "without_evidence_filter": 0.47,
+    "near_line_sales_out_of_price_change": 2.75,
+    "picks_changed_by_30_day_embargo": 0
+   }
+  },
+  {
+   "excess_plan_points": 9.55,
+   "excess_centred_points": -2.92,
+   "decision": "2025-11-03",
+   "tested": true,
+   "options": 9,
+   "picks": [
+    "Business Bay, 2 B/R",
+    "Hadaeq Sheikh Mohammed Bin Rashid, 2 B/R",
+    "Al Khairan First, 2 B/R",
+    "Business Bay, 1 B/R",
+    "Marsa Dubai, 1 B/R"
+   ],
+   "picks_estimated_yield_pct": 6.64,
+   "picks_realised_yield_pct": 6.07,
+   "others_realised_yield_pct": 5.49,
+   "picks_price_change_pct": -9.82,
+   "others_price_change_pct": -18.79,
+   "excess_aed_per_10m": 955000,
+   "bottom_five_total_pct": -12.23,
+   "top_five_total_pct": -3.75,
+   "as_planned_excess_points": 1.35,
+   "as_planned_near_line_weights_excess_points": 1.22,
+   "wider_market": {
+    "yield_pct": 7.02,
+    "change_pct": -5.46,
+    "sales_covered_share": 0.97
+   },
+   "picks_minus_wider_market_points": -5.31,
+   "official_flat_index_change_pct": null,
+   "index_within_tolerance": null,
+   "hold_to_data_cut": {
+    "years": 1,
+    "picks_total_pct": -7.1,
+    "others_total_pct": -15.3,
+    "picks_extra_service_points_if_aed_200_per_sqm": 0.24
+   },
+   "sensitivity": {
+    "well_measured_options_only": 0.44,
+    "top_3": 9.2,
+    "top_8": -2.28,
+    "without_evidence_filter": 7.26,
+    "near_line_sales_out_of_price_change": -2.03,
+    "picks_changed_by_30_day_embargo": 0
+   }
+  }
+ ]
+}
