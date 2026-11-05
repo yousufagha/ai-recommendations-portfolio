@@ -12,6 +12,14 @@ When similar-sized homes in the same building and year are compared, a first rea
 
 The records do not show who received a visa, so the link to the visa is inferred. Floor and view are not in the data. Figures come from [the results file](validation/value_at_line.json), and `make dubai` rebuilds them.
 
+## Second finding
+
+**At the same AED 2 million, ready homes differ by up to AED 30,000 a year in estimated rent.** Among 13 ready flat options that could be ranked, gross yield runs from 5.2% to 6.4%, or AED 105,000 to AED 135,000 a year. Four share the top tier, because the gaps between them are smaller than the estimate's typical error of 0.67 points: Business Bay 2-bed (6.4%), Hadaeq Sheikh Mohammed Bin Rashid 2-bed (6.1%), Business Bay 1-bed (6.0%) and Hadaeq Sheikh Mohammed Bin Rashid 1-bed (6.0%).
+
+**What it means for a buyer with about AED 2 million who wants income:** start with these four and compare actual buildings, because the same price can buy noticeably more rent. Off-plan was 76% of sales in this price band, but earns no rent until handover, so we show it separately as indicative.
+
+These are gross figures for homes priced at the threshold, before service charges, vacancy and fees, none of which are in the data. Rents come from new contracts in the year to 3 November 2026, because renewals lag the market. Estimates held up in three checks: applied to projects whose real rent was known, they showed no overall lean, with a typical miss of 0.67 points; last year's rents gave a similar order (rank correlation 0.90); and the Business Bay reading sits close to a [published 6.6%](https://joinoliva.com/en/learn/blog/dubai-rental-yields-by-area-2026-ejari-data) from a commercial source. Whether these homes would have beaten the market is not yet tested. Figures come from [the results file](validation/rent_yields.json).
+
 ## In 30 seconds (to finalise)
 
 "In Dubai, buying AED 2 million of property can come with long-term residency. I took the official sales records and used AI to answer two questions: do buyers pay extra to reach that line, and which ways of spending that money would have earned the most? Then I tested the advice on years it had never seen, against simply buying the whole market. [Result, from the data.]"
