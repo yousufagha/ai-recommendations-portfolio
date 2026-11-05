@@ -1,0 +1,161 @@
+{
+ "source_rows": 10683846,
+ "sources": [
+  {
+   "file": "rent_contracts_2026-11-04_17-55-55_0001.csv",
+   "sha256": "dbc413b6060a8a6d7224606412cc965e05dd1885bd32268d0e93276ebb4ea2c7"
+  },
+  {
+   "file": "rent_contracts_2026-11-04_17-55-55_0002.csv",
+   "sha256": "93f55f1434e12476aa6382546305f0f56ea2a8c0ca2900843d4310a0cfd5a2ae"
+  },
+  {
+   "file": "rent_contracts_2026-11-04_17-55-55_0003.csv",
+   "sha256": "6e051b6b609257ff18287f7bb419040960e7d671958c71fe6500d98c0aef1869"
+  },
+  {
+   "file": "rent_contracts_2026-11-04_17-55-55_0004.csv",
+   "sha256": "5fbaaf9d151b3966209ce7ab000cba18e815b2037acc0695b85775b8cfa6e75d"
+  },
+  {
+   "file": "rent_contracts_2026-11-04_17-55-55_0005.csv",
+   "sha256": "3fafa2f35a45338a6bf0a9b5a19c64fd65161b27272200ed89c2c5a8f3c045cb"
+  },
+  {
+   "file": "rent_contracts_2026-11-04_17-55-55_0006.csv",
+   "sha256": "6d35538896557f16b80fa8495b558f4cec9e46ee0d1c6e421e36ca446828b439"
+  },
+  {
+   "file": "rent_contracts_2026-11-04_17-55-55_0007.csv",
+   "sha256": "8ec24c6289f9215dc7bbb6ae221fa37a360e454742df726b384e35d6d7417bac"
+  },
+  {
+   "file": "rent_contracts_2026-11-04_17-55-55_0008.csv",
+   "sha256": "06388a633e527331985dc6daa0d12eaafd251f4b27ca4cf142eb6945b32b1eee"
+  },
+  {
+   "file": "rent_contracts_2026-11-04_17-55-55_0009.csv",
+   "sha256": "3973f69add3433f728aeb816b23eae8f50766eaa5c38a6ea07b2eb5993d850d3"
+  },
+  {
+   "file": "rent_contracts_2026-11-04_17-55-55_0010.csv",
+   "sha256": "b657f39dc8e8c4a0319537b21da6e59fbaf4b153289110b9a7e032c57ea063d9"
+  },
+  {
+   "file": "rent_contracts_2026-11-04_17-55-55_0011.csv",
+   "sha256": "5b085820d7c94862ab4e4aa1ac6fe5637034cdddd36df1c62e4bd266734571b3"
+  }
+ ],
+ "files": [
+  {
+   "file": "rents_2008.csv.gz",
+   "rows": 10,
+   "mb": 0.0
+  },
+  {
+   "file": "rents_2009.csv.gz",
+   "rows": 39,
+   "mb": 0.0
+  },
+  {
+   "file": "rents_2010.csv.gz",
+   "rows": 11963,
+   "mb": 0.4
+  },
+  {
+   "file": "rents_2011.csv.gz",
+   "rows": 58571,
+   "mb": 1.7
+  },
+  {
+   "file": "rents_2012.csv.gz",
+   "rows": 161100,
+   "mb": 5.1
+  },
+  {
+   "file": "rents_2013.csv.gz",
+   "rows": 329511,
+   "mb": 11.6
+  },
+  {
+   "file": "rents_2014.csv.gz",
+   "rows": 450278,
+   "mb": 16.0
+  },
+  {
+   "file": "rents_2015.csv.gz",
+   "rows": 519329,
+   "mb": 18.1
+  },
+  {
+   "file": "rents_2016.csv.gz",
+   "rows": 550535,
+   "mb": 19.4
+  },
+  {
+   "file": "rents_2017.csv.gz",
+   "rows": 591544,
+   "mb": 21.4
+  },
+  {
+   "file": "rents_2018.csv.gz",
+   "rows": 636137,
+   "mb": 23.4
+  },
+  {
+   "file": "rents_2019.csv.gz",
+   "rows": 657649,
+   "mb": 24.7
+  },
+  {
+   "file": "rents_2020.csv.gz",
+   "rows": 658918,
+   "mb": 26.0
+  },
+  {
+   "file": "rents_2021.csv.gz",
+   "rows": 769278,
+   "mb": 30.9
+  },
+  {
+   "file": "rents_2022.csv.gz",
+   "rows": 895327,
+   "mb": 35.6
+  },
+  {
+   "file": "rents_2023.csv.gz",
+   "rows": 998937,
+   "mb": 39.0
+  },
+  {
+   "file": "rents_2024.csv.gz",
+   "rows": 1148273,
+   "mb": 43.1
+  },
+  {
+   "file": "rents_2025.csv.gz",
+   "rows": 1238192,
+   "mb": 46.3
+  },
+  {
+   "file": "rents_2026.csv.gz",
+   "rows": 1005013,
+   "mb": 38.6
+  },
+  {
+   "file": "rents_2027.csv.gz",
+   "rows": 2841,
+   "mb": 0.1
+  },
+  {
+   "file": "rents_after-2027.csv.gz",
+   "rows": 369,
+   "mb": 0.0
+  },
+  {
+   "file": "rents_pre-2008.csv.gz",
+   "rows": 32,
+   "mb": 0.0
+  }
+ ]
+}
