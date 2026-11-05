@@ -1,0 +1,8 @@
+duckdb==2.0.0
+requests
+pytest
+jsonschema
+scikit-learn
+pandas
+pyarrow
+holidays
