@@ -1,10 +1,10 @@
-# Dubai real estate transaction data: notice
+# Dubai real estate data: notice
 
-**Source:** Dubai Land Department, published on [Data.Dubai](https://data.dubai/en/l/470061).
+**Source:** Dubai Land Department, published on Data.Dubai: [transactions](https://data.dubai/en/l/470061), [rent contracts](https://data.dubai/en/l/468586) and the [residential sale index](https://data.dubai/en/l/468732).
 
 **Licence:** this data is shared under the [Open Data Licence](https://data.dubai/documents/d/guest/open-data-license-english-5-pdf), not this repo's MIT licence. That licence applies to you too, and no other terms are added here.
 
-**Changes made:** the published files were split by year and compressed. No values were edited. [The manifest](transactions/manifest.json) records row counts and source checksums. The 2026 export is unchanged.
+**Changes made:** the published transaction and rent files were split by year and compressed. No values were edited. The [transactions](transactions/manifest.json) and [rents](rents/manifest.json) manifests record row counts and source checksums. The 2026 export and the price index are unchanged.
 
 **If you reuse it:**
 
