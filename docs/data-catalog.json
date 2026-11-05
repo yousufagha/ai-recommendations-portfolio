@@ -1,0 +1,2709 @@
+{
+ "terms": "https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/DATA.md",
+ "datasets": [
+  {
+   "name": "Dubai real estate transactions",
+   "publisher": "Dubai Land Department, via Data.Dubai",
+   "source": "https://data.dubai/en/l/470061",
+   "licence": "https://data.dubai/documents/d/guest/open-data-license-english-5-pdf",
+   "rows": 1813436,
+   "files": [
+    {
+     "file": "transactions_2008.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2008.csv.gz",
+     "bytes": 1105480,
+     "rows": 32155
+    },
+    {
+     "file": "transactions_2009.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2009.csv.gz",
+     "bytes": 2617897,
+     "rows": 79188
+    },
+    {
+     "file": "transactions_2010.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2010.csv.gz",
+     "bytes": 1927561,
+     "rows": 47343
+    },
+    {
+     "file": "transactions_2011.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2011.csv.gz",
+     "bytes": 1729278,
+     "rows": 38998
+    },
+    {
+     "file": "transactions_2012.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2012.csv.gz",
+     "bytes": 2167608,
+     "rows": 46332
+    },
+    {
+     "file": "transactions_2013.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2013.csv.gz",
+     "bytes": 3662268,
+     "rows": 77973
+    },
+    {
+     "file": "transactions_2014.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2014.csv.gz",
+     "bytes": 3516670,
+     "rows": 70373
+    },
+    {
+     "file": "transactions_2015.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2015.csv.gz",
+     "bytes": 3022550,
+     "rows": 58670
+    },
+    {
+     "file": "transactions_2016.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2016.csv.gz",
+     "bytes": 3150774,
+     "rows": 59147
+    },
+    {
+     "file": "transactions_2017.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2017.csv.gz",
+     "bytes": 3612677,
+     "rows": 64547
+    },
+    {
+     "file": "transactions_2018.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2018.csv.gz",
+     "bytes": 2860005,
+     "rows": 50281
+    },
+    {
+     "file": "transactions_2019.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2019.csv.gz",
+     "bytes": 2983122,
+     "rows": 53112
+    },
+    {
+     "file": "transactions_2020.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2020.csv.gz",
+     "bytes": 2843018,
+     "rows": 49286
+    },
+    {
+     "file": "transactions_2021.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2021.csv.gz",
+     "bytes": 4634494,
+     "rows": 82822
+    },
+    {
+     "file": "transactions_2022.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2022.csv.gz",
+     "bytes": 6577425,
+     "rows": 120013
+    },
+    {
+     "file": "transactions_2023.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2023.csv.gz",
+     "bytes": 9154722,
+     "rows": 165266
+    },
+    {
+     "file": "transactions_2024.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2024.csv.gz",
+     "bytes": 12519797,
+     "rows": 224408
+    },
+    {
+     "file": "transactions_2025.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2025.csv.gz",
+     "bytes": 15144218,
+     "rows": 267006
+    },
+    {
+     "file": "transactions_2026.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_2026.csv.gz",
+     "bytes": 10368074,
+     "rows": 179273
+    },
+    {
+     "file": "transactions_pre-2008.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/transactions/transactions_pre-2008.csv.gz",
+     "bytes": 1452997,
+     "rows": 47243
+    }
+   ]
+  },
+  {
+   "name": "Dubai rent contracts",
+   "publisher": "Dubai Land Department, via Data.Dubai",
+   "source": "https://data.dubai/en/l/468586",
+   "licence": "https://data.dubai/documents/d/guest/open-data-license-english-5-pdf",
+   "rows": 10683846,
+   "files": [
+    {
+     "file": "rents_2008.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2008.csv.gz",
+     "bytes": 1443,
+     "rows": 10
+    },
+    {
+     "file": "rents_2009.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2009.csv.gz",
+     "bytes": 3354,
+     "rows": 39
+    },
+    {
+     "file": "rents_2010.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2010.csv.gz",
+     "bytes": 366109,
+     "rows": 11963
+    },
+    {
+     "file": "rents_2011.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2011.csv.gz",
+     "bytes": 1722483,
+     "rows": 58571
+    },
+    {
+     "file": "rents_2012.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2012.csv.gz",
+     "bytes": 5108788,
+     "rows": 161100
+    },
+    {
+     "file": "rents_2013.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2013.csv.gz",
+     "bytes": 11550112,
+     "rows": 329511
+    },
+    {
+     "file": "rents_2014.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2014.csv.gz",
+     "bytes": 15975299,
+     "rows": 450278
+    },
+    {
+     "file": "rents_2015.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2015.csv.gz",
+     "bytes": 18128207,
+     "rows": 519329
+    },
+    {
+     "file": "rents_2016.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2016.csv.gz",
+     "bytes": 19428169,
+     "rows": 550535
+    },
+    {
+     "file": "rents_2017.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2017.csv.gz",
+     "bytes": 21422084,
+     "rows": 591544
+    },
+    {
+     "file": "rents_2018.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2018.csv.gz",
+     "bytes": 23375383,
+     "rows": 636137
+    },
+    {
+     "file": "rents_2019.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2019.csv.gz",
+     "bytes": 24703828,
+     "rows": 657649
+    },
+    {
+     "file": "rents_2020.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2020.csv.gz",
+     "bytes": 25956412,
+     "rows": 658918
+    },
+    {
+     "file": "rents_2021.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2021.csv.gz",
+     "bytes": 30949039,
+     "rows": 769278
+    },
+    {
+     "file": "rents_2022.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2022.csv.gz",
+     "bytes": 35606204,
+     "rows": 895327
+    },
+    {
+     "file": "rents_2023.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2023.csv.gz",
+     "bytes": 38973964,
+     "rows": 998937
+    },
+    {
+     "file": "rents_2024.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2024.csv.gz",
+     "bytes": 43073707,
+     "rows": 1148273
+    },
+    {
+     "file": "rents_2025.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2025.csv.gz",
+     "bytes": 46277093,
+     "rows": 1238192
+    },
+    {
+     "file": "rents_2026.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2026.csv.gz",
+     "bytes": 38606351,
+     "rows": 1005013
+    },
+    {
+     "file": "rents_2027.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2027.csv.gz",
+     "bytes": 96741,
+     "rows": 2841
+    },
+    {
+     "file": "rents_after-2027.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_after-2027.csv.gz",
+     "bytes": 7810,
+     "rows": 369
+    },
+    {
+     "file": "rents_pre-2008.csv.gz",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_pre-2008.csv.gz",
+     "bytes": 3061,
+     "rows": 32
+    }
+   ]
+  },
+  {
+   "name": "Dubai residential sale price index",
+   "publisher": "Dubai Land Department, via Data.Dubai",
+   "source": "https://data.dubai/en/l/468732",
+   "licence": "https://data.dubai/documents/d/guest/open-data-license-english-5-pdf",
+   "files": [
+    {
+     "file": "residential_sale_index_2026-11-01.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/price_index/residential_sale_index_2026-11-01.csv",
+     "bytes": 22827
+    }
+   ]
+  },
+  {
+   "name": "Australian electricity prices and demand",
+   "publisher": "Australian Energy Market Operator",
+   "source": "https://www.aemo.com.au/",
+   "licence": "https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions",
+   "files": [
+    {
+     "file": "201901_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201901_NSW1.csv",
+     "bytes": 69323
+    },
+    {
+     "file": "201901_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201901_QLD1.csv",
+     "bytes": 68815
+    },
+    {
+     "file": "201901_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201901_SA1.csv",
+     "bytes": 67407
+    },
+    {
+     "file": "201901_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201901_TAS1.csv",
+     "bytes": 69300
+    },
+    {
+     "file": "201901_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201901_VIC1.csv",
+     "bytes": 69039
+    },
+    {
+     "file": "201902_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201902_NSW1.csv",
+     "bytes": 62127
+    },
+    {
+     "file": "201902_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201902_QLD1.csv",
+     "bytes": 62001
+    },
+    {
+     "file": "201902_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201902_SA1.csv",
+     "bytes": 60929
+    },
+    {
+     "file": "201902_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201902_TAS1.csv",
+     "bytes": 62168
+    },
+    {
+     "file": "201902_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201902_VIC1.csv",
+     "bytes": 62367
+    },
+    {
+     "file": "201903_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201903_NSW1.csv",
+     "bytes": 68692
+    },
+    {
+     "file": "201903_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201903_QLD1.csv",
+     "bytes": 68526
+    },
+    {
+     "file": "201903_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201903_SA1.csv",
+     "bytes": 67377
+    },
+    {
+     "file": "201903_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201903_TAS1.csv",
+     "bytes": 68981
+    },
+    {
+     "file": "201903_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201903_VIC1.csv",
+     "bytes": 69091
+    },
+    {
+     "file": "201904_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201904_NSW1.csv",
+     "bytes": 66289
+    },
+    {
+     "file": "201904_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201904_QLD1.csv",
+     "bytes": 66172
+    },
+    {
+     "file": "201904_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201904_SA1.csv",
+     "bytes": 64964
+    },
+    {
+     "file": "201904_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201904_TAS1.csv",
+     "bytes": 66522
+    },
+    {
+     "file": "201904_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201904_VIC1.csv",
+     "bytes": 66765
+    },
+    {
+     "file": "201905_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201905_NSW1.csv",
+     "bytes": 68494
+    },
+    {
+     "file": "201905_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201905_QLD1.csv",
+     "bytes": 68389
+    },
+    {
+     "file": "201905_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201905_SA1.csv",
+     "bytes": 66995
+    },
+    {
+     "file": "201905_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201905_TAS1.csv",
+     "bytes": 68520
+    },
+    {
+     "file": "201905_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201905_VIC1.csv",
+     "bytes": 68746
+    },
+    {
+     "file": "201906_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201906_NSW1.csv",
+     "bytes": 66644
+    },
+    {
+     "file": "201906_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201906_QLD1.csv",
+     "bytes": 66385
+    },
+    {
+     "file": "201906_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201906_SA1.csv",
+     "bytes": 65065
+    },
+    {
+     "file": "201906_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201906_TAS1.csv",
+     "bytes": 66594
+    },
+    {
+     "file": "201906_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201906_VIC1.csv",
+     "bytes": 66693
+    },
+    {
+     "file": "201907_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201907_NSW1.csv",
+     "bytes": 68609
+    },
+    {
+     "file": "201907_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201907_QLD1.csv",
+     "bytes": 68380
+    },
+    {
+     "file": "201907_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201907_SA1.csv",
+     "bytes": 66969
+    },
+    {
+     "file": "201907_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201907_TAS1.csv",
+     "bytes": 68259
+    },
+    {
+     "file": "201907_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201907_VIC1.csv",
+     "bytes": 68687
+    },
+    {
+     "file": "201908_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201908_NSW1.csv",
+     "bytes": 68683
+    },
+    {
+     "file": "201908_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201908_QLD1.csv",
+     "bytes": 68385
+    },
+    {
+     "file": "201908_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201908_SA1.csv",
+     "bytes": 67165
+    },
+    {
+     "file": "201908_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201908_TAS1.csv",
+     "bytes": 68299
+    },
+    {
+     "file": "201908_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201908_VIC1.csv",
+     "bytes": 68870
+    },
+    {
+     "file": "201909_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201909_NSW1.csv",
+     "bytes": 66461
+    },
+    {
+     "file": "201909_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201909_QLD1.csv",
+     "bytes": 66169
+    },
+    {
+     "file": "201909_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201909_SA1.csv",
+     "bytes": 64699
+    },
+    {
+     "file": "201909_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201909_TAS1.csv",
+     "bytes": 65690
+    },
+    {
+     "file": "201909_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201909_VIC1.csv",
+     "bytes": 66614
+    },
+    {
+     "file": "201910_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201910_NSW1.csv",
+     "bytes": 68741
+    },
+    {
+     "file": "201910_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201910_QLD1.csv",
+     "bytes": 68526
+    },
+    {
+     "file": "201910_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201910_SA1.csv",
+     "bytes": 66879
+    },
+    {
+     "file": "201910_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201910_TAS1.csv",
+     "bytes": 68244
+    },
+    {
+     "file": "201910_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201910_VIC1.csv",
+     "bytes": 68834
+    },
+    {
+     "file": "201911_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201911_NSW1.csv",
+     "bytes": 66178
+    },
+    {
+     "file": "201911_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201911_QLD1.csv",
+     "bytes": 66185
+    },
+    {
+     "file": "201911_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201911_SA1.csv",
+     "bytes": 64387
+    },
+    {
+     "file": "201911_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201911_TAS1.csv",
+     "bytes": 65602
+    },
+    {
+     "file": "201911_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201911_VIC1.csv",
+     "bytes": 66159
+    },
+    {
+     "file": "201912_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201912_NSW1.csv",
+     "bytes": 68372
+    },
+    {
+     "file": "201912_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201912_QLD1.csv",
+     "bytes": 68290
+    },
+    {
+     "file": "201912_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201912_SA1.csv",
+     "bytes": 66541
+    },
+    {
+     "file": "201912_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201912_TAS1.csv",
+     "bytes": 67605
+    },
+    {
+     "file": "201912_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/201912_VIC1.csv",
+     "bytes": 68282
+    },
+    {
+     "file": "202001_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202001_NSW1.csv",
+     "bytes": 68578
+    },
+    {
+     "file": "202001_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202001_QLD1.csv",
+     "bytes": 68351
+    },
+    {
+     "file": "202001_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202001_SA1.csv",
+     "bytes": 66520
+    },
+    {
+     "file": "202001_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202001_TAS1.csv",
+     "bytes": 67781
+    },
+    {
+     "file": "202001_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202001_VIC1.csv",
+     "bytes": 68362
+    },
+    {
+     "file": "202002_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202002_NSW1.csv",
+     "bytes": 63999
+    },
+    {
+     "file": "202002_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202002_QLD1.csv",
+     "bytes": 63908
+    },
+    {
+     "file": "202002_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202002_SA1.csv",
+     "bytes": 62214
+    },
+    {
+     "file": "202002_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202002_TAS1.csv",
+     "bytes": 63297
+    },
+    {
+     "file": "202002_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202002_VIC1.csv",
+     "bytes": 63830
+    },
+    {
+     "file": "202003_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202003_NSW1.csv",
+     "bytes": 68298
+    },
+    {
+     "file": "202003_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202003_QLD1.csv",
+     "bytes": 68292
+    },
+    {
+     "file": "202003_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202003_SA1.csv",
+     "bytes": 66453
+    },
+    {
+     "file": "202003_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202003_TAS1.csv",
+     "bytes": 67539
+    },
+    {
+     "file": "202003_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202003_VIC1.csv",
+     "bytes": 68191
+    },
+    {
+     "file": "202004_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202004_NSW1.csv",
+     "bytes": 66004
+    },
+    {
+     "file": "202004_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202004_QLD1.csv",
+     "bytes": 66018
+    },
+    {
+     "file": "202004_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202004_SA1.csv",
+     "bytes": 64228
+    },
+    {
+     "file": "202004_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202004_TAS1.csv",
+     "bytes": 65571
+    },
+    {
+     "file": "202004_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202004_VIC1.csv",
+     "bytes": 65964
+    },
+    {
+     "file": "202005_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202005_NSW1.csv",
+     "bytes": 68293
+    },
+    {
+     "file": "202005_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202005_QLD1.csv",
+     "bytes": 68298
+    },
+    {
+     "file": "202005_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202005_SA1.csv",
+     "bytes": 66582
+    },
+    {
+     "file": "202005_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202005_TAS1.csv",
+     "bytes": 68056
+    },
+    {
+     "file": "202005_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202005_VIC1.csv",
+     "bytes": 68204
+    },
+    {
+     "file": "202006_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202006_NSW1.csv",
+     "bytes": 66361
+    },
+    {
+     "file": "202006_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202006_QLD1.csv",
+     "bytes": 66039
+    },
+    {
+     "file": "202006_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202006_SA1.csv",
+     "bytes": 64626
+    },
+    {
+     "file": "202006_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202006_TAS1.csv",
+     "bytes": 65935
+    },
+    {
+     "file": "202006_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202006_VIC1.csv",
+     "bytes": 66051
+    },
+    {
+     "file": "202007_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202007_NSW1.csv",
+     "bytes": 68572
+    },
+    {
+     "file": "202007_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202007_QLD1.csv",
+     "bytes": 68263
+    },
+    {
+     "file": "202007_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202007_SA1.csv",
+     "bytes": 66650
+    },
+    {
+     "file": "202007_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202007_TAS1.csv",
+     "bytes": 68294
+    },
+    {
+     "file": "202007_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202007_VIC1.csv",
+     "bytes": 68349
+    },
+    {
+     "file": "202008_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202008_NSW1.csv",
+     "bytes": 68469
+    },
+    {
+     "file": "202008_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202008_QLD1.csv",
+     "bytes": 68363
+    },
+    {
+     "file": "202008_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202008_SA1.csv",
+     "bytes": 66703
+    },
+    {
+     "file": "202008_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202008_TAS1.csv",
+     "bytes": 68194
+    },
+    {
+     "file": "202008_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202008_VIC1.csv",
+     "bytes": 68297
+    },
+    {
+     "file": "202009_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202009_NSW1.csv",
+     "bytes": 66080
+    },
+    {
+     "file": "202009_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202009_QLD1.csv",
+     "bytes": 66070
+    },
+    {
+     "file": "202009_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202009_SA1.csv",
+     "bytes": 64535
+    },
+    {
+     "file": "202009_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202009_TAS1.csv",
+     "bytes": 65881
+    },
+    {
+     "file": "202009_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202009_VIC1.csv",
+     "bytes": 66017
+    },
+    {
+     "file": "202010_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202010_NSW1.csv",
+     "bytes": 68324
+    },
+    {
+     "file": "202010_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202010_QLD1.csv",
+     "bytes": 68284
+    },
+    {
+     "file": "202010_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202010_SA1.csv",
+     "bytes": 66625
+    },
+    {
+     "file": "202010_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202010_TAS1.csv",
+     "bytes": 67973
+    },
+    {
+     "file": "202010_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202010_VIC1.csv",
+     "bytes": 68378
+    },
+    {
+     "file": "202011_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202011_NSW1.csv",
+     "bytes": 66180
+    },
+    {
+     "file": "202011_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202011_QLD1.csv",
+     "bytes": 66083
+    },
+    {
+     "file": "202011_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202011_SA1.csv",
+     "bytes": 64357
+    },
+    {
+     "file": "202011_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202011_TAS1.csv",
+     "bytes": 65448
+    },
+    {
+     "file": "202011_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202011_VIC1.csv",
+     "bytes": 66051
+    },
+    {
+     "file": "202012_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202012_NSW1.csv",
+     "bytes": 68390
+    },
+    {
+     "file": "202012_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202012_QLD1.csv",
+     "bytes": 68373
+    },
+    {
+     "file": "202012_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202012_SA1.csv",
+     "bytes": 66529
+    },
+    {
+     "file": "202012_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202012_TAS1.csv",
+     "bytes": 67787
+    },
+    {
+     "file": "202012_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202012_VIC1.csv",
+     "bytes": 68267
+    },
+    {
+     "file": "202101_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202101_NSW1.csv",
+     "bytes": 68344
+    },
+    {
+     "file": "202101_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202101_QLD1.csv",
+     "bytes": 68290
+    },
+    {
+     "file": "202101_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202101_SA1.csv",
+     "bytes": 66578
+    },
+    {
+     "file": "202101_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202101_TAS1.csv",
+     "bytes": 67780
+    },
+    {
+     "file": "202101_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202101_VIC1.csv",
+     "bytes": 68277
+    },
+    {
+     "file": "202102_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202102_NSW1.csv",
+     "bytes": 61669
+    },
+    {
+     "file": "202102_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202102_QLD1.csv",
+     "bytes": 61713
+    },
+    {
+     "file": "202102_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202102_SA1.csv",
+     "bytes": 60098
+    },
+    {
+     "file": "202102_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202102_TAS1.csv",
+     "bytes": 61028
+    },
+    {
+     "file": "202102_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202102_VIC1.csv",
+     "bytes": 61606
+    },
+    {
+     "file": "202103_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202103_NSW1.csv",
+     "bytes": 68300
+    },
+    {
+     "file": "202103_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202103_QLD1.csv",
+     "bytes": 68318
+    },
+    {
+     "file": "202103_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202103_SA1.csv",
+     "bytes": 66538
+    },
+    {
+     "file": "202103_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202103_TAS1.csv",
+     "bytes": 67641
+    },
+    {
+     "file": "202103_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202103_VIC1.csv",
+     "bytes": 68180
+    },
+    {
+     "file": "202104_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202104_NSW1.csv",
+     "bytes": 66169
+    },
+    {
+     "file": "202104_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202104_QLD1.csv",
+     "bytes": 66206
+    },
+    {
+     "file": "202104_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202104_SA1.csv",
+     "bytes": 64319
+    },
+    {
+     "file": "202104_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202104_TAS1.csv",
+     "bytes": 65740
+    },
+    {
+     "file": "202104_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202104_VIC1.csv",
+     "bytes": 66151
+    },
+    {
+     "file": "202105_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202105_NSW1.csv",
+     "bytes": 68565
+    },
+    {
+     "file": "202105_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202105_QLD1.csv",
+     "bytes": 68550
+    },
+    {
+     "file": "202105_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202105_SA1.csv",
+     "bytes": 66764
+    },
+    {
+     "file": "202105_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202105_TAS1.csv",
+     "bytes": 68252
+    },
+    {
+     "file": "202105_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202105_VIC1.csv",
+     "bytes": 68400
+    },
+    {
+     "file": "202106_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202106_NSW1.csv",
+     "bytes": 66885
+    },
+    {
+     "file": "202106_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202106_QLD1.csv",
+     "bytes": 66573
+    },
+    {
+     "file": "202106_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202106_SA1.csv",
+     "bytes": 65018
+    },
+    {
+     "file": "202106_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202106_TAS1.csv",
+     "bytes": 66334
+    },
+    {
+     "file": "202106_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202106_VIC1.csv",
+     "bytes": 66506
+    },
+    {
+     "file": "202107_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202107_NSW1.csv",
+     "bytes": 69115
+    },
+    {
+     "file": "202107_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202107_QLD1.csv",
+     "bytes": 68800
+    },
+    {
+     "file": "202107_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202107_SA1.csv",
+     "bytes": 67443
+    },
+    {
+     "file": "202107_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202107_TAS1.csv",
+     "bytes": 68394
+    },
+    {
+     "file": "202107_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202107_VIC1.csv",
+     "bytes": 68807
+    },
+    {
+     "file": "202108_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202108_NSW1.csv",
+     "bytes": 68455
+    },
+    {
+     "file": "202108_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202108_QLD1.csv",
+     "bytes": 68410
+    },
+    {
+     "file": "202108_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202108_SA1.csv",
+     "bytes": 66913
+    },
+    {
+     "file": "202108_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202108_TAS1.csv",
+     "bytes": 68271
+    },
+    {
+     "file": "202108_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202108_VIC1.csv",
+     "bytes": 68443
+    },
+    {
+     "file": "202109_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202109_NSW1.csv",
+     "bytes": 66111
+    },
+    {
+     "file": "202109_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202109_QLD1.csv",
+     "bytes": 66327
+    },
+    {
+     "file": "202109_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202109_SA1.csv",
+     "bytes": 64691
+    },
+    {
+     "file": "202109_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202109_TAS1.csv",
+     "bytes": 66117
+    },
+    {
+     "file": "202109_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202109_VIC1.csv",
+     "bytes": 66316
+    },
+    {
+     "file": "202110_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202110_NSW1.csv",
+     "bytes": 407906
+    },
+    {
+     "file": "202110_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202110_QLD1.csv",
+     "bytes": 408173
+    },
+    {
+     "file": "202110_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202110_SA1.csv",
+     "bytes": 395193
+    },
+    {
+     "file": "202110_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202110_TAS1.csv",
+     "bytes": 407354
+    },
+    {
+     "file": "202110_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202110_VIC1.csv",
+     "bytes": 407690
+    },
+    {
+     "file": "202111_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202111_NSW1.csv",
+     "bytes": 394835
+    },
+    {
+     "file": "202111_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202111_QLD1.csv",
+     "bytes": 395198
+    },
+    {
+     "file": "202111_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202111_SA1.csv",
+     "bytes": 383210
+    },
+    {
+     "file": "202111_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202111_TAS1.csv",
+     "bytes": 392989
+    },
+    {
+     "file": "202111_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202111_VIC1.csv",
+     "bytes": 391464
+    },
+    {
+     "file": "202112_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202112_NSW1.csv",
+     "bytes": 409440
+    },
+    {
+     "file": "202112_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202112_QLD1.csv",
+     "bytes": 408767
+    },
+    {
+     "file": "202112_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202112_SA1.csv",
+     "bytes": 396853
+    },
+    {
+     "file": "202112_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202112_TAS1.csv",
+     "bytes": 407543
+    },
+    {
+     "file": "202112_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202112_VIC1.csv",
+     "bytes": 407187
+    },
+    {
+     "file": "202201_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202201_NSW1.csv",
+     "bytes": 406863
+    },
+    {
+     "file": "202201_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202201_QLD1.csv",
+     "bytes": 412012
+    },
+    {
+     "file": "202201_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202201_SA1.csv",
+     "bytes": 399572
+    },
+    {
+     "file": "202201_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202201_TAS1.csv",
+     "bytes": 409035
+    },
+    {
+     "file": "202201_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202201_VIC1.csv",
+     "bytes": 407418
+    },
+    {
+     "file": "202202_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202202_NSW1.csv",
+     "bytes": 368739
+    },
+    {
+     "file": "202202_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202202_QLD1.csv",
+     "bytes": 371734
+    },
+    {
+     "file": "202202_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202202_SA1.csv",
+     "bytes": 360718
+    },
+    {
+     "file": "202202_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202202_TAS1.csv",
+     "bytes": 370053
+    },
+    {
+     "file": "202202_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202202_VIC1.csv",
+     "bytes": 368754
+    },
+    {
+     "file": "202203_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202203_NSW1.csv",
+     "bytes": 410047
+    },
+    {
+     "file": "202203_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202203_QLD1.csv",
+     "bytes": 411669
+    },
+    {
+     "file": "202203_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202203_SA1.csv",
+     "bytes": 399547
+    },
+    {
+     "file": "202203_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202203_TAS1.csv",
+     "bytes": 409637
+    },
+    {
+     "file": "202203_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202203_VIC1.csv",
+     "bytes": 410095
+    },
+    {
+     "file": "202204_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202204_NSW1.csv",
+     "bytes": 401457
+    },
+    {
+     "file": "202204_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202204_QLD1.csv",
+     "bytes": 402604
+    },
+    {
+     "file": "202204_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202204_SA1.csv",
+     "bytes": 391611
+    },
+    {
+     "file": "202204_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202204_TAS1.csv",
+     "bytes": 401763
+    },
+    {
+     "file": "202204_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202204_VIC1.csv",
+     "bytes": 401178
+    },
+    {
+     "file": "202205_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202205_NSW1.csv",
+     "bytes": 416541
+    },
+    {
+     "file": "202205_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202205_QLD1.csv",
+     "bytes": 416069
+    },
+    {
+     "file": "202205_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202205_SA1.csv",
+     "bytes": 405903
+    },
+    {
+     "file": "202205_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202205_TAS1.csv",
+     "bytes": 416694
+    },
+    {
+     "file": "202205_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202205_VIC1.csv",
+     "bytes": 414342
+    },
+    {
+     "file": "202206_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202206_NSW1.csv",
+     "bytes": 399545
+    },
+    {
+     "file": "202206_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202206_QLD1.csv",
+     "bytes": 400110
+    },
+    {
+     "file": "202206_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202206_SA1.csv",
+     "bytes": 391672
+    },
+    {
+     "file": "202206_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202206_TAS1.csv",
+     "bytes": 403054
+    },
+    {
+     "file": "202206_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202206_VIC1.csv",
+     "bytes": 402417
+    },
+    {
+     "file": "202207_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202207_NSW1.csv",
+     "bytes": 415657
+    },
+    {
+     "file": "202207_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202207_QLD1.csv",
+     "bytes": 410692
+    },
+    {
+     "file": "202207_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202207_SA1.csv",
+     "bytes": 406510
+    },
+    {
+     "file": "202207_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202207_TAS1.csv",
+     "bytes": 418076
+    },
+    {
+     "file": "202207_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202207_VIC1.csv",
+     "bytes": 413867
+    },
+    {
+     "file": "202208_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202208_NSW1.csv",
+     "bytes": 412731
+    },
+    {
+     "file": "202208_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202208_QLD1.csv",
+     "bytes": 409026
+    },
+    {
+     "file": "202208_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202208_SA1.csv",
+     "bytes": 404807
+    },
+    {
+     "file": "202208_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202208_TAS1.csv",
+     "bytes": 413614
+    },
+    {
+     "file": "202208_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202208_VIC1.csv",
+     "bytes": 413103
+    },
+    {
+     "file": "202209_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202209_NSW1.csv",
+     "bytes": 399936
+    },
+    {
+     "file": "202209_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202209_QLD1.csv",
+     "bytes": 399334
+    },
+    {
+     "file": "202209_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202209_SA1.csv",
+     "bytes": 390872
+    },
+    {
+     "file": "202209_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202209_TAS1.csv",
+     "bytes": 400932
+    },
+    {
+     "file": "202209_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202209_VIC1.csv",
+     "bytes": 398320
+    },
+    {
+     "file": "202210_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202210_NSW1.csv",
+     "bytes": 413896
+    },
+    {
+     "file": "202210_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202210_QLD1.csv",
+     "bytes": 413824
+    },
+    {
+     "file": "202210_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202210_SA1.csv",
+     "bytes": 403517
+    },
+    {
+     "file": "202210_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202210_TAS1.csv",
+     "bytes": 413584
+    },
+    {
+     "file": "202210_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202210_VIC1.csv",
+     "bytes": 412431
+    },
+    {
+     "file": "202211_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202211_NSW1.csv",
+     "bytes": 399636
+    },
+    {
+     "file": "202211_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202211_QLD1.csv",
+     "bytes": 396964
+    },
+    {
+     "file": "202211_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202211_SA1.csv",
+     "bytes": 388936
+    },
+    {
+     "file": "202211_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202211_TAS1.csv",
+     "bytes": 396312
+    },
+    {
+     "file": "202211_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202211_VIC1.csv",
+     "bytes": 396970
+    },
+    {
+     "file": "202212_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202212_NSW1.csv",
+     "bytes": 411418
+    },
+    {
+     "file": "202212_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202212_QLD1.csv",
+     "bytes": 408105
+    },
+    {
+     "file": "202212_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202212_SA1.csv",
+     "bytes": 400322
+    },
+    {
+     "file": "202212_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202212_TAS1.csv",
+     "bytes": 409713
+    },
+    {
+     "file": "202212_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202212_VIC1.csv",
+     "bytes": 409022
+    },
+    {
+     "file": "202301_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202301_NSW1.csv",
+     "bytes": 411790
+    },
+    {
+     "file": "202301_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202301_QLD1.csv",
+     "bytes": 407205
+    },
+    {
+     "file": "202301_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202301_SA1.csv",
+     "bytes": 402224
+    },
+    {
+     "file": "202301_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202301_TAS1.csv",
+     "bytes": 411437
+    },
+    {
+     "file": "202301_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202301_VIC1.csv",
+     "bytes": 409228
+    },
+    {
+     "file": "202302_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202302_NSW1.csv",
+     "bytes": 370872
+    },
+    {
+     "file": "202302_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202302_QLD1.csv",
+     "bytes": 371105
+    },
+    {
+     "file": "202302_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202302_SA1.csv",
+     "bytes": 363139
+    },
+    {
+     "file": "202302_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202302_TAS1.csv",
+     "bytes": 372094
+    },
+    {
+     "file": "202302_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202302_VIC1.csv",
+     "bytes": 370298
+    },
+    {
+     "file": "202303_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202303_NSW1.csv",
+     "bytes": 410911
+    },
+    {
+     "file": "202303_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202303_QLD1.csv",
+     "bytes": 412472
+    },
+    {
+     "file": "202303_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202303_SA1.csv",
+     "bytes": 402060
+    },
+    {
+     "file": "202303_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202303_TAS1.csv",
+     "bytes": 409072
+    },
+    {
+     "file": "202303_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202303_VIC1.csv",
+     "bytes": 411649
+    },
+    {
+     "file": "202304_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202304_NSW1.csv",
+     "bytes": 399312
+    },
+    {
+     "file": "202304_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202304_QLD1.csv",
+     "bytes": 399681
+    },
+    {
+     "file": "202304_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202304_SA1.csv",
+     "bytes": 388849
+    },
+    {
+     "file": "202304_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202304_TAS1.csv",
+     "bytes": 397246
+    },
+    {
+     "file": "202304_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202304_VIC1.csv",
+     "bytes": 396293
+    },
+    {
+     "file": "202305_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202305_NSW1.csv",
+     "bytes": 415243
+    },
+    {
+     "file": "202305_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202305_QLD1.csv",
+     "bytes": 413973
+    },
+    {
+     "file": "202305_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202305_SA1.csv",
+     "bytes": 404973
+    },
+    {
+     "file": "202305_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202305_TAS1.csv",
+     "bytes": 412352
+    },
+    {
+     "file": "202305_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202305_VIC1.csv",
+     "bytes": 413026
+    },
+    {
+     "file": "202306_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202306_NSW1.csv",
+     "bytes": 398198
+    },
+    {
+     "file": "202306_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202306_QLD1.csv",
+     "bytes": 398394
+    },
+    {
+     "file": "202306_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202306_SA1.csv",
+     "bytes": 389308
+    },
+    {
+     "file": "202306_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202306_TAS1.csv",
+     "bytes": 395208
+    },
+    {
+     "file": "202306_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202306_VIC1.csv",
+     "bytes": 396461
+    },
+    {
+     "file": "202307_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202307_NSW1.csv",
+     "bytes": 410186
+    },
+    {
+     "file": "202307_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202307_QLD1.csv",
+     "bytes": 411007
+    },
+    {
+     "file": "202307_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202307_SA1.csv",
+     "bytes": 402997
+    },
+    {
+     "file": "202307_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202307_TAS1.csv",
+     "bytes": 408270
+    },
+    {
+     "file": "202307_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202307_VIC1.csv",
+     "bytes": 410115
+    },
+    {
+     "file": "202308_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202308_NSW1.csv",
+     "bytes": 410715
+    },
+    {
+     "file": "202308_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202308_QLD1.csv",
+     "bytes": 410569
+    },
+    {
+     "file": "202308_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202308_SA1.csv",
+     "bytes": 402061
+    },
+    {
+     "file": "202308_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202308_TAS1.csv",
+     "bytes": 408798
+    },
+    {
+     "file": "202308_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202308_VIC1.csv",
+     "bytes": 409818
+    },
+    {
+     "file": "202309_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202309_NSW1.csv",
+     "bytes": 394632
+    },
+    {
+     "file": "202309_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202309_QLD1.csv",
+     "bytes": 398399
+    },
+    {
+     "file": "202309_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202309_SA1.csv",
+     "bytes": 386796
+    },
+    {
+     "file": "202309_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202309_TAS1.csv",
+     "bytes": 391778
+    },
+    {
+     "file": "202309_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202309_VIC1.csv",
+     "bytes": 396015
+    },
+    {
+     "file": "202310_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202310_NSW1.csv",
+     "bytes": 406568
+    },
+    {
+     "file": "202310_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202310_QLD1.csv",
+     "bytes": 410980
+    },
+    {
+     "file": "202310_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202310_SA1.csv",
+     "bytes": 398766
+    },
+    {
+     "file": "202310_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202310_TAS1.csv",
+     "bytes": 406756
+    },
+    {
+     "file": "202310_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202310_VIC1.csv",
+     "bytes": 408159
+    },
+    {
+     "file": "202311_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202311_NSW1.csv",
+     "bytes": 395418
+    },
+    {
+     "file": "202311_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202311_QLD1.csv",
+     "bytes": 397736
+    },
+    {
+     "file": "202311_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202311_SA1.csv",
+     "bytes": 386919
+    },
+    {
+     "file": "202311_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202311_TAS1.csv",
+     "bytes": 395946
+    },
+    {
+     "file": "202311_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202311_VIC1.csv",
+     "bytes": 396077
+    },
+    {
+     "file": "202312_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202312_NSW1.csv",
+     "bytes": 408663
+    },
+    {
+     "file": "202312_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202312_QLD1.csv",
+     "bytes": 410980
+    },
+    {
+     "file": "202312_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202312_SA1.csv",
+     "bytes": 400658
+    },
+    {
+     "file": "202312_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202312_TAS1.csv",
+     "bytes": 408497
+    },
+    {
+     "file": "202312_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202312_VIC1.csv",
+     "bytes": 410103
+    },
+    {
+     "file": "202401_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202401_NSW1.csv",
+     "bytes": 407785
+    },
+    {
+     "file": "202401_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202401_QLD1.csv",
+     "bytes": 411154
+    },
+    {
+     "file": "202401_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202401_SA1.csv",
+     "bytes": 400206
+    },
+    {
+     "file": "202401_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202401_TAS1.csv",
+     "bytes": 407084
+    },
+    {
+     "file": "202401_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202401_VIC1.csv",
+     "bytes": 408883
+    },
+    {
+     "file": "202402_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202402_NSW1.csv",
+     "bytes": 382131
+    },
+    {
+     "file": "202402_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202402_QLD1.csv",
+     "bytes": 385181
+    },
+    {
+     "file": "202402_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202402_SA1.csv",
+     "bytes": 374505
+    },
+    {
+     "file": "202402_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202402_TAS1.csv",
+     "bytes": 382673
+    },
+    {
+     "file": "202402_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202402_VIC1.csv",
+     "bytes": 383585
+    },
+    {
+     "file": "202403_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202403_NSW1.csv",
+     "bytes": 407878
+    },
+    {
+     "file": "202403_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202403_QLD1.csv",
+     "bytes": 411162
+    },
+    {
+     "file": "202403_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202403_SA1.csv",
+     "bytes": 400967
+    },
+    {
+     "file": "202403_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202403_TAS1.csv",
+     "bytes": 409859
+    },
+    {
+     "file": "202403_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202403_VIC1.csv",
+     "bytes": 409371
+    },
+    {
+     "file": "202404_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202404_NSW1.csv",
+     "bytes": 396511
+    },
+    {
+     "file": "202404_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202404_QLD1.csv",
+     "bytes": 399761
+    },
+    {
+     "file": "202404_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202404_SA1.csv",
+     "bytes": 389117
+    },
+    {
+     "file": "202404_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202404_TAS1.csv",
+     "bytes": 397623
+    },
+    {
+     "file": "202404_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202404_VIC1.csv",
+     "bytes": 398651
+    },
+    {
+     "file": "202405_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202405_NSW1.csv",
+     "bytes": 412804
+    },
+    {
+     "file": "202405_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202405_QLD1.csv",
+     "bytes": 414139
+    },
+    {
+     "file": "202405_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202405_SA1.csv",
+     "bytes": 403687
+    },
+    {
+     "file": "202405_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202405_TAS1.csv",
+     "bytes": 415648
+    },
+    {
+     "file": "202405_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202405_VIC1.csv",
+     "bytes": 413619
+    },
+    {
+     "file": "202406_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202406_NSW1.csv",
+     "bytes": 399787
+    },
+    {
+     "file": "202406_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202406_QLD1.csv",
+     "bytes": 401465
+    },
+    {
+     "file": "202406_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202406_SA1.csv",
+     "bytes": 391688
+    },
+    {
+     "file": "202406_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202406_TAS1.csv",
+     "bytes": 403334
+    },
+    {
+     "file": "202406_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202406_VIC1.csv",
+     "bytes": 400401
+    },
+    {
+     "file": "202407_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202407_NSW1.csv",
+     "bytes": 412277
+    },
+    {
+     "file": "202407_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202407_QLD1.csv",
+     "bytes": 413987
+    },
+    {
+     "file": "202407_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202407_SA1.csv",
+     "bytes": 403751
+    },
+    {
+     "file": "202407_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202407_TAS1.csv",
+     "bytes": 415913
+    },
+    {
+     "file": "202407_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202407_VIC1.csv",
+     "bytes": 412875
+    },
+    {
+     "file": "202408_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202408_NSW1.csv",
+     "bytes": 411872
+    },
+    {
+     "file": "202408_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202408_QLD1.csv",
+     "bytes": 414404
+    },
+    {
+     "file": "202408_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202408_SA1.csv",
+     "bytes": 402125
+    },
+    {
+     "file": "202408_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202408_TAS1.csv",
+     "bytes": 412338
+    },
+    {
+     "file": "202408_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202408_VIC1.csv",
+     "bytes": 411335
+    },
+    {
+     "file": "202409_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202409_NSW1.csv",
+     "bytes": 394419
+    },
+    {
+     "file": "202409_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202409_QLD1.csv",
+     "bytes": 399526
+    },
+    {
+     "file": "202409_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202409_SA1.csv",
+     "bytes": 385808
+    },
+    {
+     "file": "202409_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202409_TAS1.csv",
+     "bytes": 392912
+    },
+    {
+     "file": "202409_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202409_VIC1.csv",
+     "bytes": 394286
+    },
+    {
+     "file": "202410_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202410_NSW1.csv",
+     "bytes": 406230
+    },
+    {
+     "file": "202410_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202410_QLD1.csv",
+     "bytes": 413662
+    },
+    {
+     "file": "202410_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202410_SA1.csv",
+     "bytes": 398346
+    },
+    {
+     "file": "202410_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202410_TAS1.csv",
+     "bytes": 406600
+    },
+    {
+     "file": "202410_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202410_VIC1.csv",
+     "bytes": 407457
+    },
+    {
+     "file": "202411_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202411_NSW1.csv",
+     "bytes": 398253
+    },
+    {
+     "file": "202411_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202411_QLD1.csv",
+     "bytes": 400110
+    },
+    {
+     "file": "202411_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202411_SA1.csv",
+     "bytes": 387606
+    },
+    {
+     "file": "202411_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202411_TAS1.csv",
+     "bytes": 400033
+    },
+    {
+     "file": "202411_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202411_VIC1.csv",
+     "bytes": 398611
+    },
+    {
+     "file": "202412_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202412_NSW1.csv",
+     "bytes": 412737
+    },
+    {
+     "file": "202412_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202412_QLD1.csv",
+     "bytes": 413690
+    },
+    {
+     "file": "202412_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202412_SA1.csv",
+     "bytes": 400897
+    },
+    {
+     "file": "202412_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202412_TAS1.csv",
+     "bytes": 406425
+    },
+    {
+     "file": "202412_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202412_VIC1.csv",
+     "bytes": 411461
+    },
+    {
+     "file": "202501_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202501_NSW1.csv",
+     "bytes": 409875
+    },
+    {
+     "file": "202501_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202501_QLD1.csv",
+     "bytes": 412633
+    },
+    {
+     "file": "202501_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202501_SA1.csv",
+     "bytes": 400288
+    },
+    {
+     "file": "202501_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202501_TAS1.csv",
+     "bytes": 411499
+    },
+    {
+     "file": "202501_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202501_VIC1.csv",
+     "bytes": 409676
+    },
+    {
+     "file": "202502_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202502_NSW1.csv",
+     "bytes": 371497
+    },
+    {
+     "file": "202502_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202502_QLD1.csv",
+     "bytes": 371803
+    },
+    {
+     "file": "202502_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202502_SA1.csv",
+     "bytes": 361767
+    },
+    {
+     "file": "202502_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202502_TAS1.csv",
+     "bytes": 372469
+    },
+    {
+     "file": "202502_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202502_VIC1.csv",
+     "bytes": 370552
+    },
+    {
+     "file": "202503_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202503_NSW1.csv",
+     "bytes": 410996
+    },
+    {
+     "file": "202503_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202503_QLD1.csv",
+     "bytes": 411790
+    },
+    {
+     "file": "202503_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202503_SA1.csv",
+     "bytes": 401180
+    },
+    {
+     "file": "202503_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202503_TAS1.csv",
+     "bytes": 412045
+    },
+    {
+     "file": "202503_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202503_VIC1.csv",
+     "bytes": 408789
+    },
+    {
+     "file": "202504_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202504_NSW1.csv",
+     "bytes": 399110
+    },
+    {
+     "file": "202504_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202504_QLD1.csv",
+     "bytes": 399547
+    },
+    {
+     "file": "202504_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202504_SA1.csv",
+     "bytes": 387797
+    },
+    {
+     "file": "202504_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202504_TAS1.csv",
+     "bytes": 399817
+    },
+    {
+     "file": "202504_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202504_VIC1.csv",
+     "bytes": 397820
+    },
+    {
+     "file": "202505_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202505_NSW1.csv",
+     "bytes": 412893
+    },
+    {
+     "file": "202505_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202505_QLD1.csv",
+     "bytes": 412528
+    },
+    {
+     "file": "202505_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202505_SA1.csv",
+     "bytes": 400940
+    },
+    {
+     "file": "202505_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202505_TAS1.csv",
+     "bytes": 413821
+    },
+    {
+     "file": "202505_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202505_VIC1.csv",
+     "bytes": 410287
+    },
+    {
+     "file": "202506_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202506_NSW1.csv",
+     "bytes": 402086
+    },
+    {
+     "file": "202506_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202506_QLD1.csv",
+     "bytes": 399794
+    },
+    {
+     "file": "202506_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202506_SA1.csv",
+     "bytes": 389998
+    },
+    {
+     "file": "202506_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202506_TAS1.csv",
+     "bytes": 403037
+    },
+    {
+     "file": "202506_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202506_VIC1.csv",
+     "bytes": 400176
+    },
+    {
+     "file": "202507_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202507_NSW1.csv",
+     "bytes": 414010
+    },
+    {
+     "file": "202507_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202507_QLD1.csv",
+     "bytes": 411800
+    },
+    {
+     "file": "202507_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202507_SA1.csv",
+     "bytes": 400222
+    },
+    {
+     "file": "202507_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202507_TAS1.csv",
+     "bytes": 414179
+    },
+    {
+     "file": "202507_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202507_VIC1.csv",
+     "bytes": 409008
+    },
+    {
+     "file": "202508_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202508_NSW1.csv",
+     "bytes": 413388
+    },
+    {
+     "file": "202508_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202508_QLD1.csv",
+     "bytes": 412842
+    },
+    {
+     "file": "202508_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202508_SA1.csv",
+     "bytes": 399977
+    },
+    {
+     "file": "202508_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202508_TAS1.csv",
+     "bytes": 414058
+    },
+    {
+     "file": "202508_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202508_VIC1.csv",
+     "bytes": 409642
+    },
+    {
+     "file": "202509_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202509_NSW1.csv",
+     "bytes": 398558
+    },
+    {
+     "file": "202509_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202509_QLD1.csv",
+     "bytes": 399304
+    },
+    {
+     "file": "202509_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202509_SA1.csv",
+     "bytes": 385462
+    },
+    {
+     "file": "202509_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202509_TAS1.csv",
+     "bytes": 390391
+    },
+    {
+     "file": "202509_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202509_VIC1.csv",
+     "bytes": 394725
+    },
+    {
+     "file": "202510_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202510_NSW1.csv",
+     "bytes": 412723
+    },
+    {
+     "file": "202510_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202510_QLD1.csv",
+     "bytes": 412116
+    },
+    {
+     "file": "202510_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202510_SA1.csv",
+     "bytes": 398541
+    },
+    {
+     "file": "202510_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202510_TAS1.csv",
+     "bytes": 401256
+    },
+    {
+     "file": "202510_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202510_VIC1.csv",
+     "bytes": 410012
+    },
+    {
+     "file": "202511_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202511_NSW1.csv",
+     "bytes": 398127
+    },
+    {
+     "file": "202511_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202511_QLD1.csv",
+     "bytes": 398213
+    },
+    {
+     "file": "202511_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202511_SA1.csv",
+     "bytes": 385384
+    },
+    {
+     "file": "202511_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202511_TAS1.csv",
+     "bytes": 388841
+    },
+    {
+     "file": "202511_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202511_VIC1.csv",
+     "bytes": 396786
+    },
+    {
+     "file": "202512_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202512_NSW1.csv",
+     "bytes": 410417
+    },
+    {
+     "file": "202512_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202512_QLD1.csv",
+     "bytes": 409903
+    },
+    {
+     "file": "202512_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202512_SA1.csv",
+     "bytes": 397769
+    },
+    {
+     "file": "202512_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202512_TAS1.csv",
+     "bytes": 403054
+    },
+    {
+     "file": "202512_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202512_VIC1.csv",
+     "bytes": 408271
+    },
+    {
+     "file": "202601_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202601_NSW1.csv",
+     "bytes": 409049
+    },
+    {
+     "file": "202601_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202601_QLD1.csv",
+     "bytes": 407740
+    },
+    {
+     "file": "202601_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202601_SA1.csv",
+     "bytes": 398027
+    },
+    {
+     "file": "202601_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202601_TAS1.csv",
+     "bytes": 407921
+    },
+    {
+     "file": "202601_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202601_VIC1.csv",
+     "bytes": 408571
+    },
+    {
+     "file": "202602_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202602_NSW1.csv",
+     "bytes": 371072
+    },
+    {
+     "file": "202602_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202602_QLD1.csv",
+     "bytes": 369651
+    },
+    {
+     "file": "202602_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202602_SA1.csv",
+     "bytes": 359068
+    },
+    {
+     "file": "202602_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202602_TAS1.csv",
+     "bytes": 364353
+    },
+    {
+     "file": "202602_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202602_VIC1.csv",
+     "bytes": 369387
+    },
+    {
+     "file": "202603_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202603_NSW1.csv",
+     "bytes": 409084
+    },
+    {
+     "file": "202603_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202603_QLD1.csv",
+     "bytes": 408945
+    },
+    {
+     "file": "202603_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202603_SA1.csv",
+     "bytes": 397868
+    },
+    {
+     "file": "202603_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202603_TAS1.csv",
+     "bytes": 404687
+    },
+    {
+     "file": "202603_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202603_VIC1.csv",
+     "bytes": 409014
+    },
+    {
+     "file": "202604_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202604_NSW1.csv",
+     "bytes": 395254
+    },
+    {
+     "file": "202604_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202604_QLD1.csv",
+     "bytes": 394601
+    },
+    {
+     "file": "202604_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202604_SA1.csv",
+     "bytes": 384004
+    },
+    {
+     "file": "202604_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202604_TAS1.csv",
+     "bytes": 392983
+    },
+    {
+     "file": "202604_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202604_VIC1.csv",
+     "bytes": 394905
+    },
+    {
+     "file": "202605_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202605_NSW1.csv",
+     "bytes": 410239
+    },
+    {
+     "file": "202605_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202605_QLD1.csv",
+     "bytes": 410105
+    },
+    {
+     "file": "202605_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202605_SA1.csv",
+     "bytes": 400303
+    },
+    {
+     "file": "202605_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202605_TAS1.csv",
+     "bytes": 409515
+    },
+    {
+     "file": "202605_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202605_VIC1.csv",
+     "bytes": 409131
+    },
+    {
+     "file": "202606_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202606_NSW1.csv",
+     "bytes": 396677
+    },
+    {
+     "file": "202606_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202606_QLD1.csv",
+     "bytes": 396313
+    },
+    {
+     "file": "202606_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202606_SA1.csv",
+     "bytes": 386797
+    },
+    {
+     "file": "202606_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202606_TAS1.csv",
+     "bytes": 395038
+    },
+    {
+     "file": "202606_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202606_VIC1.csv",
+     "bytes": 396921
+    },
+    {
+     "file": "202607_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202607_NSW1.csv",
+     "bytes": 411288
+    },
+    {
+     "file": "202607_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202607_QLD1.csv",
+     "bytes": 409595
+    },
+    {
+     "file": "202607_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202607_SA1.csv",
+     "bytes": 401176
+    },
+    {
+     "file": "202607_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202607_TAS1.csv",
+     "bytes": 409233
+    },
+    {
+     "file": "202607_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202607_VIC1.csv",
+     "bytes": 409860
+    },
+    {
+     "file": "202608_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202608_NSW1.csv",
+     "bytes": 410993
+    },
+    {
+     "file": "202608_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202608_QLD1.csv",
+     "bytes": 408499
+    },
+    {
+     "file": "202608_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202608_SA1.csv",
+     "bytes": 399820
+    },
+    {
+     "file": "202608_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202608_TAS1.csv",
+     "bytes": 407683
+    },
+    {
+     "file": "202608_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202608_VIC1.csv",
+     "bytes": 409127
+    },
+    {
+     "file": "202609_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202609_NSW1.csv",
+     "bytes": 396276
+    },
+    {
+     "file": "202609_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202609_QLD1.csv",
+     "bytes": 394433
+    },
+    {
+     "file": "202609_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202609_SA1.csv",
+     "bytes": 385101
+    },
+    {
+     "file": "202609_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202609_TAS1.csv",
+     "bytes": 391691
+    },
+    {
+     "file": "202609_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202609_VIC1.csv",
+     "bytes": 394598
+    },
+    {
+     "file": "202610_NSW1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202610_NSW1.csv",
+     "bytes": 412358
+    },
+    {
+     "file": "202610_QLD1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202610_QLD1.csv",
+     "bytes": 411334
+    },
+    {
+     "file": "202610_SA1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202610_SA1.csv",
+     "bytes": 398464
+    },
+    {
+     "file": "202610_TAS1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202610_TAS1.csv",
+     "bytes": 407022
+    },
+    {
+     "file": "202610_VIC1.csv",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/aemo/202610_VIC1.csv",
+     "bytes": 409580
+    }
+   ]
+  },
+  {
+   "name": "Australian city weather",
+   "publisher": "Open-Meteo.com",
+   "source": "https://open-meteo.com/",
+   "licence": "https://open-meteo.com/en/licence",
+   "files": [
+    {
+     "file": "NSW1_Newcastle.json",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/weather/NSW1_Newcastle.json",
+     "bytes": 2188704
+    },
+    {
+     "file": "NSW1_Sydney.json",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/weather/NSW1_Sydney.json",
+     "bytes": 2185768
+    },
+    {
+     "file": "NSW1_Wollongong.json",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/weather/NSW1_Wollongong.json",
+     "bytes": 2187348
+    },
+    {
+     "file": "QLD1_Brisbane.json",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/weather/QLD1_Brisbane.json",
+     "bytes": 2190492
+    },
+    {
+     "file": "QLD1_Gold_Coast.json",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/weather/QLD1_Gold_Coast.json",
+     "bytes": 2191762
+    },
+    {
+     "file": "QLD1_Townsville.json",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/weather/QLD1_Townsville.json",
+     "bytes": 2192877
+    },
+    {
+     "file": "SA1_Adelaide.json",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/weather/SA1_Adelaide.json",
+     "bytes": 2185766
+    },
+    {
+     "file": "TAS1_Hobart.json",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/weather/TAS1_Hobart.json",
+     "bytes": 2166805
+    },
+    {
+     "file": "TAS1_Launceston.json",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/weather/TAS1_Launceston.json",
+     "bytes": 2169391
+    },
+    {
+     "file": "VIC1_Geelong.json",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/weather/VIC1_Geelong.json",
+     "bytes": 2176254
+    },
+    {
+     "file": "VIC1_Melbourne.json",
+     "url": "https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/grid-pulse/data/raw/weather/VIC1_Melbourne.json",
+     "bytes": 2177177
+    }
+   ]
+  }
+ ]
+}

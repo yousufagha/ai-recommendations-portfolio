@@ -1,4 +1,4 @@
-# Datasheet: Dubai real estate transactions
+# Datasheet: Dubai real estate data
 
 ## Source
 
@@ -34,8 +34,24 @@ The two source files were split by `pipeline/split_raw.py`. Rows, unique transac
 - **Fill rates from 2019.** Value, size and area are complete. Project is 89% filled, rooms 86% and building 79%.
 - **Not checked yet:** outliers and area name changes.
 
+## Rent contracts
+
+- **Source:** [Rent Contracts on Data.Dubai](https://data.dubai/en/l/468586), tagged Open, released 4 November 2026, downloaded 5 November 2026.
+- **Files:** `data/raw/rents/`, all 10,683,846 published lines, in 22 files by contract start year. A full-value checksum matched the 11 source files.
+- **Coverage:** 7,555,484 residential lines. Residential lines rise from 307,687 starting in 2014 to 826,260 in 2025.
+- **One contract can have several lines.** There are 8,915,150 contract IDs, and `contract_id` with `line_number` is unique.
+- **Annual and contract amounts differ on 806,260 residential lines,** so use `annual_amount` for yearly rent.
+- **Whole-building and bulk contracts.** 1,511,943 residential lines cover more than one property, and 140,169 exceed AED 5 million a year, so filter on `no_of_prop` before estimating a home's rent.
+- **Labour accommodation and virtual units** can appear under Residential usage, so filter by property type too.
+- **Project is 25% filled for 2026,** so area is the reliable place field. 177 of the 215 rent area names also appear in the 2025 sales file, so the rest need matching.
+- **Dates:** a few starts run far ahead, such as `2205-07-16`. They sit in `rents_after-2027.csv.gz`.
+- **Fields on people:** the files have no names, phone numbers or unit numbers. They do hold contract IDs and tenant type, and the portal has listed `Personal Information (DNRD)` under Rights for this dataset. Aggregate before publishing analysis.
+
+## Residential sale index
+
+`data/raw/price_index/` holds the [Residential Properties Sale Index](https://data.dubai/en/l/468732) unchanged. It has 159 monthly rows from March 2011 to May 2024, so its latest value is May 2024 despite the November 2026 file date. Use the sales records for newer price moves. Quarterly and yearly columns are often blank.
+
 ## Limits
 
 - Values are registered amounts and may differ from market prices.
 - There are no buyer or seller names, and no visa status, so any Golden Visa effect can only be inferred.
-- Rents and the price index are separate datasets, not downloaded yet.
