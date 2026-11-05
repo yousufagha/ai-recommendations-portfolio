@@ -1,0 +1,14 @@
+name: Improvement
+description: Suggest a change to the code, data or analysis
+labels: [enhancement]
+body:
+  - type: textarea
+    id: change
+    attributes:
+      label: What should change?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it matter?

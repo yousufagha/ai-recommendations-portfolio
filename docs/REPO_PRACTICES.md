@@ -38,10 +38,10 @@ Sources checked on 5 November 2026. Status: **In place** is true of the repo tod
 | README, licence | [GitHub community profile](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories) | In place |
 | Secret scanning and push protection | [Blocks supported secrets on push](https://docs.github.com/en/code-security/getting-started/securing-your-repository) | In place |
 | Tests on every pull request | Catches breakage before `main` | In place |
-| CONTRIBUTING, code of conduct, issue templates | [Community profile](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories) | To do |
-| SECURITY.md | [GitHub suggests it](https://docs.github.com/en/code-security/getting-started/securing-your-repository) | To do |
-| Dependabot security updates | [Opens pull requests for vulnerable dependencies](https://docs.github.com/en/code-security/getting-started/securing-your-repository); currently off | To do |
-| Branch protection requiring tests to pass on `main` | [GitHub recommends it](https://docs.github.com/en/repositories/creating-and-managing-repositories/best-practices-for-repositories) | To do |
+| CONTRIBUTING, code of conduct, issue templates | [Community profile](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories) | In place |
+| SECURITY.md | [GitHub suggests it](https://docs.github.com/en/code-security/getting-started/securing-your-repository) | In place, with private reporting on |
+| Dependabot security updates | [Opens pull requests for vulnerable dependencies](https://docs.github.com/en/code-security/getting-started/securing-your-repository);  | In place |
+| Branch protection requiring tests to pass on `main` | [GitHub recommends it](https://docs.github.com/en/repositories/creating-and-managing-repositories/best-practices-for-repositories) | In place: the `test` check must pass. The owner can still override it |
 | Linting with ruff, run in CI | Common Python practice, not checked against a primary source today | In place |
 
 ## Claims
