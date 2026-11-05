@@ -23,6 +23,8 @@ Sources checked on 5 November 2026. Status: **In place** is true of the repo tod
 | Models record seeds, settings and accuracy by region or group | [Model cards](https://huggingface.co/docs/hub/model-cards) report results beyond one headline number | In place: [forecast model card](../grid-pulse/docs/MODEL_CARD.md) |
 | Secrets never enter Git; any local secrets go in an ignored `.env` file | [Cookiecutter](https://cookiecutter-data-science.drivendata.org/opinions/) | In place: no secrets are used, and `.env` is ignored |
 
+**Sharing the data:** raw files are public and listed in [the data index](../DATA.md). Before any new dataset goes public, its licence must be read and must allow republishing. The Dubai licence is summarised in [the data notice](../dubai-property/data/raw/README.md).
+
 ## Commits and pull requests
 
 - **Small commits:** each commit is one real change, with a message saying what it does. No empty commits.
@@ -48,4 +50,5 @@ Sources checked on 5 November 2026. Status: **In place** is true of the repo tod
 
 - Every published figure traces to a tested script or a results file.
 - A public claim is checked against the data before it merges, and findings that weaken a recommendation are disclosed.
+- Writing about the UAE is respectful and forward-looking, and every figure and test result is reported accurately, whichever way it goes.
 - Data publishers are credited in the README, and analysis is labelled as not being financial, investment or immigration advice.
