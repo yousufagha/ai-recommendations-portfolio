@@ -1,0 +1,24 @@
+# Decisions
+
+- 2026-11-05: Recommendations are the deliverable; the report opens on them and each drills through to evidence.
+- 2026-11-05: Source data is AEMO price and demand, used under its general permission with attribution; raw files are not committed.
+- 2026-11-05: Dates derive from interval start, so a 00:00 row belongs to the previous day. Calendar day is the reporting day.
+- 2026-11-05: Every aggregate uses energy (demand x interval hours); the last 30-minute row ends at 2021-10-01 00:00.
+- 2026-11-05: Full import rather than incremental refresh, because Parquet does not fold.
+- 2026-11-05: Analysis figures use full financial years from FY2023, the first full year of 5-minute settlement.
+- 2026-11-05: Battery figures are labelled perfect-foresight upper bounds.
+- 2026-11-05: SA has 1,423 intervals of negative demand; kept as published, because removing them would break reconciliation with AEMO. State this in the README.
+- 2026-11-05: Keep June 2022 administered pricing rows; FY2022 is outside the recommendation figures, and the report must flag it.
+- 2026-11-05: Each project must be explainable in conversation; every recommendation carries a plain-English sentence.
+- 2026-11-05: Whole project is told in layman's terms in STORY.md, with 30-second and 2-minute versions.
+- 2026-11-05: Forecast issues at midnight before the target day; hyperparameters are fixed to keep test years clean.
+- 2026-11-05: Report no-weather and with-weather accuracy together, since observed weather flatters the model.
+- 2026-11-05: Mac route is a Windows 11 ARM VM, with a date-visual smoke test first and a paid x64 cloud desktop as fallback.
+- 2026-11-05: Primary Power BI route on the Mac is the browser, with fabric-cicd deployment and Execute Queries tests; a VM is the fallback.
+- 2026-11-05: Likely range is widened by a conformal margin from the final training year, never the test year.
+- 2026-11-05: Tools changed: Grid Pulse moves to Looker Studio, because it is free with no card or VM; Power BI lines above are superseded.
+- 2026-11-05: Looker gets CSV uploads, not BigQuery, because sandbox tables expire after 60 days.
+- 2026-11-05: Test the public link on one chart before building pages or updating the stories.
+- 2026-11-05: Forecast band is plotted with the no-weather model only, because the band comes from that model.
+- 2026-11-05: Grid Pulse comes second, in Looker Studio; Dubai in Tableau Public replaces Superset.
+- 2026-11-05: Raw AEMO and weather files are now committed for reproducibility, superseding the earlier decision; the star schema is rebuilt from them.
