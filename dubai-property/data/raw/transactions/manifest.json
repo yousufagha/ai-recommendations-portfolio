@@ -1,0 +1,115 @@
+{
+ "source_rows": 1813436,
+ "sources": [
+  {
+   "file": "transactions_2026-11-04_17-46-14_0001.csv",
+   "sha256": "75c2bb2a29a13bd39eb24a288941ffd95a1db28d9c7b9d2e0b9811f980d96b23"
+  },
+  {
+   "file": "transactions_2026-11-04_17-46-14_0002.csv",
+   "sha256": "52e5f81fe73afbc7666ee5ba6fc15d22e595e13f272fa348c0047bc8d06c92fa"
+  }
+ ],
+ "files": [
+  {
+   "file": "transactions_2008.csv.gz",
+   "rows": 32155,
+   "mb": 1.1
+  },
+  {
+   "file": "transactions_2009.csv.gz",
+   "rows": 79188,
+   "mb": 2.6
+  },
+  {
+   "file": "transactions_2010.csv.gz",
+   "rows": 47343,
+   "mb": 1.9
+  },
+  {
+   "file": "transactions_2011.csv.gz",
+   "rows": 38998,
+   "mb": 1.7
+  },
+  {
+   "file": "transactions_2012.csv.gz",
+   "rows": 46332,
+   "mb": 2.2
+  },
+  {
+   "file": "transactions_2013.csv.gz",
+   "rows": 77973,
+   "mb": 3.7
+  },
+  {
+   "file": "transactions_2014.csv.gz",
+   "rows": 70373,
+   "mb": 3.5
+  },
+  {
+   "file": "transactions_2015.csv.gz",
+   "rows": 58670,
+   "mb": 3.0
+  },
+  {
+   "file": "transactions_2016.csv.gz",
+   "rows": 59147,
+   "mb": 3.2
+  },
+  {
+   "file": "transactions_2017.csv.gz",
+   "rows": 64547,
+   "mb": 3.6
+  },
+  {
+   "file": "transactions_2018.csv.gz",
+   "rows": 50281,
+   "mb": 2.9
+  },
+  {
+   "file": "transactions_2019.csv.gz",
+   "rows": 53112,
+   "mb": 3.0
+  },
+  {
+   "file": "transactions_2020.csv.gz",
+   "rows": 49286,
+   "mb": 2.8
+  },
+  {
+   "file": "transactions_2021.csv.gz",
+   "rows": 82822,
+   "mb": 4.6
+  },
+  {
+   "file": "transactions_2022.csv.gz",
+   "rows": 120013,
+   "mb": 6.6
+  },
+  {
+   "file": "transactions_2023.csv.gz",
+   "rows": 165266,
+   "mb": 9.2
+  },
+  {
+   "file": "transactions_2024.csv.gz",
+   "rows": 224408,
+   "mb": 12.5
+  },
+  {
+   "file": "transactions_2025.csv.gz",
+   "rows": 267006,
+   "mb": 15.1
+  },
+  {
+   "file": "transactions_2026.csv.gz",
+   "rows": 179273,
+   "mb": 10.4
+  },
+  {
+   "file": "transactions_pre-2008.csv.gz",
+   "rows": 47243,
+   "mb": 1.5
+  }
+ ]
+}
