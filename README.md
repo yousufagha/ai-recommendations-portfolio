@@ -21,7 +21,7 @@ Read [the story in everyday language](grid-pulse/STORY.md) or [the recommendatio
 
 ## Free data
 
-**[Download the raw data](DATA.md):** 1.8 million Dubai real estate transactions, plus Australian electricity prices, demand and weather. No login needed.
+**[Download the raw data](DATA.md):** 1.8 million Dubai real estate transactions, 10.7 million Dubai rent contract lines, a Dubai price index, and Australian electricity and weather data. No login needed.
 
 ## Dubai Golden Visa so far
 

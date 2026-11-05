@@ -29,6 +29,20 @@ print(duckdb.sql(f"""
 """))
 ```
 
+## Dubai rent contracts
+
+10,683,846 contract lines from 8,915,150 contract IDs, including 7,555,484 residential lines, mainly starting from 2014 to 2026. Each line has annual and contract amounts, start and end dates, area, project, property type, size, usage, and new or renewal status.
+
+| File | Format | Link |
+|---|---|---|
+| Yearly rent files | Compressed CSV, up to 47 MB each | [Browse the folder](dubai-property/data/raw/rents/) |
+| 2025 rents | Compressed CSV | [Download](https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/rents/rents_2025.csv.gz) |
+| Row counts and checksums | JSON | [Manifest](dubai-property/data/raw/rents/manifest.json) |
+
+## Dubai residential sale price index
+
+Monthly, quarterly and yearly index values and typical prices for all homes, flats and villas, March 2011 to May 2024: [download the CSV](https://raw.githubusercontent.com/yousufagha/ai-recommendations-portfolio/main/dubai-property/data/raw/price_index/residential_sale_index_2026-11-01.csv).
+
 ## Australian electricity and weather
 
 Half-hourly and 5-minute prices and demand for 5 market regions from January 2019 to October 2026, and hourly weather for 11 cities.
@@ -40,6 +54,10 @@ Half-hourly and 5-minute prices and demand for 5 market regions from January 201
 
 Details are in [the datasheet](grid-pulse/docs/DATASHEET.md).
 
+## For scripts and crawlers
+
+[`data-catalog.json`](https://yousufagha.github.io/ai-recommendations-portfolio/data-catalog.json) lists every file with a direct link, its size and, for the large Dubai files, its row count.
+
 ## Insights built on this data
 
 - [Grid Pulse recommendations](grid-pulse/RECOMMENDATIONS.md), with [the story in everyday language](grid-pulse/STORY.md)
@@ -49,7 +67,7 @@ Details are in [the datasheet](grid-pulse/docs/DATASHEET.md).
 
 The MIT licence covers the code only. Each dataset stays under its publisher's terms:
 
-- **Dubai transactions:** from the Dubai Land Department via [Data.Dubai](https://data.dubai/en/l/470061), under the [Open Data Licence](https://data.dubai/documents/d/guest/open-data-license-english-5-pdf). This repo is independent and is not endorsed by or affiliated with any government entity.
+- **Dubai transactions, rents and price index:** from the Dubai Land Department via [Data.Dubai](https://data.dubai/en/l/470061), under the [Open Data Licence](https://data.dubai/documents/d/guest/open-data-license-english-5-pdf). This repo is independent and is not endorsed by or affiliated with any government entity.
 - **Electricity:** Australian Energy Market Operator, under [its copyright permissions](https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions).
 - **Weather:** [Open-Meteo.com](https://open-meteo.com/), [CC BY 4.0](https://open-meteo.com/en/licence).
 
