@@ -231,10 +231,10 @@ footer p{margin:0 0 8px;max-width:60em}
 <h2>What the data shows so far</h2>
 <p class="intro">Four findings for someone with about AED 2 million looking at a UAE Golden Visa through property.</p>
 <div class="takeaways">
-  <div class="takeaway"><b>{{sales_multiple}}x</b><h3>A market in strong growth</h3><p>Flat and villa sales rose from {{sales_2019}} in 2019 to {{sales_2025}} in 2025.</p></div>
   <div class="takeaway"><b>{{crowd_after}} to 1</b><h3>Demand gathers at AED 2 million</h3><p>Sales just above the Golden Visa line outnumber those just below it, up from {{crowd_before}} to 1 before 2022.</p></div>
   <div class="takeaway"><b>Not proven</b><h3>No clear extra cost at the line</h3><p>A first reading of about AED {{step_aed}} is in line with swings at prices that have no visa line.</p></div>
   <div class="takeaway"><b>AED {{rent_gap}}</b><h3>The same money, different rent</h3><p>Estimated yearly rent differs by up to this much between ready homes at about AED 2 million.</p></div>
+  <div class="takeaway"><b>{{rounds_more_rent}} of {{rounds_tested}}</b><h3>The ranking found more rent</h3><p>Tested on past years, picked homes went on to earn more rent. Better total return is not shown.</p></div>
 </div>
 </section>
 
@@ -275,7 +275,18 @@ footer p{margin:0 0 8px;max-width:60em}
 <p class="note">Gross, before service charges, vacancy and fees, which are not in the records. These are homes priced at the threshold, not confirmed visa cases.</p>{{table_yields}}</figure>
 <div class="callout"><h3>What it means for a buyer who wants income</h3>
 <p>Start with the highlighted options and compare actual buildings, because the same AED 2 million can buy noticeably more rent. Off-plan was {{off_plan_share}} of sales at this price and earns rent from handover, so we report it separately.</p>
-<p>Last year's rents give a similar order (rank correlation {{rank_correlation}}). Next: test on past years whether these homes would have beaten the market. See <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/validation/rent_yields.json">the results</a> and <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/pipeline/rent_yields.py">the method</a>.</p></div>
+<p>Last year's rents give a similar order (rank correlation {{rank_correlation}}). See <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/validation/rent_yields.json">the results</a> and <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/pipeline/rent_yields.py">the method</a>.</p></div>
+</section>
+
+<section id="backtest">
+<h2>Would it have worked? The test on past years</h2>
+<p class="intro">Each November from 2022 to 2025, we picked five AED 2 million homes using only what was known that day, then followed them for the next year against the other ranked options.</p>
+<figure><figcaption><h3>Picked homes earned more rent in all {{rounds_tested}} rounds</h3><p>New rents agreed in the following year, as a percent of purchase price. The gap of {{rent_gap_low}} to {{rent_gap_high}} points is AED {{rent_aed_low}} to AED {{rent_aed_high}} a year on a paper AED 10 million, before costs. Across the rounds, it beat all {{random_draws}} random picks.</p></figcaption>
+<div class="chart" data-chart="lines" data-key="backtest" data-format="yield"></div>
+{{table_backtest}}</figure>
+<div class="callout"><h3>What it means: use the ranking to choose for income</h3>
+<p>The ranking finds homes that earn more rent. It does not predict which homes will rise most in price: for total return, rent plus price change, the verdict is {{verdict}}. Picks were ahead in {{total_rounds_ahead}} of {{rounds_tested}} rounds on both price measures, but the summed gap beat 95% of random picks on only one of them ({{sum_plan}} points, against {{sum_centred}}). Limited to well-measured options, the gaps nearly vanish after 2022.</p>
+<p>Homes across all prices often earn a higher rental yield, and picks trailed all ready flats in {{wider_behind}} of {{rounds_tested}} rounds, so the visa is part of what a threshold buyer gets for their money. Four rounds in one market cycle cannot prove much. This was not a blind test: a reviewer ran the original plan before the method was final, and <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/DECISIONS.md">the decisions log</a> records what changed. See <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/validation/backtest.json">the results</a> and <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/pipeline/backtest.py">the method</a>.</p></div>
 </section>
 
 <section id="data">
