@@ -1,0 +1,386 @@
+{
+ "sales_by_year": [
+  {
+   "year": "2015",
+   "sales": 27271
+  },
+  {
+   "year": "2016",
+   "sales": 26626
+  },
+  {
+   "year": "2017",
+   "sales": 32319
+  },
+  {
+   "year": "2018",
+   "sales": 22573
+  },
+  {
+   "year": "2019",
+   "sales": 29142
+  },
+  {
+   "year": "2020",
+   "sales": 24877
+  },
+  {
+   "year": "2021",
+   "sales": 44344
+  },
+  {
+   "year": "2022",
+   "sales": 71498
+  },
+  {
+   "year": "2023",
+   "sales": 104266
+  },
+  {
+   "year": "2024",
+   "sales": 149914
+  },
+  {
+   "year": "2025",
+   "sales": 177619
+  },
+  {
+   "year": "2026",
+   "sales": 113673
+  }
+ ],
+ "bands_2025": [
+  {
+   "from_aed": 1800000,
+   "sales": 1091
+  },
+  {
+   "from_aed": 1825000,
+   "sales": 746
+  },
+  {
+   "from_aed": 1850000,
+   "sales": 942
+  },
+  {
+   "from_aed": 1875000,
+   "sales": 889
+  },
+  {
+   "from_aed": 1900000,
+   "sales": 1017
+  },
+  {
+   "from_aed": 1925000,
+   "sales": 821
+  },
+  {
+   "from_aed": 1950000,
+   "sales": 1001
+  },
+  {
+   "from_aed": 1975000,
+   "sales": 772
+  },
+  {
+   "from_aed": 2000000,
+   "sales": 1732
+  },
+  {
+   "from_aed": 2025000,
+   "sales": 827
+  },
+  {
+   "from_aed": 2050000,
+   "sales": 929
+  },
+  {
+   "from_aed": 2075000,
+   "sales": 772
+  },
+  {
+   "from_aed": 2100000,
+   "sales": 952
+  },
+  {
+   "from_aed": 2125000,
+   "sales": 680
+  },
+  {
+   "from_aed": 2150000,
+   "sales": 918
+  },
+  {
+   "from_aed": 2175000,
+   "sales": 690
+  }
+ ],
+ "quarterly_crowding": [
+  {
+   "quarter": "2021 Q1",
+   "at_2m": 1.31,
+   "comparison": 1.33
+  },
+  {
+   "quarter": "2021 Q2",
+   "at_2m": 1.25,
+   "comparison": 1.22
+  },
+  {
+   "quarter": "2021 Q3",
+   "at_2m": 0.78,
+   "comparison": 1.35
+  },
+  {
+   "quarter": "2021 Q4",
+   "at_2m": 0.9,
+   "comparison": 1.01
+  },
+  {
+   "quarter": "2022 Q1",
+   "at_2m": 0.84,
+   "comparison": 1.22
+  },
+  {
+   "quarter": "2022 Q2",
+   "at_2m": 1.31,
+   "comparison": 1.24
+  },
+  {
+   "quarter": "2022 Q3",
+   "at_2m": 1.77,
+   "comparison": 1.14
+  },
+  {
+   "quarter": "2022 Q4",
+   "at_2m": 1.82,
+   "comparison": 1.07
+  },
+  {
+   "quarter": "2023 Q1",
+   "at_2m": 1.59,
+   "comparison": 1.22
+  },
+  {
+   "quarter": "2023 Q2",
+   "at_2m": 1.54,
+   "comparison": 1.25
+  },
+  {
+   "quarter": "2023 Q3",
+   "at_2m": 1.79,
+   "comparison": 0.95
+  },
+  {
+   "quarter": "2023 Q4",
+   "at_2m": 1.94,
+   "comparison": 1.14
+  },
+  {
+   "quarter": "2024 Q1",
+   "at_2m": 1.53,
+   "comparison": 1.16
+  },
+  {
+   "quarter": "2024 Q2",
+   "at_2m": 1.74,
+   "comparison": 1.06
+  },
+  {
+   "quarter": "2024 Q3",
+   "at_2m": 1.19,
+   "comparison": 0.92
+  },
+  {
+   "quarter": "2024 Q4",
+   "at_2m": 1.41,
+   "comparison": 0.94
+  },
+  {
+   "quarter": "2025 Q1",
+   "at_2m": 1.57,
+   "comparison": 1.1
+  },
+  {
+   "quarter": "2025 Q2",
+   "at_2m": 1.43,
+   "comparison": 1.13
+  },
+  {
+   "quarter": "2025 Q3",
+   "at_2m": 1.29,
+   "comparison": 0.96
+  },
+  {
+   "quarter": "2025 Q4",
+   "at_2m": 1.56,
+   "comparison": 1.17
+  },
+  {
+   "quarter": "2026 Q1",
+   "at_2m": 1.85,
+   "comparison": 0.99
+  },
+  {
+   "quarter": "2026 Q2",
+   "at_2m": 1.62,
+   "comparison": 1.07
+  },
+  {
+   "quarter": "2026 Q3",
+   "at_2m": 1.69,
+   "comparison": 1.1
+  },
+  {
+   "quarter": "2026 Q4",
+   "at_2m": 2.07,
+   "comparison": 1.1
+  }
+ ],
+ "rents_by_year": [
+  {
+   "year": "2015",
+   "type": "Flat",
+   "contracts": 243677,
+   "median_aed": 62000
+  },
+  {
+   "year": "2015",
+   "type": "Villa",
+   "contracts": 29843,
+   "median_aed": 171296
+  },
+  {
+   "year": "2016",
+   "type": "Flat",
+   "contracts": 254229,
+   "median_aed": 65000
+  },
+  {
+   "year": "2016",
+   "type": "Villa",
+   "contracts": 31642,
+   "median_aed": 175000
+  },
+  {
+   "year": "2017",
+   "type": "Flat",
+   "contracts": 279869,
+   "median_aed": 64615
+  },
+  {
+   "year": "2017",
+   "type": "Villa",
+   "contracts": 35449,
+   "median_aed": 165000
+  },
+  {
+   "year": "2018",
+   "type": "Flat",
+   "contracts": 307622,
+   "median_aed": 60000
+  },
+  {
+   "year": "2018",
+   "type": "Villa",
+   "contracts": 38861,
+   "median_aed": 155000
+  },
+  {
+   "year": "2019",
+   "type": "Flat",
+   "contracts": 328228,
+   "median_aed": 55000
+  },
+  {
+   "year": "2019",
+   "type": "Villa",
+   "contracts": 41502,
+   "median_aed": 143077
+  },
+  {
+   "year": "2020",
+   "type": "Flat",
+   "contracts": 340312,
+   "median_aed": 48000
+  },
+  {
+   "year": "2020",
+   "type": "Villa",
+   "contracts": 48420,
+   "median_aed": 125000
+  },
+  {
+   "year": "2021",
+   "type": "Flat",
+   "contracts": 404931,
+   "median_aed": 43000
+  },
+  {
+   "year": "2021",
+   "type": "Villa",
+   "contracts": 52549,
+   "median_aed": 125000
+  },
+  {
+   "year": "2022",
+   "type": "Flat",
+   "contracts": 456023,
+   "median_aed": 45000
+  },
+  {
+   "year": "2022",
+   "type": "Villa",
+   "contracts": 54349,
+   "median_aed": 130000
+  },
+  {
+   "year": "2023",
+   "type": "Flat",
+   "contracts": 498023,
+   "median_aed": 50000
+  },
+  {
+   "year": "2023",
+   "type": "Villa",
+   "contracts": 54750,
+   "median_aed": 143325
+  },
+  {
+   "year": "2024",
+   "type": "Flat",
+   "contracts": 530732,
+   "median_aed": 55000
+  },
+  {
+   "year": "2024",
+   "type": "Villa",
+   "contracts": 56407,
+   "median_aed": 160000
+  },
+  {
+   "year": "2025",
+   "type": "Flat",
+   "contracts": 557013,
+   "median_aed": 60000
+  },
+  {
+   "year": "2025",
+   "type": "Villa",
+   "contracts": 59972,
+   "median_aed": 170000
+  },
+  {
+   "year": "2026",
+   "type": "Flat",
+   "contracts": 469514,
+   "median_aed": 61123
+  },
+  {
+   "year": "2026",
+   "type": "Villa",
+   "contracts": 51863,
+   "median_aed": 175000
+  }
+ ]
+}
