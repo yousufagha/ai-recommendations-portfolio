@@ -1,4 +1,4 @@
-.PHONY: setup test lint grid-pulse
+.PHONY: setup test lint grid-pulse dubai
 
 # Installs the locked versions into one environment shared by both projects
 setup:
@@ -20,3 +20,8 @@ grid-pulse:
 	cd grid-pulse && .venv/bin/python -m pipeline.forecast
 	cd grid-pulse && .venv/bin/python -m pipeline.export_looker
 	cd grid-pulse && .venv/bin/python -m pytest -q
+
+# Rebuilds the Dubai results from the committed raw data, then tests them
+dubai:
+	cd dubai-property && ../grid-pulse/.venv/bin/python -m pipeline.value_at_line
+	cd dubai-property && ../grid-pulse/.venv/bin/python -m pytest -q
