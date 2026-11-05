@@ -26,6 +26,10 @@ def test_every_written_claim_holds_in_the_results():
     f, data = figures(results), chart_data(results)
     assert f["quarters_above"] == f["quarters_total"], "the page says the pattern held in every quarter since Q2 2022"
     assert max(data["bands"], key=lambda b: b["value"])["highlight"], "the page says AED 2M was the most popular nearby band"
+    assert data["yields"][0]["highlight"] and [y["value"] for y in data["yields"]] == sorted((y["value"] for y in data["yields"]), reverse=True)
+    tier = [y for y in data["yields"] if y["highlight"]]
+    assert len(tier) >= 2 and round(tier[-1]["value"]) == 6, "the page says the top options run from about 6%"
+    assert int(f["rent_gap"].replace(",", "")) == max(y["rent"] for y in data["yields"]) - min(y["rent"] for y in data["yields"])
     assert data["shift"][0]["label"] == data["tail"][0]["label"] == "South Australia"
     highlight = next(s for s in data["steps"] if s["highlight"])
     assert any(abs(s["value"]) >= abs(highlight["value"]) for s in data["steps"] if not s["highlight"]), "no clear cost relies on this"

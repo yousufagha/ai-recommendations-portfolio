@@ -25,6 +25,7 @@ def load_results(root: Path = ROOT) -> dict:
     d = root / "dubai-property" / "validation"
     return {"overview": json.loads((d / "market_overview.json").read_text()),
             "lines": json.loads((d / "value_at_line.json").read_text()),
+            "yields": json.loads((d / "rent_yields.json").read_text()),
             "grid": json.loads((root / "grid-pulse" / "validation" / "golden_values.json").read_text())}
 
 
@@ -36,7 +37,10 @@ def chart_data(r: dict) -> dict:
     steps = sorted(main + near, key=lambda x: x["line"])
     fy = lambda key: {x["region_code"]: x for x in r["grid"][key] if x["fy"] == 2026}
     order = sorted(REGIONS, key=lambda c: -fy("load_shift")[c]["saving_aud_per_mw_year"])
+    bedrooms = {"1 B/R": "1-bed", "2 B/R": "2-bed", "3 B/R": "3-bed"}
     return {
+        "yields": [{"label": f"{x['area']}, {bedrooms.get(x['rooms'], x['rooms'])}", "value": x["yield_pct"], "rent": x["rent_aed"],
+                    "highlight": x["top_tier"]} for x in r["yields"]["ready_ranked"]],
         "sales": [{"label": x["year"], "value": x["sales"], "partial": x["year"] == "2026"} for x in o["sales_by_year"]],
         "rents": {"x": [x["year"] for x in rents["Flat"]],
                   "series": [{"name": f"{t}s", "values": [x["median_aed"] for x in rents[t]]} for t in ("Villa", "Flat")]},
@@ -60,7 +64,18 @@ def figures(r: dict) -> dict:
     step = next(x for x in lines["by_line"] if x["period"] == "from_q2_2022" and x["stage"] == "all" and x["line"] == 2_000_000)
     quarters = [x for x in o["quarterly_crowding"] if x["quarter"] >= "2022 Q2"]
     bands = {x["from_aed"]: x["sales"] for x in o["bands_2025"]}
+    ranked = r["yields"]["ready_ranked"]
+    rents = [x["rent_aed"] for x in ranked]
+    evidence = r["yields"]["evidence"]
+    near = sum(x["sales"] for x in evidence)
+    off_plan = sum(x["sales"] for x in evidence if x["stage"] == "off_plan")
+    held_out = r["yields"]["checks"]["leave_project_out"]
     return {
+        "ranked_count": str(len(ranked)), "top_tier_count": str(sum(x["top_tier"] for x in ranked)),
+        "yield_low": f"{ranked[-1]['yield_pct']:.1f}", "yield_high": f"{ranked[0]['yield_pct']:.1f}",
+        "rent_low": f"{min(rents):,}", "rent_high": f"{max(rents):,}", "rent_gap": f"{max(rents) - min(rents):,}",
+        "yield_error": f"{held_out['median_abs_yield_points']:.2f}", "off_plan_share": f"{off_plan / near:.0%}",
+        "rank_correlation": f"{r['yields']['checks']['last_year_rents']['spearman']:.2f}",
         "sales_2019": f"{sales['2019']:,}", "sales_2025": f"{sales['2025']:,}", "sales_multiple": f"{sales['2025'] / sales['2019']:.1f}",
         "flat_2021": f"{flat['2021']:,}", "flat_2026": f"{flat['2026']:,}", "flat_growth": f"{flat['2026'] / flat['2021'] - 1:.0%}",
         "crowd_before": f"{crowd[('before_2022', 2_000_000)]['ratio']:.2f}", "crowd_after": f"{crowd[('from_q2_2022', 2_000_000)]['ratio']:.2f}",
@@ -74,6 +89,8 @@ def figures(r: dict) -> dict:
 def tables(data: dict) -> dict:
     series = lambda c: [[x] + [s["values"][i] for s in c["series"]] for i, x in enumerate(c["x"])]
     return {
+        "table_yields": table("Estimated gross yield and yearly rent, ready flats priced at AED 2M to 2.2M", ["Home", "Gross yield, percent", "Rent a year, AED"],
+                              [[x["label"], x["value"], f"{x['rent']:,}"] for x in data["yields"]]),
         "table_sales": table("Residential flat and villa sales by year", ["Year", "Sales"], [[x["label"], f"{x['value']:,}"] for x in data["sales"]]),
         "table_rents": table("Median yearly rent in dirhams", ["Year"] + [s["name"] for s in data["rents"]["series"]], series(data["rents"])),
         "table_bands": table("2025 sales by AED 25,000 price band", ["Band from", "Sales"], [[x["label"], f"{x['value']:,}"] for x in data["bands"]]),
