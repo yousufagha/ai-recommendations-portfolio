@@ -9,7 +9,7 @@ Sources checked on 5 November 2026. Status: **In place** is true of the repo tod
 | Raw data is never edited, and derived data is rebuilt from it | [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org/opinions/): raw data "must be treated as immutable" | In place |
 | Any reshaping of raw files keeps a manifest of row counts and source checksums, and a test checks it | Proves nothing was lost | In place for Dubai |
 | Each file stays under 95 MB | [GitHub enforces 100 MB per file and recommends 1 MB](https://docs.github.com/en/repositories/creating-and-managing-repositories/repository-limits) | In place |
-| Each dataset has a datasheet: source, coverage, known traps, licence and limits | [Datasheets](https://huggingface.co/docs/hub/model-cards) make a result interpretable as well as re-runnable | To do |
+| Each dataset has a datasheet: source, coverage, known traps, licence and limits | [Datasheets](https://huggingface.co/docs/hub/model-cards) make a result interpretable as well as re-runnable | In place: [Dubai](../dubai-property/docs/DATASHEET.md), [Grid Pulse](../grid-pulse/docs/DATASHEET.md) |
 
 **A deliberate exception:** Cookiecutter's default is to keep data out of Git, and GitHub suggests Git LFS for large files. We commit raw data so that anyone can rebuild the results from one clone. The `.git` folder is 127 MB against [GitHub's 10 GB recommended limit](https://docs.github.com/en/repositories/creating-and-managing-repositories/repository-limits). Review this if it passes 1 GB or if files start changing often.
 
@@ -18,10 +18,10 @@ Sources checked on 5 November 2026. Status: **In place** is true of the repo tod
 | Rule | Why | Status |
 |---|---|---|
 | Logic lives in `pipeline/`, not notebooks | [Source files are for repetition](https://cookiecutter-data-science.drivendata.org/opinions/) | In place |
-| Exact dependency versions are locked | [Reproducing starts with the same environment](https://cookiecutter-data-science.drivendata.org/opinions/); only `duckdb` is pinned today | To do |
-| One command rebuilds each project from raw data | Pipelines should re-run from code and raw data | To do |
-| Models record seeds, settings and accuracy by region or group | [Model cards](https://huggingface.co/docs/hub/model-cards) report results beyond one headline number | Partly: seeds and regional accuracy exist, the model card does not |
-| Secrets never enter Git; any local secrets go in an ignored `.env` file | [Cookiecutter](https://cookiecutter-data-science.drivendata.org/opinions/) | Partly: no secrets are used yet, and `.env` still needs ignoring |
+| Exact dependency versions are locked | [Reproducing starts with the same environment](https://cookiecutter-data-science.drivendata.org/opinions/) | In place: `grid-pulse/requirements-lock.txt`, used by CI |
+| One command rebuilds each project from raw data | Pipelines should re-run from code and raw data | In place for Grid Pulse: `make grid-pulse` reproduced the committed results exactly on 5 November 2026. Dubai has no derived results yet |
+| Models record seeds, settings and accuracy by region or group | [Model cards](https://huggingface.co/docs/hub/model-cards) report results beyond one headline number | In place: [forecast model card](../grid-pulse/docs/MODEL_CARD.md) |
+| Secrets never enter Git; any local secrets go in an ignored `.env` file | [Cookiecutter](https://cookiecutter-data-science.drivendata.org/opinions/) | In place: no secrets are used, and `.env` is ignored |
 
 ## Commits and pull requests
 
@@ -42,7 +42,7 @@ Sources checked on 5 November 2026. Status: **In place** is true of the repo tod
 | SECURITY.md | [GitHub suggests it](https://docs.github.com/en/code-security/getting-started/securing-your-repository) | To do |
 | Dependabot security updates | [Opens pull requests for vulnerable dependencies](https://docs.github.com/en/code-security/getting-started/securing-your-repository); currently off | To do |
 | Branch protection requiring tests to pass on `main` | [GitHub recommends it](https://docs.github.com/en/repositories/creating-and-managing-repositories/best-practices-for-repositories) | To do |
-| Linting with ruff, run in CI | Common Python practice, not checked against a primary source today | To do |
+| Linting with ruff, run in CI | Common Python practice, not checked against a primary source today | In place |
 
 ## Claims
 

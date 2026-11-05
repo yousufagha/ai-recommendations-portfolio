@@ -2,7 +2,6 @@ import datetime as dt
 from pathlib import Path
 
 import pytest
-
 from pipeline.build_star import build
 
 FIXTURE = str(Path(__file__).parent / "fixtures" / "PRICE_AND_DEMAND_boundary_VIC1.csv")

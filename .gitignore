@@ -4,3 +4,5 @@ __pycache__/
 .pytest_cache/
 # Working plan, kept local
 PLAN.md
+.ruff_cache/
+.env

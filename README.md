@@ -24,10 +24,22 @@ Read [the story in everyday language](grid-pulse/STORY.md) or [the recommendatio
 - 1,813,436 official transaction records, of which 1,386,564 are sales, in yearly files under [`dubai-property/data/raw/transactions/`](dubai-property/data/raw/transactions/). Most records fall from 2008 onwards.
 - No findings are claimed yet. Read [the planned story](dubai-property/STORY.md).
 
-## Run the tests
+## Run it
+
+Install the locked versions, then run the tests:
 
 ```bash
-cd grid-pulse && python -m pip install -r requirements.txt && python -m pytest
+make setup
+```
+
+```bash
+make test
+```
+
+Rebuild every Grid Pulse result from the committed raw data:
+
+```bash
+make grid-pulse
 ```
 
 ## How this repo is maintained
