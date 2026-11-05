@@ -1,0 +1,68 @@
+group,home,area,bedrooms,type,sales,price_aed,size_sqm,rent_aed,gross_yield_pct,yield_low_pct,yield_high_pct,all_price_yield_pct,project_evidence_share,price_tier_evidence_share,area_evidence_share,top_tier
+"Ready, ranked","Business Bay, 2-bed",Business Bay,2-bed,Flat,214,2100000,126.7,135000,6.43,6.43,6.54,4.54,0.53,0.47,0.0,True
+"Ready, ranked","Hadaeq Sheikh Mohammed Bin Rashid, 2-bed",Hadaeq Sheikh Mohammed Bin Rashid,2-bed,Flat,81,2060000,92.3,125000,6.07,5.9,6.34,5.0,0.8,0.2,0.0,True
+"Ready, ranked","Business Bay, 1-bed",Business Bay,1-bed,Flat,206,2050000,88.2,123000,6.0,5.85,6.06,4.5,0.83,0.17,0.0,True
+"Ready, ranked","Hadaeq Sheikh Mohammed Bin Rashid, 1-bed",Hadaeq Sheikh Mohammed Bin Rashid,1-bed,Flat,52,2100000,80.9,125000,5.95,5.71,5.99,5.26,0.73,0.27,0.0,True
+"Ready, ranked","Jumeirah First, 1-bed",Jumeirah First,1-bed,Flat,30,2100000,74.5,120000,5.71,5.44,5.78,4.57,0.87,0.13,0.0,False
+"Ready, ranked","Um Suqaim Third, 1-bed",Um Suqaim Third,1-bed,Flat,54,2100000,71.5,118000,5.62,5.56,5.69,5.23,0.93,0.07,0.0,False
+"Ready, ranked","Al Khairan First, 2-bed",Al Khairan First,2-bed,Flat,74,2140944,99.7,120000,5.61,5.58,6.34,4.87,0.73,0.27,0.0,False
+"Ready, ranked","Marsa Dubai, 1-bed",Marsa Dubai,1-bed,Flat,193,2058000,80.3,113000,5.49,5.38,5.51,4.57,0.6,0.4,0.0,False
+"Ready, ranked","Palm Jumeirah, 1-bed",Palm Jumeirah,1-bed,Flat,32,2100000,95.2,115000,5.48,5.35,5.61,4.17,0.59,0.0,0.41,False
+"Ready, ranked","Al Khairan First, 1-bed",Al Khairan First,1-bed,Flat,90,2041000,73.2,110000,5.39,5.37,5.5,5.2,0.86,0.14,0.0,False
+"Ready, ranked","Burj Khalifa, 1-bed",Burj Khalifa,1-bed,Flat,232,2100000,80.9,110000,5.24,5.24,5.34,5.0,0.64,0.36,0.0,False
+"Ready, ranked","Zaabeel Second, 1-bed",Zaabeel Second,1-bed,Flat,47,2100000,69.1,110000,5.24,5.19,5.37,4.61,1.0,0.0,0.0,False
+"Ready, ranked","Al Merkadh, 1-bed",Al Merkadh,1-bed,Flat,55,2010000,77.3,105000,5.22,5.12,5.25,5.71,0.51,0.49,0.0,False
+"Ready, indicative","Al Thanyah Fifth, 2-bed",Al Thanyah Fifth,2-bed,Flat,60,2061498,139.1,150000,7.28,7.14,7.43,4.29,0.32,0.68,0.0,False
+"Ready, indicative","Jabal Ali First, 3-bed",Jabal Ali First,3-bed,Flat,36,2122500,160.9,140000,6.6,6.51,6.67,5.74,0.0,1.0,0.0,False
+"Ready, indicative","Burj Khalifa, 2-bed",Burj Khalifa,2-bed,Flat,32,2075000,114.2,135000,6.51,6.28,6.75,4.67,0.41,0.59,0.0,False
+"Ready, indicative","Al Thanyah Third, 2-bed",Al Thanyah Third,2-bed,Flat,61,2125000,122.0,135154,6.36,6.29,6.44,6.12,0.0,0.0,1.0,False
+"Ready, indicative","Al Merkadh, 2-bed",Al Merkadh,2-bed,Flat,109,2090000,105.1,132000,6.32,6.29,6.46,5.47,0.41,0.59,0.0,False
+"Ready, indicative","Jabal Ali First, 2-bed",Jabal Ali First,2-bed,Flat,46,2050000,144.7,127000,6.2,6.05,6.23,5.37,0.02,0.98,0.0,False
+"Ready, indicative","Al Yelayiss 2, 3-bed",Al Yelayiss 2,3-bed,Flat,32,2140000,142.1,130000,6.07,6.05,6.27,5.88,0.0,1.0,0.0,False
+"Ready, indicative","Al Barsha South Fourth, 2-bed",Al Barsha South Fourth,2-bed,Flat,149,2086093,137.6,124647,5.98,5.94,6.08,6.07,0.24,0.76,0.0,False
+"Ready, indicative","Marsa Dubai, 2-bed",Marsa Dubai,2-bed,Flat,261,2090000,124.7,120000,5.74,5.71,5.85,4.43,0.32,0.68,0.0,False
+"Ready, indicative","Al Jadaf, 2-bed",Al Jadaf,2-bed,Flat,40,2048164,110.1,94810,4.63,4.57,4.69,4.87,0.0,0.0,1.0,False
+"Off-plan, indicative","Al Barshaa South Second, 2-bed",Al Barshaa South Second,2-bed,Flat,159,2031000,141.3,155564,7.66,7.5,7.76,5.68,0.0,0.0,1.0,False
+"Off-plan, indicative","Jabal Ali First, 3-bed",Jabal Ali First,3-bed,Flat,99,2100000,153.3,140000,6.67,6.56,6.74,5.74,0.0,1.0,0.0,False
+"Off-plan, indicative","Al Barsha South Fourth, 3-bed",Al Barsha South Fourth,3-bed,Flat,63,2122750,144.4,140000,6.6,6.54,6.67,6.48,0.11,0.89,0.0,False
+"Off-plan, indicative","Business Bay, 2-bed",Business Bay,2-bed,Flat,105,2070000,85.3,135000,6.52,6.47,6.59,4.54,0.13,0.87,0.0,False
+"Off-plan, indicative","Al Barshaa South Third, 2-bed",Al Barshaa South Third,2-bed,Flat,111,2070575,123.6,135000,6.52,6.46,6.58,6.08,0.03,0.97,0.0,False
+"Off-plan, indicative","Al Merkadh, 2-bed",Al Merkadh,2-bed,Flat,44,2044258,90.1,132000,6.46,6.34,6.54,5.47,0.16,0.84,0.0,False
+"Off-plan, indicative","Hadaeq Sheikh Mohammed Bin Rashid, 2-bed",Hadaeq Sheikh Mohammed Bin Rashid,2-bed,Flat,30,2120000,99.0,134750,6.36,6.11,6.55,5.0,0.73,0.27,0.0,False
+"Off-plan, indicative","Al Yelayiss 2, 2-bed",Al Yelayiss 2,2-bed,Flat,30,2027388,105.7,127178,6.27,6.23,6.32,6.2,0.0,0.0,1.0,False
+"Off-plan, indicative","Al Yelayiss 2, 3-bed",Al Yelayiss 2,3-bed,Flat,32,2100000,130.8,130000,6.19,6.09,6.32,5.88,0.0,1.0,0.0,False
+"Off-plan, indicative","Jabal Ali First, 2-bed",Jabal Ali First,2-bed,Flat,238,2064245,121.0,127000,6.15,6.1,6.19,5.37,0.0,1.0,0.0,False
+"Off-plan, indicative","Al Barsha South Fourth, 2-bed",Al Barsha South Fourth,2-bed,Flat,195,2040000,123.5,124647,6.11,6.04,6.17,6.07,0.07,0.93,0.0,False
+"Off-plan, indicative","Hadaeq Sheikh Mohammed Bin Rashid, 1-bed",Hadaeq Sheikh Mohammed Bin Rashid,1-bed,Flat,215,2058750,74.3,125000,6.07,6.06,6.1,5.26,0.04,0.96,0.0,False
+"Off-plan, indicative","Wadi Al Safa 3, 3-bed",Wadi Al Safa 3,3-bed,Flat,75,2100000,169.1,125460,5.97,5.95,6.03,6.05,0.0,0.0,1.0,False
+"Off-plan, indicative","Business Bay, 1-bed",Business Bay,1-bed,Flat,605,2080000,77.3,123000,5.91,5.88,5.94,4.5,0.08,0.92,0.0,False
+"Off-plan, indicative","Al Wasl, 1-bed",Al Wasl,1-bed,Flat,152,2133000,69.9,120000,5.63,5.6,5.67,5.17,0.13,0.87,0.0,False
+"Off-plan, indicative","Al Hebiah Third, 2-bed",Al Hebiah Third,2-bed,Flat,121,2089920,115.3,117363,5.62,5.58,5.7,5.91,0.0,0.0,1.0,False
+"Off-plan, indicative","Marsa Dubai, 1-bed",Marsa Dubai,1-bed,Flat,254,2101084,70.8,113000,5.38,5.36,5.39,4.57,0.01,0.99,0.0,False
+"Off-plan, indicative","Wadi Al Safa 3, 2-bed",Wadi Al Safa 3,2-bed,Flat,102,2077404,120.5,111355,5.36,5.31,5.41,5.91,0.0,0.0,1.0,False
+"Off-plan, indicative","Burj Khalifa, 1-bed",Burj Khalifa,1-bed,Flat,60,2062102,70.3,110000,5.33,5.24,5.38,5.0,0.1,0.9,0.0,False
+"Off-plan, indicative","Wadi Al Safa 2, 2-bed",Wadi Al Safa 2,2-bed,Flat,34,2028828,123.4,107705,5.31,5.17,5.35,5.17,0.0,0.0,1.0,False
+"Off-plan, indicative","Al Khairan First, 1-bed",Al Khairan First,1-bed,Flat,743,2081888,71.0,110000,5.28,5.27,5.3,5.2,0.0,1.0,0.0,False
+"Off-plan, indicative","Um Suqaim Third, 1-bed",Um Suqaim Third,1-bed,Flat,38,2085500,69.7,110000,5.27,5.12,5.37,5.23,0.37,0.63,0.0,False
+"Off-plan, indicative","Al Kifaf, 1-bed",Al Kifaf,1-bed,Flat,32,2035777,79.7,106923,5.25,5.11,5.28,5.4,0.0,0.0,1.0,False
+"Off-plan, indicative","Madinat Al Mataar, 3-bed",Madinat Al Mataar,3-bed,Flat,46,2109828,140.2,109735,5.2,5.15,5.25,4.73,0.0,0.0,1.0,False
+"Off-plan, indicative","Nadd Hessa, 2-bed",Nadd Hessa,2-bed,Flat,69,2072694,117.0,106270,5.13,5.06,5.19,5.41,0.0,0.0,1.0,False
+"Off-plan, indicative","Al Barsha South Fifth, 2-bed",Al Barsha South Fifth,2-bed,Flat,74,2062000,115.0,104308,5.06,4.99,5.12,5.71,0.0,0.0,1.0,False
+"Off-plan, indicative","Nadd Hessa, 3-bed",Nadd Hessa,3-bed,Flat,32,2036000,135.2,102817,5.05,5.01,5.07,5.34,0.0,0.0,1.0,False
+"Off-plan, indicative","Jabal Ali First, 1-bed",Jabal Ali First,1-bed,Flat,529,2085994,61.2,102882,4.93,4.91,4.95,5.72,0.0,0.0,1.0,False
+"Off-plan, indicative","Wadi Al Safa 5, 3-bed",Wadi Al Safa 5,3-bed,Flat,60,2052171,146.3,100073,4.88,4.82,4.92,4.88,0.0,0.0,1.0,False
+"Off-plan, indicative","Mirdif, 2-bed",Mirdif,2-bed,Flat,35,2169531,149.3,105301,4.85,4.85,4.86,4.49,0.0,0.0,1.0,False
+"Off-plan, indicative","Al Hebiah Fourth, 3-bed",Al Hebiah Fourth,3-bed,Flat,36,2089156,151.6,101129,4.84,4.8,4.88,4.98,0.0,0.0,1.0,False
+"Off-plan, indicative","Al Hebiah First, 2-bed",Al Hebiah First,2-bed,Flat,278,2046732,98.2,96737,4.73,4.69,4.75,6.16,0.0,0.0,1.0,False
+"Off-plan, indicative","Zaabeel Second, 1-bed",Zaabeel Second,1-bed,Flat,53,2130000,70.1,98980,4.65,4.61,4.74,4.61,0.0,0.0,1.0,False
+"Off-plan, indicative","Wadi Al Safa 5, 2-bed",Wadi Al Safa 5,2-bed,Flat,142,2075700,129.2,94354,4.55,4.51,4.57,4.92,0.0,0.0,1.0,False
+"Off-plan, indicative","Al Jadaf, 2-bed",Al Jadaf,2-bed,Flat,221,2100000,99.5,94810,4.51,4.5,4.53,4.87,0.0,0.0,1.0,False
+"Off-plan, indicative","Al Satwa, 1-bed",Al Satwa,1-bed,Flat,76,2036736,88.8,89420,4.39,4.36,4.44,4.63,0.0,0.0,1.0,False
+"Off-plan, indicative","Al Hebiah Fifth, 2-bed",Al Hebiah Fifth,2-bed,Flat,111,2027000,107.8,88833,4.38,4.35,4.4,4.71,0.0,0.0,1.0,False
+"Off-plan, indicative","Dubai Investment Park Second, 2-bed",Dubai Investment Park Second,2-bed,Flat,227,2061000,131.8,89291,4.33,4.31,4.34,4.43,0.0,0.0,1.0,False
+"Off-plan, indicative","Madinat Al Mataar, 1-bed",Madinat Al Mataar,1-bed,Flat,161,2055000,78.0,88164,4.29,4.27,4.31,4.82,0.0,0.0,1.0,False
+"Off-plan, indicative","Al Satwa, 2-bed",Al Satwa,2-bed,Flat,37,2121984,101.3,90364,4.26,4.22,4.34,4.15,0.0,0.0,1.0,False
+"Off-plan, indicative","Madinat Al Mataar, 2-bed",Madinat Al Mataar,2-bed,Flat,496,2100888,103.2,88756,4.22,4.21,4.23,4.39,0.0,0.0,1.0,False
+"Off-plan, indicative","Al Thanyah Fifth, 1-bed",Al Thanyah Fifth,1-bed,Flat,531,2100000,76.8,87267,4.16,4.14,4.17,4.32,0.0,0.0,1.0,False
+"Off-plan, indicative","Madinat Dubai Almelaheyah, 1-bed",Madinat Dubai Almelaheyah,1-bed,Flat,624,2119595,71.7,66101,3.12,3.11,3.13,3.19,0.0,0.0,1.0,False
+"Villa, not ranked","Madinat Al Mataar, 3-bed",Madinat Al Mataar,3-bed,Villa,99,2150000,139.8,100000,4.65,4.65,4.69,3.27,0.98,0.02,0.0,False
