@@ -7,8 +7,8 @@
 <meta name="description" content="Free download: 1.8 million Dubai real estate transactions and 10.7 million rent contract lines as CSV, with a price index and analysis. Plus Australian electricity data.">
 <meta name="google-site-verification" content="r3Fxc4NBjjsHhVxP82BT0LHT2JWeFU9Jw5OFyxg-4GM">
 <link rel="canonical" href="https://yousufagha.github.io/ai-recommendations-portfolio/">
-<meta property="og:title" content="Dubai Real Estate Transactions Data: Free Download">
-<meta property="og:description" content="1.8 million Dubai property transaction records as CSV, ready for analysis, with code and tested recommendations.">
+<meta property="og:title" content="Dubai Real Estate Sales and Rent Data: Free Download">
+<meta property="og:description" content="Free Dubai property sales and rent data with charts showing where demand is going around the AED 2 million Golden Visa line.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yousufagha.github.io/ai-recommendations-portfolio/">
 <script type="application/ld+json">
@@ -152,53 +152,327 @@
 }
 </script>
 <style>
-:root{--bg:#fbfaf7;--text:#1d2125;--muted:#596069;--line:#ddd9d0;--accent:#0b6e62;--card:#fff}
-@media (prefers-color-scheme:dark){:root{--bg:#14171a;--text:#ecebe6;--muted:#a5abb2;--line:#30353a;--accent:#57c7b6;--card:#1b1f23}}
+:root{color-scheme:light;--bg:#f7f6f2;--surface:#fcfcfb;--text:#17181a;--text2:#52514e;--muted:#74736e;--line:#e3e1da;--blue:#2a78d6;--orange:#eb6834;--gray:#c4c2ba;--accent:#0b5cad;--hero:#0e2a47;--hero-text:#f4f6f8;--hero-muted:#b9c6d4}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){color-scheme:dark;--bg:#121312;--surface:#1a1a19;--text:#f0efec;--text2:#c3c2b7;--muted:#9a998f;--line:#32322f;--blue:#3987e5;--orange:#d95926;--gray:#5a5a55;--accent:#7db4f2;--hero:#0b1f35}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#121312;--surface:#1a1a19;--text:#f0efec;--text2:#c3c2b7;--muted:#9a998f;--line:#32322f;--blue:#3987e5;--orange:#d95926;--gray:#5a5a55;--accent:#7db4f2;--hero:#0b1f35}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
-main{max-width:760px;margin:0 auto;padding:48px 16px 64px}
-h1{font-size:clamp(1.9rem,6vw,2.7rem);line-height:1.15;margin:0 0 16px}
-h2{font-size:1.3rem;margin:44px 0 8px}
-p{margin:0 0 14px}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 a{color:var(--accent)}
-.lead{font-size:1.15rem;color:var(--muted)}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:28px 0}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px}
-.stat b{display:block;font-size:1.4rem;font-variant-numeric:tabular-nums}
-.stat span{color:var(--muted);font-size:.9rem}
-.button{display:inline-block;background:var(--accent);color:var(--bg);padding:10px 18px;border-radius:6px;font-weight:600;text-decoration:none;margin:0 8px 8px 0}
-ul{padding-left:20px}
-footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header.hero{background:var(--hero);color:var(--hero-text);padding:56px 0 48px}
+.eyebrow{font-size:.85rem;font-weight:600;letter-spacing:.02em;color:var(--hero-muted);margin:0 0 12px}
+h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.08;letter-spacing:-.02em;margin:0 0 16px;max-width:17em}
+.lead{font-size:1.15rem;color:var(--hero-muted);max-width:40em;margin:0 0 28px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:24px;margin:0 0 30px;border-top:1px solid rgba(255,255,255,.2);padding-top:22px}
+.stats b{display:block;font-size:clamp(1.7rem,4vw,2.3rem);font-weight:650;line-height:1.1}
+.stats span{color:var(--hero-muted);font-size:.92rem}
+.button{display:inline-block;padding:11px 20px;border-radius:6px;font-weight:600;text-decoration:none;margin:0 8px 8px 0;background:#fff;color:#0e2a47}
+.button.alt{background:transparent;color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.5)}
+section{padding:52px 0 0}
+h2{font-size:clamp(1.5rem,4vw,2rem);line-height:1.2;letter-spacing:-.01em;margin:0 0 10px}
+.intro{color:var(--text2);max-width:44em;margin:0 0 24px}
+.takeaways{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.takeaway{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px}
+.takeaway b{display:block;font-size:2rem;line-height:1.15;margin-bottom:6px}
+.takeaway h3{font-size:1.02rem;margin:0 0 6px}
+.takeaway p{margin:0;color:var(--text2);font-size:.95rem}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px}
+figure{margin:0 0 16px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px;min-width:0}
+figcaption h3{font-size:1.08rem;line-height:1.3;margin:0 0 4px}
+figcaption p{margin:0 0 12px;color:var(--text2);font-size:.92rem}
+.chart{width:100%;position:relative}
+.chart svg{display:block;width:100%;overflow:visible}
+.chart text{font-size:12px;fill:var(--text2)}
+.chart .strong{fill:var(--text);font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0 0 8px;font-size:.88rem;color:var(--text2)}
+.legend i{display:inline-block;width:16px;height:2px;margin-right:6px;vertical-align:middle;border-radius:1px}
+.note{margin:10px 0 0;font-size:.85rem;color:var(--muted)}
+.callout{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:8px;padding:20px;margin:0 0 16px}
+.callout h3{margin:0 0 6px;font-size:1.08rem}
+.callout p{margin:0 0 8px}
+.callout p:last-child{margin:0;color:var(--text2);font-size:.93rem}
+details{margin-top:10px;font-size:.88rem}
+summary{cursor:pointer;color:var(--accent)}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;margin-top:8px;font-variant-numeric:tabular-nums}
+caption{text-align:left;color:var(--muted);padding-bottom:6px}
+th,td{text-align:left;padding:4px 12px 4px 0;border-bottom:1px solid var(--line);white-space:nowrap}
+.downloads{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.download{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px}
+.download h3{margin:0 0 4px;font-size:1.05rem}
+.download p{margin:0 0 10px;color:var(--text2);font-size:.93rem}
+footer{margin-top:60px;padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+footer p{margin:0 0 8px;max-width:60em}
+#tip{position:fixed;z-index:5;pointer-events:none;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:7px 10px;font-size:.82rem;line-height:1.35;box-shadow:0 2px 10px rgba(0,0,0,.14);display:none;max-width:240px}
+#tip b{display:block}
+#tip span{color:var(--text2)}
+#tip i{display:inline-block;width:12px;height:2px;margin-right:6px;vertical-align:middle}
+.mark:focus{outline:2px solid var(--text);outline-offset:1px}
 </style>
 </head>
 <body>
-<main>
+<header class="hero"><div class="wrap">
+<p class="eyebrow">Open data, tested analysis</p>
 <h1>Dubai real estate sales and rent data, free to download</h1>
-<p class="lead">Dubai's property market in clean downloads: every published sale and rent contract as CSV, ready for analysis, with the code and tested recommendations built on it.</p>
+<p class="lead">Dubai's property market in clean downloads, with charts that show where demand is going and what it means for someone investing about AED 2 million.</p>
 <div class="stats">
-  <div class="stat"><b>1,813,436</b><span>transaction records</span></div>
-  <div class="stat"><b>1,386,564</b><span>sales</span></div>
-  <div class="stat"><b>10,683,846</b><span>rent contract lines</span></div>
+  <div><b>1,813,436</b><span>transaction records, including 1,386,564 sales</span></div>
+  <div><b>10,683,846</b><span>rent contract lines</span></div>
+  <div><b>6.1x</b><span>flat and villa sales in 2025 against 2019</span></div>
 </div>
 <a class="button" href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/DATA.md">Get the data</a>
-<a class="button" href="https://github.com/yousufagha/ai-recommendations-portfolio">View the code</a>
+<a class="button alt" href="#findings">See the findings</a>
+<a class="button alt" href="https://github.com/yousufagha/ai-recommendations-portfolio">View the code</a>
+</div></header>
 
-<h2>What is in the Dubai data</h2>
-<p>Machine-readable list of every file: <a href="data-catalog.json">data-catalog.json</a>.</p>
-<p>Each record has its value in dirhams, area, project, building, property type, rooms, size, price per square metre, and nearest metro, mall and landmark. Rent contracts add annual amount, dates, size and usage, and a price index covers homes, flats and villas. Sales run mainly from 2008 and rents from 2014, both into 2026. Files are split by year, and manifests record row counts and checksums. Read <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/docs/DATASHEET.md">the datasheet</a> for fields and tips.</p>
+<main class="wrap">
+<section id="findings">
+<h2>What the data shows so far</h2>
+<p class="intro">Three findings for someone with about AED 2 million looking at a UAE Golden Visa through property.</p>
+<div class="takeaways">
+  <div class="takeaway"><b>6.1x</b><h3>A market in strong growth</h3><p>Flat and villa sales rose from 29,142 in 2019 to 177,619 in 2025.</p></div>
+  <div class="takeaway"><b>1.56 to 1</b><h3>Demand gathers at AED 2 million</h3><p>Sales just above the Golden Visa line outnumber those just below it, up from 1.10 to 1 before 2022.</p></div>
+  <div class="takeaway"><b>Not proven</b><h3>No clear extra cost at the line</h3><p>A first reading of about AED 39,000 is in line with swings at prices that have no visa line.</p></div>
+</div>
+</section>
 
-<h2>Dubai Golden Visa analysis</h2>
-<p>How someone with about AED 2 million can qualify for a UAE Golden Visa through property while making the most of their money.</p>
-<p><strong>First finding: demand gathers at the AED 2 million line, and no clear extra cost is proven.</strong> From Q2 2022, residential sales just above AED 2 million outnumber those just below it by 1.56 to 1, up from 1.10 to 1 in 2015 to 2021. A first reading of about AED 39,000 appears when similar-sized homes in the same building are compared, but prices with no visa line show swings of a similar size, so it is not claimed as a real cost.</p>
-<p>So a buyer can choose on value and returns, and compare price per square metre within the building as a precaution. The visa link is inferred, because the records do not show who received one. Rankings of AED 2 million options are next. Read <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/STORY.md">the story so far</a>.</p>
+<section id="market">
+<h2>Dubai's market in numbers</h2>
+<p class="intro">Sales have reached record levels, and rents have recovered strongly since 2021. Together they set the income side of any investment case.</p>
+<div class="grid2">
+<figure><figcaption><h3>Sales rose 6.1 times from 2019 to 2025</h3><p>Residential flat and villa sales per year.</p></figcaption>
+<div class="chart" data-chart="columns" data-key="sales" data-format="compact"></div>
+<p class="note">2026 runs to 3 November, so it is a part year.</p><details><summary>Show the data</summary><div class="scroll"><table><caption>Residential flat and villa sales by year</caption><thead><tr><th scope="col">Year</th><th scope="col">Sales</th></tr></thead><tbody><tr><td>2015</td><td>27,271</td></tr><tr><td>2016</td><td>26,626</td></tr><tr><td>2017</td><td>32,319</td></tr><tr><td>2018</td><td>22,573</td></tr><tr><td>2019</td><td>29,142</td></tr><tr><td>2020</td><td>24,877</td></tr><tr><td>2021</td><td>44,344</td></tr><tr><td>2022</td><td>71,498</td></tr><tr><td>2023</td><td>104,266</td></tr><tr><td>2024</td><td>149,914</td></tr><tr><td>2025</td><td>177,619</td></tr><tr><td>2026</td><td>113,673</td></tr></tbody></table></div></details></figure>
+<figure><figcaption><h3>Flat rents are up 42% since 2021</h3><p>Median yearly rent per contract, in dirhams, for single-property contracts. Flats rose from AED 43,000 to AED 61,123.</p></figcaption>
+<div class="chart" data-chart="lines" data-key="rents" data-format="compact" data-zero="1"></div>
+<p class="note">The mix of homes changes each year, so this shows the broad direction, not the change for one home. 2026 is part year.</p><details><summary>Show the data</summary><div class="scroll"><table><caption>Median yearly rent in dirhams</caption><thead><tr><th scope="col">Year</th><th scope="col">Villas</th><th scope="col">Flats</th></tr></thead><tbody><tr><td>2015</td><td>171296</td><td>62000</td></tr><tr><td>2016</td><td>175000</td><td>65000</td></tr><tr><td>2017</td><td>165000</td><td>64615</td></tr><tr><td>2018</td><td>155000</td><td>60000</td></tr><tr><td>2019</td><td>143077</td><td>55000</td></tr><tr><td>2020</td><td>125000</td><td>48000</td></tr><tr><td>2021</td><td>125000</td><td>43000</td></tr><tr><td>2022</td><td>130000</td><td>45000</td></tr><tr><td>2023</td><td>143325</td><td>50000</td></tr><tr><td>2024</td><td>160000</td><td>55000</td></tr><tr><td>2025</td><td>170000</td><td>60000</td></tr><tr><td>2026</td><td>175000</td><td>61123</td></tr></tbody></table></div></details></figure>
+</div>
+</section>
 
-<h2>Australian electricity data and insights</h2>
-<p>Prices and demand for 5 market regions from January 2019 to October 2026, with weather for 11 cities, a tested demand forecast and <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/grid-pulse/RECOMMENDATIONS.md">recommendations</a>.</p>
+<section id="line">
+<h2>What happens at the AED 2 million line</h2>
+<p class="intro">Property worth AED 2 million or more can support a UAE Golden Visa application. So we asked: do buyers aim for that price, and does it cost them more?</p>
+<figure><figcaption><h3>In 2025, AED 2 million was the most popular price point nearby</h3><p>Sales in each AED 25,000 price band, labelled in millions of dirhams. The band starting at AED 2 million had 1,732 sales, against 772 in the band just below it.</p></figcaption>
+<div class="chart" data-chart="columns" data-key="bands" data-format="number" data-tall="1"></div><details><summary>Show the data</summary><div class="scroll"><table><caption>2025 sales by AED 25,000 price band</caption><thead><tr><th scope="col">Band from</th><th scope="col">Sales</th></tr></thead><tbody><tr><td>AED 1.8M</td><td>1,091</td></tr><tr><td>AED 1.825M</td><td>746</td></tr><tr><td>AED 1.85M</td><td>942</td></tr><tr><td>AED 1.875M</td><td>889</td></tr><tr><td>AED 1.9M</td><td>1,017</td></tr><tr><td>AED 1.925M</td><td>821</td></tr><tr><td>AED 1.95M</td><td>1,001</td></tr><tr><td>AED 1.975M</td><td>772</td></tr><tr><td>AED 2.0M</td><td>1,732</td></tr><tr><td>AED 2.025M</td><td>827</td></tr><tr><td>AED 2.05M</td><td>929</td></tr><tr><td>AED 2.075M</td><td>772</td></tr><tr><td>AED 2.1M</td><td>952</td></tr><tr><td>AED 2.125M</td><td>680</td></tr><tr><td>AED 2.15M</td><td>918</td></tr><tr><td>AED 2.175M</td><td>690</td></tr></tbody></table></div></details></figure>
+<figure><figcaption><h3>AED 2 million has led comparison prices for 19 quarters in a row</h3><p>Sales in the AED 50,000 just above a price, for each sale in the AED 50,000 just below it. Above 1 means buyers lean to the upper side.</p></figcaption>
+<div class="chart" data-chart="lines" data-key="crowding" data-format="ratio" data-ref="1"></div>
+<p class="note">The visa link is inferred, because the records do not show who received a visa.</p><details><summary>Show the data</summary><div class="scroll"><table><caption>Sales just above a price for each sale just below it</caption><thead><tr><th scope="col">Quarter</th><th scope="col">AED 2M</th><th scope="col">AED 1.5M, 2.5M and 3M</th></tr></thead><tbody><tr><td>2021 Q1</td><td>1.31</td><td>1.33</td></tr><tr><td>2021 Q2</td><td>1.25</td><td>1.22</td></tr><tr><td>2021 Q3</td><td>0.78</td><td>1.35</td></tr><tr><td>2021 Q4</td><td>0.9</td><td>1.01</td></tr><tr><td>2022 Q1</td><td>0.84</td><td>1.22</td></tr><tr><td>2022 Q2</td><td>1.31</td><td>1.24</td></tr><tr><td>2022 Q3</td><td>1.77</td><td>1.14</td></tr><tr><td>2022 Q4</td><td>1.82</td><td>1.07</td></tr><tr><td>2023 Q1</td><td>1.59</td><td>1.22</td></tr><tr><td>2023 Q2</td><td>1.54</td><td>1.25</td></tr><tr><td>2023 Q3</td><td>1.79</td><td>0.95</td></tr><tr><td>2023 Q4</td><td>1.94</td><td>1.14</td></tr><tr><td>2024 Q1</td><td>1.53</td><td>1.16</td></tr><tr><td>2024 Q2</td><td>1.74</td><td>1.06</td></tr><tr><td>2024 Q3</td><td>1.19</td><td>0.92</td></tr><tr><td>2024 Q4</td><td>1.41</td><td>0.94</td></tr><tr><td>2025 Q1</td><td>1.57</td><td>1.1</td></tr><tr><td>2025 Q2</td><td>1.43</td><td>1.13</td></tr><tr><td>2025 Q3</td><td>1.29</td><td>0.96</td></tr><tr><td>2025 Q4</td><td>1.56</td><td>1.17</td></tr><tr><td>2026 Q1</td><td>1.85</td><td>0.99</td></tr><tr><td>2026 Q2</td><td>1.62</td><td>1.07</td></tr><tr><td>2026 Q3</td><td>1.69</td><td>1.1</td></tr><tr><td>2026 Q4</td><td>2.07</td><td>1.1</td></tr></tbody></table></div></details></figure>
+<figure><figcaption><h3>Buyers do not clearly pay more at the line</h3><p>Price step for a similar-sized home in the same building and year, from Q2 2022. Lines show the likely range. AED 2 million reads +1.9%, or about AED 39,000 (range AED 14,000 to 63,000), but prices with no visa line swing by similar amounts.</p></figcaption>
+<div class="chart" data-chart="ranges" data-key="steps"></div>
+<p class="note">Floor and view are not in the records, so a higher price may also buy a better home.</p><details><summary>Show the data</summary><div class="scroll"><table><caption>Step in price for a comparable home, from Q2 2022, percent</caption><thead><tr><th scope="col">Price</th><th scope="col">Step</th><th scope="col">Low</th><th scope="col">High</th></tr></thead><tbody><tr><td>AED 1.5M</td><td>-0.74</td><td>-1.73</td><td>0.36</td></tr><tr><td>AED 1.7M</td><td>0.17</td><td>-0.75</td><td>1.29</td></tr><tr><td>AED 1.8M</td><td>-1.27</td><td>-2.28</td><td>-0.15</td></tr><tr><td>AED 1.9M</td><td>0.34</td><td>-0.76</td><td>1.56</td></tr><tr><td>AED 2.0M</td><td>1.94</td><td>0.72</td><td>3.16</td></tr><tr><td>AED 2.1M</td><td>-2.24</td><td>-3.4</td><td>-1.24</td></tr><tr><td>AED 2.2M</td><td>1.68</td><td>0.57</td><td>2.88</td></tr><tr><td>AED 2.3M</td><td>0.26</td><td>-1.08</td><td>1.28</td></tr><tr><td>AED 2.5M</td><td>-0.23</td><td>-1.33</td><td>0.85</td></tr><tr><td>AED 3.0M</td><td>0.9</td><td>-0.87</td><td>2.78</td></tr><tr><td>AED 4.0M</td><td>-0.77</td><td>-2.06</td><td>0.7</td></tr></tbody></table></div></details></figure>
+<div class="callout"><h3>What it means for a buyer with about AED 2 million</h3>
+<p>Reaching the line does not appear to carry a clear premium, so choose the home on value and returns. As a precaution, compare price per square metre with similar homes in the same building.</p>
+<p>Next: rankings of AED 2 million options by area, including rental income, tested on past years. Read <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/STORY.md">the story so far</a> or <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/pipeline/value_at_line.py">the method</a>.</p></div>
+</section>
 
-<footer>
-<p>Dubai transaction data: Dubai Land Department, via <a href="https://data.dubai/en/l/470061">Data.Dubai</a>, under the <a href="https://data.dubai/documents/d/guest/open-data-license-english-5-pdf">Open Data Licence</a>. Electricity: <a href="https://www.aemo.com.au/">AEMO</a>. Weather: <a href="https://open-meteo.com/">Open-Meteo.com</a>, CC BY 4.0.</p>
-<p>An independent project, not endorsed by or affiliated with any government entity. Analysis of public data, not financial, investment or immigration advice.</p>
-</footer>
+<section id="data">
+<h2>Download the data</h2>
+<p class="intro">No login needed. Every file has a direct link, and <a href="data-catalog.json">the data catalogue</a> lists them all for scripts and crawlers.</p>
+<div class="downloads">
+  <div class="download"><h3>Dubai sales and transactions</h3><p>Value, area, project, property type, rooms, size and price per square metre, mainly 2008 to 2026.</p><a href="https://github.com/yousufagha/ai-recommendations-portfolio/tree/main/dubai-property/data/raw/transactions">Browse the files</a></div>
+  <div class="download"><h3>Dubai rent contracts</h3><p>Annual amount, dates, area, property type, size and usage, mainly 2014 to 2026.</p><a href="https://github.com/yousufagha/ai-recommendations-portfolio/tree/main/dubai-property/data/raw/rents">Browse the files</a></div>
+  <div class="download"><h3>Dubai price index</h3><p>Monthly values and typical prices for homes, flats and villas, March 2011 to May 2024.</p><a href="https://github.com/yousufagha/ai-recommendations-portfolio/tree/main/dubai-property/data/raw/price_index">Browse the file</a></div>
+  <div class="download"><h3>Australian electricity and weather</h3><p>Prices and demand for 5 market regions from 2019 to 2026, with hourly weather for 11 cities.</p><a href="https://github.com/yousufagha/ai-recommendations-portfolio/tree/main/grid-pulse/data/raw">Browse the files</a></div>
+</div>
+<p class="note">Fields, tips and terms are in the <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/docs/DATASHEET.md">datasheet</a> and <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/data/raw/README.md">data notice</a>.</p>
+</section>
+
+<section id="australia">
+<h2>Also here: Australian electricity</h2>
+<p class="intro">The same approach applied to Australia's power market, with a tested demand forecast and <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/grid-pulse/RECOMMENDATIONS.md">four recommendations</a>.</p>
+<div class="grid2">
+<figure><figcaption><h3>Moving evening load to midday pays most in South Australia</h3><p>Value of moving 1 MW for 4 hours each weekday, Australian dollars a year, FY2026. Spot prices only.</p></figcaption>
+<div class="chart" data-chart="bars" data-key="shift" data-format="dollars"></div><details><summary>Show the data</summary><div class="scroll"><table><caption>Yearly value of moving 1 MW, FY2026, Australian dollars</caption><thead><tr><th scope="col">Region</th><th scope="col">Value</th></tr></thead><tbody><tr><td>South Australia</td><td>151,760</td></tr><tr><td>Queensland</td><td>96,946</td></tr><tr><td>New South Wales</td><td>79,016</td></tr><tr><td>Victoria</td><td>78,811</td></tr><tr><td>Tasmania</td><td>28,201</td></tr></tbody></table></div></details></figure>
+<figure><figcaption><h3>South Australia's cost sits in a few expensive moments</h3><p>Share of wholesale cost in the dearest 1% of intervals, FY2026.</p></figcaption>
+<div class="chart" data-chart="bars" data-key="tail" data-format="percent"></div><details><summary>Show the data</summary><div class="scroll"><table><caption>Share of wholesale cost in the dearest 1% of intervals, FY2026, percent</caption><thead><tr><th scope="col">Region</th><th scope="col">Share</th></tr></thead><tbody><tr><td>South Australia</td><td>35.4</td></tr><tr><td>New South Wales</td><td>13.4</td></tr><tr><td>Victoria</td><td>8.4</td></tr><tr><td>Queensland</td><td>5.7</td></tr><tr><td>Tasmania</td><td>5.1</td></tr></tbody></table></div></details></figure>
+</div>
+</section>
 </main>
+
+<footer><div class="wrap">
+<p>Dubai data: Dubai Land Department, via <a href="https://data.dubai/en/l/470061">Data.Dubai</a>, under the <a href="https://data.dubai/documents/d/guest/open-data-license-english-5-pdf">Open Data Licence</a>. Electricity: <a href="https://www.aemo.com.au/">AEMO</a>. Weather: <a href="https://open-meteo.com/">Open-Meteo.com</a>, CC BY 4.0.</p>
+<p>An independent project, not endorsed by or affiliated with any government entity. Analysis of public data, not financial, investment or immigration advice. Check current visa terms with the authorities.</p>
+<p>By <a href="https://github.com/yousufagha">Yousuf Agha</a>.</p>
+</div></footer>
+<div id="tip" role="status"></div>
+<script id="chart-data" type="application/json">{"sales":[{"label":"2015","value":27271,"partial":false},{"label":"2016","value":26626,"partial":false},{"label":"2017","value":32319,"partial":false},{"label":"2018","value":22573,"partial":false},{"label":"2019","value":29142,"partial":false},{"label":"2020","value":24877,"partial":false},{"label":"2021","value":44344,"partial":false},{"label":"2022","value":71498,"partial":false},{"label":"2023","value":104266,"partial":false},{"label":"2024","value":149914,"partial":false},{"label":"2025","value":177619,"partial":false},{"label":"2026","value":113673,"partial":true}],"rents":{"x":["2015","2016","2017","2018","2019","2020","2021","2022","2023","2024","2025","2026"],"series":[{"name":"Villas","values":[171296,175000,165000,155000,143077,125000,125000,130000,143325,160000,170000,175000]},{"name":"Flats","values":[62000,65000,64615,60000,55000,48000,43000,45000,50000,55000,60000,61123]}]},"bands":[{"label":"AED 1.8M","value":1091,"highlight":false},{"label":"AED 1.825M","value":746,"highlight":false},{"label":"AED 1.85M","value":942,"highlight":false},{"label":"AED 1.875M","value":889,"highlight":false},{"label":"AED 1.9M","value":1017,"highlight":false},{"label":"AED 1.925M","value":821,"highlight":false},{"label":"AED 1.95M","value":1001,"highlight":false},{"label":"AED 1.975M","value":772,"highlight":false},{"label":"AED 2.0M","value":1732,"highlight":true},{"label":"AED 2.025M","value":827,"highlight":false},{"label":"AED 2.05M","value":929,"highlight":false},{"label":"AED 2.075M","value":772,"highlight":false},{"label":"AED 2.1M","value":952,"highlight":false},{"label":"AED 2.125M","value":680,"highlight":false},{"label":"AED 2.15M","value":918,"highlight":false},{"label":"AED 2.175M","value":690,"highlight":false}],"crowding":{"x":["2021 Q1","2021 Q2","2021 Q3","2021 Q4","2022 Q1","2022 Q2","2022 Q3","2022 Q4","2023 Q1","2023 Q2","2023 Q3","2023 Q4","2024 Q1","2024 Q2","2024 Q3","2024 Q4","2025 Q1","2025 Q2","2025 Q3","2025 Q4","2026 Q1","2026 Q2","2026 Q3","2026 Q4"],"series":[{"name":"AED 2M","values":[1.31,1.25,0.78,0.9,0.84,1.31,1.77,1.82,1.59,1.54,1.79,1.94,1.53,1.74,1.19,1.41,1.57,1.43,1.29,1.56,1.85,1.62,1.69,2.07]},{"name":"AED 1.5M, 2.5M and 3M","values":[1.33,1.22,1.35,1.01,1.22,1.24,1.14,1.07,1.22,1.25,0.95,1.14,1.16,1.06,0.92,0.94,1.1,1.13,0.96,1.17,0.99,1.07,1.1,1.1]}]},"steps":[{"label":"AED 1.5M","value":-0.74,"low":-1.73,"high":0.36,"highlight":false},{"label":"AED 1.7M","value":0.17,"low":-0.75,"high":1.29,"highlight":false},{"label":"AED 1.8M","value":-1.27,"low":-2.28,"high":-0.15,"highlight":false},{"label":"AED 1.9M","value":0.34,"low":-0.76,"high":1.56,"highlight":false},{"label":"AED 2.0M","value":1.94,"low":0.72,"high":3.16,"highlight":true},{"label":"AED 2.1M","value":-2.24,"low":-3.4,"high":-1.24,"highlight":false},{"label":"AED 2.2M","value":1.68,"low":0.57,"high":2.88,"highlight":false},{"label":"AED 2.3M","value":0.26,"low":-1.08,"high":1.28,"highlight":false},{"label":"AED 2.5M","value":-0.23,"low":-1.33,"high":0.85,"highlight":false},{"label":"AED 3.0M","value":0.9,"low":-0.87,"high":2.78,"highlight":false},{"label":"AED 4.0M","value":-0.77,"low":-2.06,"high":0.7,"highlight":false}],"shift":[{"label":"South Australia","value":151760},{"label":"Queensland","value":96946},{"label":"New South Wales","value":79016},{"label":"Victoria","value":78811},{"label":"Tasmania","value":28201}],"tail":[{"label":"South Australia","value":35.4},{"label":"New South Wales","value":13.4},{"label":"Victoria","value":8.4},{"label":"Queensland","value":5.7},{"label":"Tasmania","value":5.1}]}</script>
+<script>
+(function () {
+  var DATA = JSON.parse(document.getElementById('chart-data').textContent);
+  var NS = 'http://www.w3.org/2000/svg';
+  var tip = document.getElementById('tip');
+  var COLORS = ['var(--blue)', 'var(--orange)'];
+  var FORMAT = {
+    number: function (v) { return v.toLocaleString('en-GB'); },
+    compact: function (v) { return v >= 1000 ? parseFloat((v / 1000).toFixed(1)) + 'K' : String(v); },
+    ratio: function (v) { return v.toFixed(2); },
+    dollars: function (v) { return '$' + v.toLocaleString('en-GB'); },
+    percent: function (v) { return v + '%'; }
+  };
+  function el(name, attrs, parent, text) {
+    var e = document.createElementNS(NS, name);
+    Object.keys(attrs).forEach(function (k) { e.setAttribute(k, attrs[k]); });
+    if (text !== undefined) e.textContent = text;
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+  function showTip(evt, rows, title) {
+    tip.textContent = '';
+    if (title) { var t = document.createElement('span'); t.textContent = title; t.style.display = 'block'; tip.appendChild(t); }
+    rows.forEach(function (r) {
+      var b = document.createElement('b');
+      if (r.color) { var i = document.createElement('i'); i.style.background = r.color; b.appendChild(i); }
+      b.appendChild(document.createTextNode(r.value));
+      if (r.name) { var s = document.createElement('span'); s.textContent = ' ' + r.name; s.style.fontWeight = 'normal'; b.appendChild(s); }
+      tip.appendChild(b);
+    });
+    tip.style.display = 'block';
+    var box = evt.target.getBoundingClientRect();
+    var x = evt.clientX || box.left + box.width / 2, y = evt.clientY || box.top;
+    var w = tip.offsetWidth, h = tip.offsetHeight;
+    tip.style.left = Math.max(8, Math.min(innerWidth - w - 8, x + 12)) + 'px';
+    tip.style.top = Math.max(8, y - h - 12) + 'px';
+  }
+  function hideTip() { tip.style.display = 'none'; }
+  function bindTip(node, rows, title) {
+    node.setAttribute('tabindex', '0');
+    node.setAttribute('class', (node.getAttribute('class') || '') + ' mark');
+    node.setAttribute('aria-label', (title ? title + ': ' : '') + rows.map(function (r) { return r.value + (r.name ? ' ' + r.name : ''); }).join(', '));
+    ['pointermove', 'focus'].forEach(function (n) { node.addEventListener(n, function (e) { showTip(e, rows, title); }); });
+    ['pointerleave', 'blur'].forEach(function (n) { node.addEventListener(n, hideTip); });
+  }
+  function niceMax(v) {
+    var p = Math.pow(10, Math.floor(Math.log10(v))), n = v / p;
+    return (n <= 1 ? 1 : n <= 2 ? 2 : n <= 2.5 ? 2.5 : n <= 5 ? 5 : 10) * p;
+  }
+  function topBar(x, y, w, h) {
+    var r = Math.min(4, w / 2, h);
+    return 'M' + x + ' ' + (y + h) + 'V' + (y + r) + 'Q' + x + ' ' + y + ' ' + (x + r) + ' ' + y + 'H' + (x + w - r) + 'Q' + (x + w) + ' ' + y + ' ' + (x + w) + ' ' + (y + r) + 'V' + (y + h) + 'Z';
+  }
+  function grid(svg, W, H, m, max, fmt) {
+    var lead = max / Math.pow(10, Math.floor(Math.log10(max))), parts = lead === 2.5 || lead === 5 ? 5 : 4;
+    for (var i = 0; i <= parts; i++) {
+      var y = H - m.b - i / parts * (H - m.t - m.b);
+      el('line', { x1: m.l, x2: W - m.r, y1: y, y2: y, stroke: 'var(--line)' }, svg);
+      el('text', { x: m.l - 8, y: y + 4, 'text-anchor': 'end' }, svg, fmt(max * i / parts));
+    }
+  }
+  function columns(host, items, fmt, tall) {
+    var W = host.clientWidth, H = tall ? 300 : 260, m = { t: 26, r: 8, b: 46, l: 46 };
+    var svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, height: H, role: 'img' }, host);
+    var max = niceMax(Math.max.apply(null, items.map(function (d) { return d.value; })));
+    grid(svg, W, H, m, max, FORMAT.compact);
+    var band = (W - m.l - m.r) / items.length, bw = Math.max(4, Math.min(24, band - 2));
+    var step = Math.pow(2, Math.ceil(Math.log2(Math.max(1, 46 / band))));
+    var hasHighlight = items.some(function (d) { return d.highlight; });
+    items.forEach(function (d, i) {
+      var h = d.value / max * (H - m.t - m.b), x = m.l + i * band + (band - bw) / 2, y = H - m.b - h;
+      var color = hasHighlight && !d.highlight ? 'var(--gray)' : 'var(--blue)';
+      var bar = el('path', { d: topBar(x, y, bw, h), fill: color, opacity: d.partial ? .55 : 1 }, svg);
+      bindTip(bar, [{ value: fmt(d.value) + ' sales' }], d.label + (d.partial ? ' to 3 November' : ''));
+      if (d.highlight) el('text', { x: x + bw / 2, y: y - 8, 'text-anchor': 'middle', class: 'strong' }, svg, fmt(d.value));
+      if (i % step === 0 || d.highlight) {
+        var lab = el('text', { x: x + bw / 2, y: H - m.b + 18, 'text-anchor': 'middle' }, svg, d.label.replace('AED ', ''));
+        if (d.highlight) lab.setAttribute('class', 'strong');
+      }
+    });
+    if (!hasHighlight) {
+      var last = items.reduce(function (a, b) { return b.value > a.value ? b : a; });
+      var idx = items.indexOf(last), lh = last.value / max * (H - m.t - m.b);
+      el('text', { x: m.l + idx * band + band / 2, y: H - m.b - lh - 8, 'text-anchor': 'middle', class: 'strong' }, svg, FORMAT.number(last.value));
+    }
+  }
+  function lines(host, c, fmt, ref, zero) {
+    var legend = document.createElement('div'); legend.className = 'legend';
+    c.series.forEach(function (s, i) {
+      var row = document.createElement('span'), key = document.createElement('i');
+      key.style.background = COLORS[i]; row.appendChild(key); row.appendChild(document.createTextNode(s.name)); legend.appendChild(row);
+    });
+    host.appendChild(legend);
+    var W = host.clientWidth, H = 270, m = { t: 14, r: 44, b: 32, l: 46 };
+    var svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, height: H, role: 'img' }, host);
+    var all = [].concat.apply([], c.series.map(function (s) { return s.values; }));
+    var max = niceMax(Math.max.apply(null, all));
+    grid(svg, W, H, m, max, zero ? FORMAT.compact : fmt);
+    var X = function (i) { return m.l + i / (c.x.length - 1) * (W - m.l - m.r); };
+    var Y = function (v) { return H - m.b - v / max * (H - m.t - m.b); };
+    if (ref) {
+      el('line', { x1: m.l, x2: W - m.r, y1: Y(ref), y2: Y(ref), stroke: 'var(--muted)' }, svg);
+    }
+    var skip = Math.ceil(64 / ((W - m.l - m.r) / (c.x.length - 1)));
+    c.x.forEach(function (x, i) {
+      if (i % skip === 0) el('text', { x: X(i), y: H - 10, 'text-anchor': 'middle' }, svg, x);
+    });
+    c.series.forEach(function (s, si) {
+      var d = s.values.map(function (v, i) { return (i ? 'L' : 'M') + X(i) + ' ' + Y(v); }).join('');
+      el('path', { d: d, fill: 'none', stroke: COLORS[si], 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }, svg);
+      var n = s.values.length - 1;
+      el('circle', { cx: X(n), cy: Y(s.values[n]), r: 4, fill: COLORS[si], stroke: 'var(--surface)', 'stroke-width': 2 }, svg);
+      el('text', { x: X(n) + 8, y: Y(s.values[n]) + 4, class: 'strong' }, svg, zero ? FORMAT.compact(s.values[n]) : fmt(s.values[n]));
+    });
+    var cross = el('line', { y1: m.t, y2: H - m.b, stroke: 'var(--muted)', visibility: 'hidden' }, svg);
+    var hit = el('rect', { x: m.l, y: m.t, width: W - m.l - m.r, height: H - m.t - m.b, fill: 'transparent', tabindex: 0, 'aria-label': 'Move across the chart to read each period' }, svg);
+    function at(e) {
+      var box = svg.getBoundingClientRect();
+      var i = e.clientX ? Math.round((e.clientX - box.left - m.l) / (W - m.l - m.r) * (c.x.length - 1)) : c.x.length - 1;
+      i = Math.max(0, Math.min(c.x.length - 1, i));
+      cross.setAttribute('x1', X(i)); cross.setAttribute('x2', X(i)); cross.setAttribute('visibility', 'visible');
+      showTip(e, c.series.map(function (s, si) { return { value: zero ? FORMAT.number(s.values[i]) : fmt(s.values[i]), name: s.name, color: COLORS[si] }; }), c.x[i]);
+    }
+    hit.addEventListener('pointermove', at); hit.addEventListener('focus', at);
+    ['pointerleave', 'blur'].forEach(function (n) { hit.addEventListener(n, function () { cross.setAttribute('visibility', 'hidden'); hideTip(); }); });
+  }
+  function ranges(host, items) {
+    var row = 30, W = host.clientWidth, m = { t: 26, r: 58, b: 24, l: 82 }, H = m.t + m.b + row * items.length;
+    var svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, height: H, role: 'img' }, host);
+    var lim = Math.ceil(Math.max.apply(null, items.map(function (d) { return Math.max(Math.abs(d.low), Math.abs(d.high)); })));
+    var X = function (v) { return m.l + (v + lim) / (2 * lim) * (W - m.l - m.r); };
+    [-lim, -lim / 2, 0, lim / 2, lim].forEach(function (v) {
+      el('line', { x1: X(v), x2: X(v), y1: m.t - 4, y2: H - m.b, stroke: v === 0 ? 'var(--muted)' : 'var(--line)' }, svg);
+      el('text', { x: X(v), y: m.t - 12, 'text-anchor': 'middle' }, svg, (v > 0 ? '+' : '') + v + '%');
+    });
+    items.forEach(function (d, i) {
+      var y = m.t + row * i + row / 2, color = d.highlight ? 'var(--blue)' : 'var(--gray)';
+      el('text', { x: m.l - 10, y: y + 4, 'text-anchor': 'end', class: d.highlight ? 'strong' : '' }, svg, d.label);
+      el('line', { x1: X(d.low), x2: X(d.high), y1: y, y2: y, stroke: color, 'stroke-width': 2, 'stroke-linecap': 'round' }, svg);
+      el('circle', { cx: X(d.value), cy: y, r: 5, fill: color, stroke: 'var(--surface)', 'stroke-width': 2 }, svg);
+      el('text', { x: W - m.r + 8, y: y + 4, class: d.highlight ? 'strong' : '' }, svg, (d.value > 0 ? '+' : '') + d.value.toFixed(1) + '%');
+      var hit = el('rect', { x: m.l, y: y - row / 2, width: W - m.l - m.r, height: row, fill: 'transparent' }, svg);
+      bindTip(hit, [{ value: (d.value > 0 ? '+' : '') + d.value + '%', name: 'range ' + d.low + '% to ' + d.high + '%' }], d.label);
+    });
+  }
+  function bars(host, items, fmt) {
+    var row = 38, W = host.clientWidth, lab = Math.min(128, W * .36), val = 72, H = row * items.length;
+    var svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, height: H, role: 'img' }, host);
+    var max = Math.max.apply(null, items.map(function (d) { return d.value; }));
+    items.forEach(function (d, i) {
+      var y = row * i + (row - 20) / 2, w = d.value / max * (W - lab - val - 8);
+      el('text', { x: 0, y: y + 14 }, svg, d.label);
+      var r = Math.min(4, w);
+      var bar = el('path', { d: 'M' + lab + ' ' + y + 'H' + (lab + w - r) + 'Q' + (lab + w) + ' ' + y + ' ' + (lab + w) + ' ' + (y + r) + 'V' + (y + 20 - r) + 'Q' + (lab + w) + ' ' + (y + 20) + ' ' + (lab + w - r) + ' ' + (y + 20) + 'H' + lab + 'Z', fill: 'var(--blue)' }, svg);
+      bindTip(bar, [{ value: fmt(d.value) }], d.label);
+      el('text', { x: lab + w + 8, y: y + 14, class: 'strong' }, svg, fmt(d.value));
+    });
+  }
+  function draw() {
+    hideTip();
+    document.querySelectorAll('.chart').forEach(function (host) {
+      host.textContent = '';
+      var data = DATA[host.dataset.key], fmt = FORMAT[host.dataset.format || 'number'];
+      if (host.dataset.chart === 'columns') columns(host, data, fmt, host.dataset.tall);
+      if (host.dataset.chart === 'lines') lines(host, data, fmt, Number(host.dataset.ref || 0), host.dataset.zero);
+      if (host.dataset.chart === 'ranges') ranges(host, data);
+      if (host.dataset.chart === 'bars') bars(host, data, fmt);
+    });
+  }
+  draw();
+  var timer, width = innerWidth;
+  addEventListener('resize', function () {
+    if (innerWidth === width) return;
+    width = innerWidth; clearTimeout(timer); timer = setTimeout(draw, 120);
+  });
+})();
+</script>
 </body>
 </html>
