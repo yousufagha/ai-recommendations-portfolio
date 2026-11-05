@@ -172,7 +172,7 @@ h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.08;letter-spacing:-.02em;margi
 section{padding:52px 0 0}
 h2{font-size:clamp(1.5rem,4vw,2rem);line-height:1.2;letter-spacing:-.01em;margin:0 0 10px}
 .intro{color:var(--text2);max-width:44em;margin:0 0 24px}
-.takeaways{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.takeaways{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 .takeaway{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px}
 .takeaway b{display:block;font-size:2rem;line-height:1.15;margin-bottom:6px}
 .takeaway h3{font-size:1.02rem;margin:0 0 6px}
@@ -229,11 +229,12 @@ footer p{margin:0 0 8px;max-width:60em}
 <main class="wrap">
 <section id="findings">
 <h2>What the data shows so far</h2>
-<p class="intro">Three findings for someone with about AED 2 million looking at a UAE Golden Visa through property.</p>
+<p class="intro">Four findings for someone with about AED 2 million looking at a UAE Golden Visa through property.</p>
 <div class="takeaways">
   <div class="takeaway"><b>{{sales_multiple}}x</b><h3>A market in strong growth</h3><p>Flat and villa sales rose from {{sales_2019}} in 2019 to {{sales_2025}} in 2025.</p></div>
   <div class="takeaway"><b>{{crowd_after}} to 1</b><h3>Demand gathers at AED 2 million</h3><p>Sales just above the Golden Visa line outnumber those just below it, up from {{crowd_before}} to 1 before 2022.</p></div>
   <div class="takeaway"><b>Not proven</b><h3>No clear extra cost at the line</h3><p>A first reading of about AED {{step_aed}} is in line with swings at prices that have no visa line.</p></div>
+  <div class="takeaway"><b>AED {{rent_gap}}</b><h3>The same money, different rent</h3><p>Estimated yearly rent differs by up to this much between ready homes at about AED 2 million.</p></div>
 </div>
 </section>
 
@@ -263,7 +264,18 @@ footer p{margin:0 0 8px;max-width:60em}
 <p class="note">Floor and view are not in the records, so a higher price may also buy a better home.</p>{{table_steps}}</figure>
 <div class="callout"><h3>What it means for a buyer with about AED 2 million</h3>
 <p>Reaching the line does not appear to carry a clear premium, so choose the home on value and returns. As a precaution, compare price per square metre with similar homes in the same building.</p>
-<p>Next: rankings of AED 2 million options by area, including rental income, tested on past years. Read <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/STORY.md">the story so far</a> or <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/pipeline/value_at_line.py">the method</a>.</p></div>
+<p>Read <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/STORY.md">the story so far</a> or <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/pipeline/value_at_line.py">the method</a>.</p></div>
+</section>
+
+<section id="income">
+<h2>Which homes at AED 2 million earn the most rent</h2>
+<p class="intro">Ready flats give Dubai buyers income from the day they are let. We estimated what each option rents for today, using new contracts from the past year.</p>
+<figure><figcaption><h3>{{top_tier_count}} options lead, at about 6% to {{yield_high}}% a year</h3><p>Estimated gross yield for ready flats priced at AED 2M to 2.2M. Highlighted options are too close to separate, because estimates typically miss by {{yield_error}} points. All {{ranked_count}} options run from AED {{rent_low}} to AED {{rent_high}} a year.</p></figcaption>
+<div class="chart" data-chart="bars" data-key="yields" data-format="yield" data-stacked="1"></div>
+<p class="note">Gross, before service charges, vacancy and fees, which are not in the records. These are homes priced at the threshold, not confirmed visa cases.</p>{{table_yields}}</figure>
+<div class="callout"><h3>What it means for a buyer who wants income</h3>
+<p>Start with the highlighted options and compare actual buildings, because the same AED 2 million can buy noticeably more rent. Off-plan was {{off_plan_share}} of sales at this price and earns rent from handover, so we report it separately.</p>
+<p>Last year's rents give a similar order (rank correlation {{rank_correlation}}). Next: test on past years whether these homes would have beaten the market. See <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/validation/rent_yields.json">the results</a> and <a href="https://github.com/yousufagha/ai-recommendations-portfolio/blob/main/dubai-property/pipeline/rent_yields.py">the method</a>.</p></div>
 </section>
 
 <section id="data">
@@ -308,7 +320,8 @@ footer p{margin:0 0 8px;max-width:60em}
     compact: function (v) { return v >= 1000 ? parseFloat((v / 1000).toFixed(1)) + 'K' : String(v); },
     ratio: function (v) { return v.toFixed(2); },
     dollars: function (v) { return '$' + v.toLocaleString('en-GB'); },
-    percent: function (v) { return v + '%'; }
+    percent: function (v) { return v + '%'; },
+    yield: function (v) { return v.toFixed(1) + '%'; }
   };
   function el(name, attrs, parent, text) {
     var e = document.createElementNS(NS, name);
@@ -442,16 +455,17 @@ footer p{margin:0 0 8px;max-width:60em}
       bindTip(hit, [{ value: (d.value > 0 ? '+' : '') + d.value + '%', name: 'range ' + d.low + '% to ' + d.high + '%' }], d.label);
     });
   }
-  function bars(host, items, fmt) {
-    var row = 38, W = host.clientWidth, lab = Math.min(128, W * .36), val = 72, H = row * items.length;
+  function bars(host, items, fmt, stacked) {
+    var row = stacked ? 48 : 38, W = host.clientWidth, lab = stacked ? 0 : Math.min(128, W * .36), val = 72, H = row * items.length;
+    var hasHighlight = items.some(function (d) { return d.highlight; });
     var svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, height: H, role: 'img' }, host);
     var max = Math.max.apply(null, items.map(function (d) { return d.value; }));
     items.forEach(function (d, i) {
-      var y = row * i + (row - 20) / 2, w = d.value / max * (W - lab - val - 8);
-      el('text', { x: 0, y: y + 14 }, svg, d.label);
+      var y = stacked ? row * i + 20 : row * i + (row - 20) / 2, w = d.value / max * (W - lab - val - 8);
+      el('text', { x: 0, y: stacked ? y - 6 : y + 14, class: d.highlight ? 'strong' : '' }, svg, d.label);
       var r = Math.min(4, w);
-      var bar = el('path', { d: 'M' + lab + ' ' + y + 'H' + (lab + w - r) + 'Q' + (lab + w) + ' ' + y + ' ' + (lab + w) + ' ' + (y + r) + 'V' + (y + 20 - r) + 'Q' + (lab + w) + ' ' + (y + 20) + ' ' + (lab + w - r) + ' ' + (y + 20) + 'H' + lab + 'Z', fill: 'var(--blue)' }, svg);
-      bindTip(bar, [{ value: fmt(d.value) }], d.label);
+      var bar = el('path', { d: 'M' + lab + ' ' + y + 'H' + (lab + w - r) + 'Q' + (lab + w) + ' ' + y + ' ' + (lab + w) + ' ' + (y + r) + 'V' + (y + 20 - r) + 'Q' + (lab + w) + ' ' + (y + 20) + ' ' + (lab + w - r) + ' ' + (y + 20) + 'H' + lab + 'Z', fill: hasHighlight && !d.highlight ? 'var(--gray)' : 'var(--blue)' }, svg);
+      bindTip(bar, [{ value: fmt(d.value), name: d.rent ? 'AED ' + d.rent.toLocaleString('en-GB') + ' a year' : '' }], d.label);
       el('text', { x: lab + w + 8, y: y + 14, class: 'strong' }, svg, fmt(d.value));
     });
   }
@@ -463,7 +477,7 @@ footer p{margin:0 0 8px;max-width:60em}
       if (host.dataset.chart === 'columns') columns(host, data, fmt, host.dataset.tall);
       if (host.dataset.chart === 'lines') lines(host, data, fmt, Number(host.dataset.ref || 0), host.dataset.zero);
       if (host.dataset.chart === 'ranges') ranges(host, data);
-      if (host.dataset.chart === 'bars') bars(host, data, fmt);
+      if (host.dataset.chart === 'bars') bars(host, data, fmt, host.dataset.stacked);
     });
   }
   draw();
