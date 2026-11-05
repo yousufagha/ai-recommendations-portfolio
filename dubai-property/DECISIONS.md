@@ -17,3 +17,7 @@
 - 2026-11-05: Treat the value step at AED 2M as unproven, because prices with no visa line show steps of similar size. No saving is claimed from it.
 - 2026-11-05: The landing page is built from a template and the results files by `pipeline/build_site.py`, and tests fail if a written claim stops holding, so charts cannot drift from the analysis.
 - 2026-11-05: Dashboards are Tableau Public for Dubai and Looker Studio for Grid Pulse. Superset is dropped because a public link would need a paid server.
+- 2026-11-05: Market rent uses new contracts only, because renewals lag: 2025 flats were AED 971 per sqm new against AED 693 renewed.
+- 2026-11-05: Rent is estimated per sale from the same project, then same-price projects, then the area adjusted for price, because all-price area rents overstated AED 2M yields (cold review: Burj Khalifa 2-bed about 7.9% against about 6.0%).
+- 2026-11-05: Rank only ready flats with at least half their sales on project evidence, in tiers set by the leave-one-project-out error. Off-plan and villas stay unranked.
+- 2026-11-05: Call results "homes priced at the threshold". u.ae confirms AED 2M capital and a 5-year term for real estate but not off-plan, mortgage or joint rules, and secondary sources conflict, so recommendations must not state those as fact.
