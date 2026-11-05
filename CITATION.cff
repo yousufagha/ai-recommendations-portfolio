@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or analysis, please cite it, and credit each dataset's publisher as listed in DATA.md."
+title: "AI recommendations portfolio: Dubai real estate and Australian electricity data"
+type: software
+authors:
+  - family-names: Agha
+    given-names: Yousuf
+repository-code: "https://github.com/yousufagha/ai-recommendations-portfolio"
+url: "https://yousufagha.github.io/ai-recommendations-portfolio/"
+license: MIT
+date-released: 2026-11-05
+keywords:
+  - dubai real estate
+  - uae property
+  - golden visa
+  - open data
+  - electricity market
+  - forecasting
