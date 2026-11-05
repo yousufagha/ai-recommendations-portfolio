@@ -26,7 +26,7 @@ Read [the story in everyday language](grid-pulse/STORY.md) or [the recommendatio
 ## Dubai Golden Visa so far
 
 - 1,813,436 official transaction records, of which 1,386,564 are sales, in yearly files under [`dubai-property/data/raw/transactions/`](dubai-property/data/raw/transactions/). Most records fall from 2008 onwards.
-- No findings are claimed yet. Read [the planned story](dubai-property/STORY.md).
+- **First finding:** from Q2 2022, sales just above AED 2 million outnumber those just below it by 1.56 to 1, up from 1.10 to 1 in 2015 to 2021, and no clear extra cost at the line is proven. Rankings of AED 2 million options are next. Read [the story so far](dubai-property/STORY.md).
 
 ## Run it
 

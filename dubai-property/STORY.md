@@ -1,6 +1,16 @@
 # Dubai Golden Visa in everyday language
 
-Draft outline. No figures yet, because the official data has not been downloaded. Scale and findings will come from the data.
+Work in progress. The first finding is below, and the rankings and paper test are still to come.
+
+## First finding
+
+**Demand gathers at the Golden Visa line, and no clear extra cost is proven.** From Q2 2022, residential sales just above AED 2 million outnumber those just below it by 1.56 to 1, up from 1.10 to 1 in 2015 to 2021. Nearby prices such as AED 1.9M, 2.1M and 2.2M sit between 0.98 and 1.11.
+
+When similar-sized homes in the same building and year are compared, a first reading of about AED 39,000 (+1.9%, range AED 14,000 to 63,000) appears at the line. Prices with no visa line show swings of a similar size, from -2.2% to +1.7%, so this is not claimed as a real cost.
+
+**What it means for a buyer with about AED 2 million:** reaching the line does not appear to carry a clear premium, so choose the home on value and returns. As a precaution, compare price per square metre with similar homes in the same building.
+
+The records do not show who received a visa, so the link to the visa is inferred. Floor and view are not in the data. Figures come from [the results file](validation/value_at_line.json), and `make dubai` rebuilds them.
 
 ## In 30 seconds (to finalise)
 
@@ -9,7 +19,7 @@ Draft outline. No figures yet, because the official data has not been downloaded
 ## In 2 minutes (to complete)
 
 - **Why it matters:** a home is a very large decision, and here it can also decide where a family can live. Clear numbers help people choose well, and the official records show what sold, where and for how much.
-- **The scale:** [number of sales, years covered and total value, from the data].
+- **The scale:** 1,386,564 sales in the official records, mostly from 2008 to 3 November 2026.
 - **How it works:**
   1. **Collect:** gather the official records, keep real sales, and set aside mortgages and gifts, so a mortgage is not mistaken for a sale price.
   2. **Look for a pattern:** see if sales crowd just above AED 2 million, then check whether the same happens at other round numbers, because people like round numbers anyway.
