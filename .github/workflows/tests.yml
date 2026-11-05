@@ -13,7 +13,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python -m pip install -r grid-pulse/requirements.txt
+      - run: python -m pip install -r grid-pulse/requirements.lock
+      - name: Lint
+        run: ruff check .
       - name: Grid Pulse
         working-directory: grid-pulse
         run: python -m pytest -q
