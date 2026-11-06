@@ -1,6 +1,6 @@
 # Dubai Golden Visa in everyday language
 
-Work in progress. The first finding is below, and the rankings and paper test are still to come.
+Three findings from the official Dubai records, each tested before it is stated.
 
 ## First finding
 
@@ -32,22 +32,26 @@ These are gross figures for homes priced at the threshold, before service charge
 
 Limits: four rounds in one market cycle cannot prove much. Even a real edge of 1 to 2 points a year would usually read as "not shown". Figures are before service charges, vacancy and selling costs. Results use rents and sales as published now, because the records do not show when each was registered. The official flat index ends in May 2024, so it can check only two rounds: it matched in 2022 (14.7% against 14.6%) and differed in 2021 (27.0% against 8.4%), which is why 2021 is shown with no dirham figures. This was not a blind test: a reviewer ran the original plan before the final method was set, and [the decisions log](DECISIONS.md) records what changed. Figures come from [the results file](validation/backtest.json).
 
-## In 30 seconds (to finalise)
+## In 30 seconds
 
-"In Dubai, buying AED 2 million of property can come with long-term residency. I took the official sales records and used AI to answer two questions: do buyers pay extra to reach that line, and which ways of spending that money would have earned the most? Then I tested the advice on years it had never seen, against simply buying the whole market. [Result, from the data.]"
+"In Dubai, buying AED 2 million of property can come with long-term residency through the Golden Visa. I took the official sales and rent records and asked two questions: do buyers pay extra to reach that line, and which homes at that price earn the most rent? Demand clearly gathers at the line, with no proven extra cost. Then I tested the AI ranking on four past years it had never seen: its picks earned more rent than the other ranked homes every time, worth AED 50,000 to 73,000 a year on AED 10 million, before costs. It's a tool for choosing homes for income, not for predicting price rises."
 
-## In 2 minutes (to complete)
+## In 2 minutes
 
 - **Why it matters:** a home is a very large decision, and here it can also decide where a family can live. Clear numbers help people choose well, and the official records show what sold, where and for how much.
-- **The scale:** 1,386,564 sales in the official records, mostly from 2008 to 3 November 2026.
+- **The scale:** 1,386,564 sales in the official records, mostly from 2008 to 3 November 2026, plus 10.7 million rent contract lines.
 - **How it works:**
   1. **Collect:** gather the official records, keep real sales, and set aside mortgages and gifts, so a mortgage is not mistaken for a sale price.
   2. **Look for a pattern:** see if sales crowd just above AED 2 million, then check whether the same happens at other round numbers, because people like round numbers anyway.
-  3. **Predict:** a model learns what similar homes sell for and how each area tends to move over the next year.
-  4. **Advise:** rank the options in dirhams, after costs and risk. AI writes the advice in plain English, and an automatic check rejects it if any number is wrong.
-  5. **Show:** a public report anyone can open, starting with what to do.
-- **How we know it's right:** the advice was tested as if investing a paper AED 10 million in past years, using only what was known at the time. It had to beat buying the whole market. Rent: yes, in all four rounds, worth AED 50,000 to 73,000 a year on AED 10 million. Total return: no edge claimed, because the test did not show one.
-- **What it means:** [buyers: best way to qualify. Developers: whether to price at the line. Advisers: where the market is. Government: what happens if the line moves.]
+  3. **Measure:** compare similar-sized homes in the same building and year to see whether the line carries a price step.
+  4. **Rank:** estimate yearly rent in dirhams for each ready home priced at the line, and group options whose gaps are smaller than the estimate's typical error.
+  5. **Show:** a public report and a Tableau dashboard anyone can open, starting with what to do.
+- **How we know it's right:** the ranking was tested as if investing a paper AED 10 million in past years, using only what was known at the time, and compared with the other homes it ranked and with all ready flats. Rent: ahead of the other ranked homes in all four rounds, worth AED 50,000 to 73,000 a year on AED 10 million, and ahead of all 5,000 random picks. Total return: no edge claimed, because the test did not show one. All ready flats across prices often earn a higher yield, so the visa is part of what a threshold buyer gets.
+- **What it means:**
+  - **Buyers:** reaching AED 2 million carries no proven premium, so choose on value, and use the top four ready homes to earn up to AED 30,000 a year more rent for the same money.
+  - **Developers:** demand at the line has grown, from 1.10 sales just above for each just below in 2015 to 2021 to 1.56 since Q2 2022, so homes priced at AED 2 million meet a deep pool of buyers.
+  - **Advisers:** at the line, Business Bay and Hadaeq Sheikh Mohammed Bin Rashid lead on estimated rent among ready homes, while off-plan is 76% of sales but earns no rent until handover.
+  - **Government:** the line clearly shapes where buyers price their purchases, which is useful evidence when reviewing the threshold.
 
 ## If someone asks
 
