@@ -27,3 +27,4 @@
 - 2026-11-05: The product claim is limited to rent: picks earned 0.5 to 0.7 points more out of sample. No claim on total return or price prediction.
 - 2026-11-05: Buy-and-hold uses a 4% fee from the [Dubai Land Department fee table](https://rdc.dubailand.gov.ae/Assets/img/Real_Estate_Legislation_en.pdf). AED 200 per sqm service charge is an unverified assumption.
 - 2026-11-05: Tableau reads flat CSVs built from `validation/` by `pipeline/build_tableau.py`, with no new analysis, so the dashboard cannot disagree with tested results.
+- 2026-11-06: Present the backtest rent first: "Rent edge: delivered in 4 of 4 rounds. Total-return edge: not shown, so we don't claim one." "Delivered", not "proven", because four rounds cannot prove much. The verdict label, every number and "trailed all ready flats in 3 of 4" stay as they are.

@@ -31,7 +31,9 @@ def test_every_written_claim_holds_in_the_results():
     assert len(tier) >= 2 and round(tier[-1]["value"]) == 6, "the page says the top options run from about 6%"
     assert int(f["rent_gap"].replace(",", "")) == max(y["rent"] for y in data["yields"]) - min(y["rent"] for y in data["yields"])
     tested = [x for x in results["backtest"]["rounds"] if x["tested"]]
-    assert f["verdict"] == "not shown", "the page says better total return is not shown"
+    assert f["verdict"] == "not shown", "the page and dashboard say no total-return edge is claimed"
+    assert f["rounds_tested"] == f["rounds_more_rent"] == "4", "STORY.md and the Tableau guide say 4 of 4 rounds"
+    assert (f["rent_aed_low"], f["rent_aed_high"]) == ("50,000", "73,000"), "STORY.md and the Tableau guide quote these dirham figures"
     assert all(x["picks_realised_yield_pct"] > x["others_realised_yield_pct"] for x in tested), "the page says picks earned more rent in every round"
     rent = results["backtest"]["rent_only_permutation_added_after_seeing_results"]
     assert rent["share_of_random_at_least_as_good"] == 0, "the page says the rent gap beat all random picks"
