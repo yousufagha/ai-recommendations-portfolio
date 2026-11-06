@@ -18,14 +18,14 @@ The records do not show who received a visa, so the link to the visa is inferred
 
 **What it means for a buyer with about AED 2 million who wants income:** start with these four and compare actual buildings, because the same price can buy noticeably more rent. Off-plan was 76% of sales in this price band, but earns no rent until handover, so we show it separately as indicative.
 
-These are gross figures for homes priced at the threshold, before service charges, vacancy and fees, none of which are in the data. Rents come from new contracts in the year to 3 November 2026, because renewals lag the market. Estimates held up in three checks: applied to projects whose real rent was known, they showed no overall lean, with a typical miss of 0.67 points; last year's rents gave a similar order (rank correlation 0.90); and the Business Bay reading sits close to a [published 6.6%](https://joinoliva.com/en/learn/blog/dubai-rental-yields-by-area-2026-ejari-data) from a commercial source. Whether these homes would have beaten the market is not yet tested. Figures come from [the results file](validation/rent_yields.json).
+These are gross figures for homes priced at the threshold, before service charges, vacancy and fees, none of which are in the data. Rents come from new contracts in the year to 3 November 2026, because renewals lag the market. Estimates held up in three checks: applied to projects whose real rent was known, they showed no overall lean, with a typical miss of 0.67 points; last year's rents gave a similar order (rank correlation 0.90); and the Business Bay reading sits close to a [published 6.6%](https://joinoliva.com/en/learn/blog/dubai-rental-yields-by-area-2026-ejari-data) from a commercial source. The third finding tests whether these picks would have worked. Figures come from [the results file](validation/rent_yields.json).
 
 ## Third finding: the test on past years
 
-**The ranking found homes that went on to earn more rent. Better total return is not shown.** Each November from 2022 to 2025 we picked five AED 2M homes using only what was known that day, then compared them with the other ranked options over the next year.
+**Built for rent, delivered on rent.** Rent edge: delivered in 4 of 4 rounds against the other ranked homes. Total-return edge: not shown, so we don't claim one. Each November from 2022 to 2025 we picked five AED 2M homes using only what was known that day, then compared them with the other ranked options over the next year.
 
 - **Rent:** the picks earned 0.5 to 0.7 points more in new rents agreed afterwards, in all four rounds. On a paper AED 10 million, that is AED 50,000 to AED 73,000 a year before costs. Across the rounds, the gap of 2.41 points beat all 5,000 random picks.
-- **Total return, rent plus price change:** not shown. The picks were ahead in three of four rounds on both ways of measuring price, by 1.08 to 3.02 points. The summed gap beat 95% of random picks on one measure (16.94 points) but not the other (3.78 points). Limited to options with at least 100 matched sales, the gaps were +2.25, -0.35, -0.51 and +0.44 points.
+- **Total return, rent plus price change:** no edge claimed, because the test did not show one. The picks were ahead in three of four rounds on both ways of measuring price, by 1.08 to 3.02 points. The summed gap beat 95% of random picks on one measure (16.94 points) but not the other (3.78 points). Limited to options with at least 100 matched sales, the gaps were +2.25, -0.35, -0.51 and +0.44 points.
 - **Against the wider market:** AED 2M picks trailed all ready flats in three of four rounds. Homes across all prices often earn a higher rental yield, so the visa is part of what a threshold buyer gets for their money.
 
 **What it means for a buyer with about AED 2 million:** use the ranking to choose for rental income. Do not rely on it to predict which homes will rise most in price.
@@ -46,7 +46,7 @@ Limits: four rounds in one market cycle cannot prove much. Even a real edge of 1
   3. **Predict:** a model learns what similar homes sell for and how each area tends to move over the next year.
   4. **Advise:** rank the options in dirhams, after costs and risk. AI writes the advice in plain English, and an automatic check rejects it if any number is wrong.
   5. **Show:** a public report anyone can open, starting with what to do.
-- **How we know it's right:** the advice was tested as if investing a paper AED 10 million in past years, using only what was known at the time. It had to beat buying the whole market. Rent: yes, in all four rounds. Total return: not shown.
+- **How we know it's right:** the advice was tested as if investing a paper AED 10 million in past years, using only what was known at the time. It had to beat buying the whole market. Rent: yes, in all four rounds, worth AED 50,000 to 73,000 a year on AED 10 million. Total return: no edge claimed, because the test did not show one.
 - **What it means:** [buyers: best way to qualify. Developers: whether to price at the line. Advisers: where the market is. Government: what happens if the line moves.]
 
 ## If someone asks
