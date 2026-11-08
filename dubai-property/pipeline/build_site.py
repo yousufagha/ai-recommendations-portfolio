@@ -85,6 +85,7 @@ def figures(r: dict) -> dict:
         "rounds_tested": str(len(tested)), "rounds_more_rent": str(sum(g > 0 for g in gaps)), "total_rounds_ahead": str(wins),
         "rent_gap_low": f"{min(gaps):.1f}", "rent_gap_high": f"{max(gaps):.1f}",
         "rent_aed_low": f"{round(min(gaps) / 100 * 10_000_000, -3):,.0f}", "rent_aed_high": f"{round(max(gaps) / 100 * 10_000_000, -3):,.0f}",
+        "rent_aed_2m_low": f"{round(min(gaps) / 100 * 2_000_000, -3):,.0f}", "rent_aed_2m_high": f"{round(max(gaps) / 100 * 2_000_000, -3):,.0f}",
         "random_draws": f"{5000:,}", "verdict": b["verdict"]["label"],
         "sum_plan": f"{b['permutation']['plan']['observed_points']:.1f}", "sum_centred": f"{b['permutation']['centred']['observed_points']:.1f}",
         "wider_behind": str(sum(x["picks_minus_wider_market_points"] < 0 for x in tested)),
