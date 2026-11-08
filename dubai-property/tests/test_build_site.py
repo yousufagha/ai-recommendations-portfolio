@@ -39,6 +39,11 @@ def test_every_written_claim_holds_in_the_results():
     assert rent["share_of_random_at_least_as_good"] == 0, "the page says the rent gap beat all random picks"
     p = results["backtest"]["permutation"]
     assert (p["plan"]["observed_points"] > p["plan"]["random_95th_points"]) != (p["centred"]["observed_points"] > p["centred"]["random_95th_points"]), "the page says one measure of two"
+    assert f["wider_behind"] == "3", "the page says the picks trailed all ready flats on total return in 3 of 4 rounds"
+    assert float(f["crowd_before"]) < float(f["crowd_after"]), "the page says the crowding at the line grew"
+    assert (f["yield_low"], f["yield_high"]) == ("5.2", "6.4"), "the page quotes the yield range of the ranked options"
+    assert (f["rent_aed_2m_low"], f["rent_aed_2m_high"]) == ("10,000", "15,000"), "the page restates the rent gap on AED 2 million"
+    assert [round(a - b, 2) for a, b in zip(data["backtest"]["series"][0]["values"], data["backtest"]["series"][1]["values"])] == [0.5, 0.6, 0.73, 0.58], "the chart labels show these gaps"
     assert data["shift"][0]["label"] == data["tail"][0]["label"] == "South Australia"
     highlight = next(s for s in data["steps"] if s["highlight"])
     assert any(abs(s["value"]) >= abs(highlight["value"]) for s in data["steps"] if not s["highlight"]), "no clear cost relies on this"
@@ -53,3 +58,8 @@ def test_search_and_trust_lines_stay_on_the_page():
 def test_local_data_links_exist():
     for path in set(re.findall(r"github\.com/yousufagha/ai-recommendations-portfolio/(?:blob|tree)/main/([^\"#]+)", PAGE.read_text())):
         assert (ROOT / path).exists(), path
+
+
+def test_page_has_no_em_dash_or_unfilled_placeholder():
+    text = PAGE.read_text()
+    assert "\u2014" not in text and "{{" not in text

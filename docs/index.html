@@ -172,12 +172,19 @@ h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.08;letter-spacing:-.02em;margi
 section{padding:52px 0 0}
 h2{font-size:clamp(1.5rem,4vw,2rem);line-height:1.2;letter-spacing:-.01em;margin:0 0 10px}
 .intro{color:var(--text2);max-width:44em;margin:0 0 24px}
-.takeaways{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.takeaway{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px}
-.takeaway b{display:block;font-size:2rem;line-height:1.15;margin-bottom:6px}
-.takeaway h3{font-size:1.02rem;margin:0 0 6px}
-.takeaway p{margin:0;color:var(--text2);font-size:.95rem}
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px}
+.findings{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:16px;align-items:start}
+.lead-finding{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:24px;min-width:0}
+.kicker{margin:0 0 8px;font-size:.85rem;font-weight:600;color:var(--accent)}
+.lead-finding h3{font-size:1.35rem;line-height:1.25;letter-spacing:-.01em;margin:0 0 8px}
+.lead-finding .sub{margin:0 0 16px;color:var(--text2);font-size:.95rem}
+.ledger{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.ledger li{padding:20px 0;border-bottom:1px solid var(--line)}
+.status{display:block;margin:0 0 4px;font-size:.85rem;color:var(--text2)}
+.ledger h3{font-size:1.05rem;line-height:1.3;margin:0 0 6px;font-variant-numeric:tabular-nums}
+.ledger p{margin:0;color:var(--text2);font-size:.93rem}
+@media (max-width:820px){.findings{grid-template-columns:minmax(0,1fr)}}
+.legend.sq i{width:10px;height:10px;border-radius:2px}
 figure{margin:0 0 16px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px;min-width:0}
 figcaption h3{font-size:1.08rem;line-height:1.3;margin:0 0 4px}
 figcaption p{margin:0 0 12px;color:var(--text2);font-size:.92rem}
@@ -228,13 +235,21 @@ footer p{margin:0 0 8px;max-width:60em}
 
 <main class="wrap">
 <section id="findings">
-<h2>What the data shows so far</h2>
-<p class="intro">Four findings for someone with about AED 2 million looking at a UAE Golden Visa through property.</p>
-<div class="takeaways">
-  <div class="takeaway"><b>1.56 to 1</b><h3>Demand gathers at AED 2 million</h3><p>Sales just above the Golden Visa line outnumber those just below it, up from 1.10 to 1 before 2022.</p></div>
-  <div class="takeaway"><b>Not proven</b><h3>No clear extra cost at the line</h3><p>A first reading of about AED 39,000 is in line with swings at prices that have no visa line.</p></div>
-  <div class="takeaway"><b>AED 30,000</b><h3>The same money, different rent</h3><p>Estimated yearly rent differs by up to this much between ready homes at about AED 2 million.</p></div>
-  <div class="takeaway"><b>4 of 4</b><h3>Built for rent, delivered on rent</h3><p>Tested on past years, picked homes earned more rent than the other ranked options in every round. No total-return edge is claimed.</p></div>
+<h2>What the data shows</h2>
+<p class="intro">For someone with about AED 2 million looking at a Golden Visa through property.</p>
+<div class="findings">
+<article class="lead-finding">
+<p class="kicker">Delivered in 4 of 4 tests</p>
+<h3>The ranking picked homes that earned more rent in every test round</h3>
+<p class="sub">Each November from 2022 to 2025 we picked five homes using only what was known that day, then compared the rent they earned over the next year with the other ranked options. The gap was worth AED 50,000 to 73,000 a year on a paper AED 10 million, or about AED 10,000 to 15,000 on AED 2 million, before costs.</p>
+<div class="chart" data-chart="pairs" data-key="backtest" data-format="yield2"></div>
+<p class="note">Yearly rent as a percent of purchase price. Labels show the gap in points. Four rounds in one market cycle, and not a blind test: see <a href="#backtest">the full test</a>.</p><details><summary>Show the data</summary><div class="scroll"><table><caption>Each round: yearly rent as a percent of price, and gaps in points</caption><thead><tr><th scope="col">Decision</th><th scope="col">Picked homes&#x27; rent</th><th scope="col">Others&#x27; rent</th><th scope="col">Total gap, first price measure</th><th scope="col">Total gap, second price measure</th><th scope="col">Total gap, well-measured options only</th><th scope="col">Total gap against all ready flats</th></tr></thead><tbody><tr><td>Nov 2022</td><td>7.22</td><td>6.72</td><td>2.25</td><td>1.08</td><td>2.25</td><td>2.31</td></tr><tr><td>Nov 2023</td><td>7.03</td><td>6.43</td><td>2.7</td><td>3.02</td><td>-0.35</td><td>-3.88</td></tr><tr><td>Nov 2024</td><td>6.96</td><td>6.23</td><td>2.44</td><td>2.6</td><td>-0.51</td><td>-2.29</td></tr><tr><td>Nov 2025</td><td>6.07</td><td>5.49</td><td>9.55</td><td>-2.92</td><td>0.44</td><td>-5.31</td></tr></tbody></table></div></details>
+</article>
+<ul class="ledger">
+<li><span class="status">Same price band, different rent</span><h3>Rent runs from AED 105,000 to AED 135,000 a year</h3><p>Among 13 ready flats priced at AED 2M to 2.2M, gross yield runs from 5.2% to 6.4%. 4 homes share the top tier, so start there and compare actual buildings.</p></li>
+<li><span class="status">Clear pattern, premium not proven</span><h3>1.56 sales just above AED 2 million for every sale just below</h3><p>Up from 1.10 before 2022. A first reading of +1.9% (about AED 39,000) at the line is similar in size to swings at prices with no visa line, so we claim no extra cost. Choose on value.</p></li>
+<li><span class="status">Use it for income</span><h3>No total-return edge is claimed</h3><p>The ranking is built for rent, not for forecasting price rises. Across all prices, ready flats often earn more, and the picks trailed them on total return in 3 of 4 rounds. Our reading: the residency route is part of what a threshold buyer gets for their money.</p></li>
+</ul>
 </div>
 </section>
 
@@ -332,7 +347,8 @@ footer p{margin:0 0 8px;max-width:60em}
     ratio: function (v) { return v.toFixed(2); },
     dollars: function (v) { return '$' + v.toLocaleString('en-GB'); },
     percent: function (v) { return v + '%'; },
-    yield: function (v) { return v.toFixed(1) + '%'; }
+    yield: function (v) { return v.toFixed(1) + '%'; },
+    yield2: function (v) { return v.toFixed(2) + '%'; }
   };
   function el(name, attrs, parent, text) {
     var e = document.createElementNS(NS, name);
@@ -480,6 +496,33 @@ footer p{margin:0 0 8px;max-width:60em}
       el('text', { x: lab + w + 8, y: y + 14, class: 'strong' }, svg, fmt(d.value));
     });
   }
+  function pairs(host, c, fmt) {
+    var colors = ['var(--blue)', 'var(--muted)'];
+    var legend = document.createElement('div'); legend.className = 'legend sq';
+    c.series.forEach(function (s, i) {
+      var row = document.createElement('span'), key = document.createElement('i');
+      key.style.background = colors[i]; row.appendChild(key); row.appendChild(document.createTextNode(s.name)); legend.appendChild(row);
+    });
+    host.appendChild(legend);
+    var W = host.clientWidth, H = 260, m = { t: 30, r: 8, b: 32, l: 40 };
+    var all = [].concat.apply([], c.series.map(function (s) { return s.values; }));
+    var max = Math.ceil(Math.max.apply(null, all) / 2) * 2;
+    var label = c.x.map(function (x, i) { return x + ': ' + c.series.map(function (s) { return s.name + ' ' + fmt(s.values[i]); }).join(', '); }).join('. ');
+    var svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, height: H, role: 'img', 'aria-label': label }, host);
+    grid(svg, W, H, m, max, FORMAT.percent);
+    var band = (W - m.l - m.r) / c.x.length, bw = Math.max(10, Math.min(36, band * .32));
+    c.x.forEach(function (x, i) {
+      var cx = m.l + i * band + band / 2, hs = c.series.map(function (s) { return s.values[i] / max * (H - m.t - m.b); });
+      c.series.forEach(function (s, si) {
+        var bx = si ? cx + 1.5 : cx - bw - 1.5;
+        el('path', { d: topBar(bx, H - m.b - hs[si], bw, hs[si]), fill: colors[si] }, svg);
+      });
+      el('text', { x: cx, y: H - m.b - Math.max(hs[0], hs[1]) - 8, 'text-anchor': 'middle', class: 'strong' }, svg, '+' + (c.series[0].values[i] - c.series[1].values[i]).toFixed(2));
+      el('text', { x: cx, y: H - m.b + 18, 'text-anchor': 'middle' }, svg, x);
+      var hit = el('rect', { x: m.l + i * band, y: m.t, width: band, height: H - m.t - m.b, fill: 'transparent' }, svg);
+      bindTip(hit, c.series.map(function (s, si) { return { value: fmt(s.values[i]), name: s.name, color: colors[si] }; }), x);
+    });
+  }
   function draw() {
     hideTip();
     document.querySelectorAll('.chart').forEach(function (host) {
@@ -487,6 +530,7 @@ footer p{margin:0 0 8px;max-width:60em}
       var data = DATA[host.dataset.key], fmt = FORMAT[host.dataset.format || 'number'];
       if (host.dataset.chart === 'columns') columns(host, data, fmt, host.dataset.tall);
       if (host.dataset.chart === 'lines') lines(host, data, fmt, Number(host.dataset.ref || 0), host.dataset.zero);
+      if (host.dataset.chart === 'pairs') pairs(host, data, fmt);
       if (host.dataset.chart === 'ranges') ranges(host, data);
       if (host.dataset.chart === 'bars') bars(host, data, fmt, host.dataset.stacked);
     });
